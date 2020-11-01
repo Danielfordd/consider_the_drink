@@ -222,3 +222,5 @@ cython_debug/
 # System Files
 .DS_Store
 Thumbs.db
+
+.Identifier
