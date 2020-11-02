@@ -1,0 +1,14 @@
+[
+{ "model": "ingredient.Ingredient",
+    "fields": {
+        "ingredient_name": "Vodka",
+        "category": 1
+    }
+},
+{ "model": "ingredient.Ingredient",
+    "fields": {
+        "ingredient_name": "Rum",
+        "category": 2
+    }
+}
+]

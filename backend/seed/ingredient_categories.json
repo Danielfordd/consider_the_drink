@@ -1,0 +1,42 @@
+[
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Spirit"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Mixer"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Citrus"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Sweetner"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Bitter"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Liqueur"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Misc"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Juice"
+        }
+    }
+]
