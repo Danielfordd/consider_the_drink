@@ -38,5 +38,10 @@
         "fields": {
             "category_name": "Juice"
         }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Garnish"
+        }
     }
 ]

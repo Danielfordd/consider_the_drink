@@ -1,14 +1,712 @@
 [
-{ "model": "ingredient.Ingredient",
-    "fields": {
-        "ingredient_name": "Vodka",
-        "category": 1
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Vodka"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Rum (Any)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Bourbon Whiskey"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Scotch Whiskey"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Whiskey (Any)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Canadian Whiskey"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Japanese Whiskey"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Scotch Whiskey (Very Peaty)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Gin"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Rum (Dark)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Rum (White)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Rhum (White)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Rhum (Dark)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Spiced Rum"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Triple Sec"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sambuca"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Brandy"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cognac"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Armagnac"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Anise Liqueur"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Absinthe"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Tequila"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Tequila (Reposado)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Tequila (Anejo)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Tequila (Extra Anejo)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Mezcal"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Orange Bitters"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Angostura Bitters"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Peychaud Bitters"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Orange Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cranberry Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Pineapple Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lime Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lemon Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Apple Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Grapefruit Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Watermelon Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Simple syrup"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Simple Syrup (Heavy)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Honey Syrup"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Agave"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Mint"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lemon Wheel"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lime Wheel"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lime Wedge"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lemon Wedge"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Flag"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cherry"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Brandy Cherry"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Orange Wheel"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Orange Slice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Orange Peel"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lemon Peel"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lime Peel"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Salt"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Aquavit"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Red Wine"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "White Wine"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sparkling Wine"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Champagne"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sherry (Cream)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Madeira"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sherry (Amontillado)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sherry (Oloroso)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sherry (Pedro Ximenez)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sherry"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Calvados"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Apple Brandy"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Baiju"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Creme de Banana"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Beer (IPA)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Beer (Lager)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Beer"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Chambord"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Raspberry Liqueur"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Creme de Cassis"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Scotch Whiskey (Blended)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cachaca"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Coffee Liqueur"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Coconut Liqueur"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Malibu"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Kahlua"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Eau de vie"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sake"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Soju"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Amaro"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cynar"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Amaro Lucano"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Amaro Nonino Quintessentia"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Braulio"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Fernet Branca"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sweet Vermouth"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Dry Vermouth"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Aperol"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Campari"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Suze"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Luxardo Maraschino Liqueur"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Saint Germain"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Rye Whiskey"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Elderflower Liqueur"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Grappa"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Frangelico"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Disaronno"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Amaretto"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Grenadine"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Rose's Lime Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Ginger Ale"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Ginger Beer"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sugar Cube"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Brown Sugar Simple Syrup"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Advocaat"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Pisco"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Curacao"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Blue Curacao"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Plymouth Gin"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Genever"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Old Tom Gin"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cointreau"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Creme de Cacao"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Dramuie"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Galliano"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cocktail Onion"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Olives"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Bluecheese stuffed Olives"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Olive Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sugar"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Coffee"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lemonade"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Iced Tea"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Seltzer"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Coca-Cola"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sprite"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "7Up"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Pepsi"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Orgeat"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Peach Schnapps"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Pineapple"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Coconut Cream"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Creme de Menthe"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cream"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Egg"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Egg White"
+        }
     }
-},
-{ "model": "ingredient.Ingredient",
-    "fields": {
-        "ingredient_name": "Rum",
-        "category": 2
-    }
-}
 ]
