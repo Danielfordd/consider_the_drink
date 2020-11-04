@@ -1,0 +1,58 @@
+[
+    { "model": "bar.Bar",
+        "pk":1,
+        "fields": {
+            "user": 1,
+            "ingredient":1
+        }
+    },
+    { "model": "bar.Bar",
+        "pk":2,
+        "fields": {
+            "user": 1,
+            "ingredient": 3
+        }
+    },
+    { "model": "bar.Bar",
+        "pk":3,
+        "fields": {
+            "user": 1,
+            "ingredient": 9
+        }
+    },
+    { "model": "bar.Bar",
+        "pk":4,
+        "fields": {
+            "user": 1,
+            "ingredient": 30
+        }
+    },
+    { "model": "bar.Bar",
+        "pk":5,
+        "fields": {
+            "user": 1,
+            "ingredient": 41
+        }
+    },
+    { "model": "bar.Bar",
+        "pk":6,
+        "fields": {
+            "user": 1,
+            "ingredient":33
+        }
+    },
+    { "model": "bar.Bar",
+        "pk":7,
+        "fields": {
+            "user": 1,
+            "ingredient":55
+        }
+    },
+    { "model": "bar.Bar",
+        "pk":8,
+        "fields": {
+            "user": 1,
+            "ingredient":59
+        }
+    }
+]

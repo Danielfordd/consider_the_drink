@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'authentication.apps.AuthenticationConfig',
-    'ingredient.apps.IngredientConfig'
+    'ingredient.apps.IngredientConfig',
+    'bar.apps.BarConfig',
+    'cocktail.apps.CocktailConfig'
 ]
 
 

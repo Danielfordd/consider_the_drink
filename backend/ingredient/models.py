@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class IngredientCategory(models.Model):
     category_name = models.CharField(max_length=100, unique=True)
 
@@ -28,3 +27,6 @@ class IngredientCategoryList(models.Model):
 
     class Meta:
         db_table = "ingredient_category_lists"
+
+    def __str__(self):
+        return self.ingredient, self.category

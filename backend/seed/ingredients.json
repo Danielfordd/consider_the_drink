@@ -256,7 +256,7 @@
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Orange Peel"
+            "ingredient_name": "Orange Twist"
         }
     },
     { "model": "ingredient.Ingredient",
@@ -707,6 +707,56 @@
     { "model": "ingredient.Ingredient",
         "fields": {
             "ingredient_name": "Egg White"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Honey"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Spirit"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Mixer"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Citrus"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Sweetner"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Bitter"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Liqueur"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Misc"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Juice"
+        }
+    },
+    { "model": "ingredient.IngredientCategory",
+        "fields": {
+            "category_name": "Garnish"
         }
     }
 ]

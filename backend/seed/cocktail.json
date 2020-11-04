@@ -1,0 +1,713 @@
+[
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Old Fashioned (Classic)",
+            "cocktail_description": "An old fashioned was one of the simpler and earlier versions of cocktails, before the development of advanced bartending techniques and recipes in the later part of the 19th century. The first documented definition of the word \"cocktail\" was in response to a reader's letter asking to define the word in the May 6, 1806, issue of The Balance and Columbian Repository in Hudson, New York. In the May 13, 1806, issue, the paper's editor wrote that it was a potent concoction of spirits, bitters, water, and sugar; it was also referred to at the time as a bittered sling and is essentially the recipe for an old fashioned."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 1,
+            "served": 2
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 1,
+            "served": 7
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 1,
+            "glass": 5
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 1,
+            "ingredient": 3,
+            "order": 0,
+            "ingredient_quantity": "2 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 1,
+            "ingredient": 38,
+            "order": 1,
+            "ingredient_quantity": ".5 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 1,
+            "ingredient": 28,
+            "order": 2,
+            "ingredient_quantity": "2 Dashes"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 1,
+            "ingredient": 52,
+            "order": 3,
+            "ingredient_quantity": "1 Ea"
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 1,
+            "order": 0,
+            "instruction": "Combine whiskey, Angostura bitters, simple syrup, and ice in a glass."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 1,
+            "order": 1,
+            "instruction": "Sitr until the entire cocktail is chilled, approximately 20-30 seconds."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 1,
+            "order": 2,
+            "instruction": "Strain into another glass filled with ice and garnish with an orange twist."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Old Fashioned (Muddled)",
+            "cocktail_description": "Although a classic old fashioned is made without muddling fruit, a popular variation involves muddling orange and cherry before adding the remaining ingredients."
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 2,
+            "glass": 5
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Sazerac",
+            "cocktail_description": "The defining feature of the Sazerac is its method of preparation, which commonly involves two chilled old-fashioned glasses. The first glass is swirled with a wash of absinthe for its flavor and strong scent. The second glass is used to combine the remaining ingredients, which are stirred with ice, then strained into the first glass. Various anisettes such as pastis, Pernod, or Herbsaint are common substitutes when absinthe is unavailable. In New Orleans, Herbsaint is most commonly used due to the absence of absinthe in the U.S. market from 1912 until 2007."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Manhattan",
+            "cocktail_description": "A Manhattan is a cocktail made with whiskey, sweet vermouth, and bitters. While rye is the traditional whiskey of choice, other commonly used whiskies include Canadian whisky, bourbon, blended whiskey, and Tennessee whiskey. The cocktail is usually stirred then strained into a cocktail glass and garnished traditionally with a maraschino cherry. A Manhattan may also be served on the rocks in a lowball glass. The whiskey-based Manhattan is one of five cocktails named for a New York City borough. It is closely related to the Brooklyn cocktail, which uses dry vermouth and Maraschino liqueur in place of the Manhattan's sweet vermouth, and Amer Picon in place of the Manhattan's angostura bitters."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Brooklyn",
+            "cocktail_description": "The Brooklyn is one of five cocktails named for the boroughs of New York City, along with the Bronx, the Manhattan, the Queens and the Staten Island Ferry. It resembles a Manhattan, but with a specific type of bitters (several types of bitters can be used in a Manhattan) and the addition of Maraschino liqueur. It largely fell into obscurity after the end of Prohibition, but experienced a resurgence in the 1990s."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"The Bronx",
+            "cocktail_description": "Named after the borough of The Bronx, a Bronx consists of gin, vermouth, and orange juice. It was formerly listed as an IBA official cocktail and was ranked as the third most famous cocktail in the world in 1934. A pre-Prohibition cocktail, the Bronx appears in the 1908 book The World's Drinks and How to Mix Them. Some accounts say the Bronx originated in Philadelphia and was later popularized in New York. Others say that it was invented by a bartender in the Waldorf-Astoria Hotel. According to Alcoholics Anonymous founder Bill W., the first drink he ever had was a Bronx cocktail, after which he became an alcoholic."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Queens",
+            "cocktail_description": "Named after the borough of Queens, a Queens consists of gin, vermouth, and pineapple juice. The drink dates back to 1930, appearing in Harry Craddock's Savoy Cocktail Book."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Staten Island",
+            "cocktail_description": "Staten Island is the only borough without a cocktail that bears its name directly. A Staten Island Ferry is named after the ferry that carries passengers between the boroughs of Manhattan and Staten Island. It consists of Malibu rum and pineapple juice, resembling a piña colada. Its tropical flavoring is a satire on the fact that Staten Island is an island though far removed from the tropics."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Americano",
+            "cocktail_description": "It is the first drink ordered by James Bond in the first novel in Ian Fleming's series, Casino Royale. In From Russia With Love, Bond drinks \"two excellent Americanos\" in Rome during his flight to Istanbul. In the short story \"From a View to a Kill\", Bond chooses an Americano as an appropriate drink for a mere café; suggesting that \"in cafés you have to drink the least offensive of the musical comedy drinks that go with them.\" Bond always stipulates Perrier, for, in his opinion, expensive soda water was the cheapest way to improve a poor drink."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Brandy Alexander",
+            "cocktail_description": "A Brandy Alexander is a brandy-based cocktail consisting of cognac, crème de cacao, and cream that became popular during the early 20th century. It is a variation of an earlier, gin-based cocktail called simply an Alexander. The cocktail known as Alexander today may contain gin or brandy."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Sidecar",
+            "cocktail_description": "Like the daiquiri, the sidecar evolved from the original sour formula, but sidecars are often drier than sours, combining liqueurs like Curaçao with citrus. Sidecars are considered more of a challenge for bartenders because the proportion of ingredients is more difficult to balance for liqueurs of variable sweetness."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Aviation",
+            "cocktail_description": "The Aviation is a classic gin cocktail dating back to the turn of the 20th century, and it first appeared in Huge Enslinn’s book “Recipes for Mixed Drinks” in 1916 while he was tending bar at New York City’s Hotel Wallick. In the ensuing decades, it was all but forgotten. That’s because one of the drink’s primary ingredients, crème de violette liqueur, disappeared from the market in the 1960s."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Between the Sheets",
+            "cocktail_description": "Created in the early 1930s during Prohibtion by Harry MacElhone of Harry's New York bar in Paris. This cocktail is derived from the Sidecar"
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Boulevardier",
+            "cocktail_description": "The boulevardier cocktail is an alcoholic drink composed of whiskey, sweet vermouth, and campari. Its creation is ascribed to Erskine Gwynne, an American-born writer who founded a monthly magazine in Paris called Boulevardier, which appeared from 1927 to 1932. The boulevardier is similar to a Negroni, sharing two of its three ingredients. It is differentiated by its use of bourbon whiskey or rye whiskey as its principal component instead of gin. Paul Clark, writing for the food blog Serious Eats, says, \"This isn't a Negroni. It is, however, the Negroni's long-lost autumnal cousin.\""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Negroni",
+            "cocktail_description": "While the drink's origins are unknown, the most widely reported account is that it was first mixed in Florence, Italy, in 1919, at Caffè Casoni (formerly Caffè Giacosa), on Via de' Tornabuoni and now called Caffè Roberto Cavalli. Count Camillo Negroni concocted it by asking the bartender, Fosco Scarselli, to strengthen his favorite cocktail, the Americano, by adding gin rather than the normal soda water. The bartender also added an orange garnish rather than the typical lemon garnish of the Americano to signify that it was a different drink."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Old Pal",
+            "cocktail_description": "The Old Pal is a cocktail originally made with Rye Whiskey, French Vermouth (dry), and Campari. It is similar to a Negroni, but with Rye whiskey instead of Gin and dry vermouth instead of sweet. Harry MacElhone, the proprietor of Harry's New York Bar in Paris, France is recognized as the first to publish the cocktail's recipe. MacElhone named this cocktail after William \"Sparrow\" Robinson, a sports-editor for The New York Herald in Paris. This three-ingredient cocktail is essentially a lighter version Boulevardier, which was also invented by the MacElhone."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Brandy Crusta",
+            "cocktail_description": "The cocktail, named for the crust of sugar on the rim, was invented by Joseph Santini, a bartender in New Orleans at his bar, Jewel of the South. Jerry Thomas was the first to publish the recipe in his 1862 cocktail manual."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Clover Club",
+            "cocktail_description": "The Clover Club Cocktail is a drink that pre-dates Prohibition in the United States, and is named for the Philadelphia men's club of the same name, which met in the Bellevue-Stratford Hotel at South Broad and Walnut Streets in Center City. The Clover Club itself dates to 1896, as seen in the 1897 book, The Clover Club of Philadelphia, page 172 by Mary R. Deacon. Brooklyn's Clover Club restaurant claims that the Philadelphia men's club dates to 1882 and lasted until \"the 1920s.\""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Daiquiri (Classic)",
+            "cocktail_description": "Daiquirí is also the name of a beach and an iron mine near Santiago de Cuba, and is a word of Taíno origin. The drink was supposedly invented by an American mining engineer named Jennings Cox, who was in Cuba at the time of the Spanish–American War. It is also possible that William A. Chanler, a US congressman who purchased the Santiago iron mines in 1902, introduced the daiquiri to clubs in New York in that year."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Martini (Dry)",
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became a common drink order. Over the course of the 20th century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1. During the latter part of the 20th century, 6:1, 8:1, 12:1, 15:1 (the \"Montgomery\", after British Field Marshal Bernard Montgomery's supposed penchant for attacking only when in possession of great numerical superiority), or even 50:1 or 100:1 Martinis became considered the norm."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Martini (Dirty)",
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Martinez",
+            "cocktail_description": "The true origin of the Martinez cocktail is unclear. Two early stories attribute the making of a cocktail named the Martinez to bartender Jerry Thomas at the Occidental Hotel or by a bartender by the name of Richelieue who worked at a saloon in Martinez, California. Both stories are difficult to verify because records of drinks at the time are missing or incomplete, but the 1887 edition of Thomas' The Bar-Tender's Guide includes a recipe for the Martinez. It calls for a pony of Old Tom gin, a glass of vermouth, two dashes of Maraschino, and a dash of Boker's Bitters with ice, garnished with a slice of lemon."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Gin Fizz",
+            "cocktail_description": "The first printed reference to \"fiz\" is in the appendix to the 1876 edition of Jerry Thomas's Bartender's Guide, which contains four such recipes. The fizz became widely popular in America between 1900 and the 1940s. Known as a hometown specialty of New Orleans, the gin fizz was so popular that bars would employ teams of bartenders that would take turns shaking the drinks. Demand for fizzes went international at least as early as 1950, as evidenced by its inclusion in the French cookbook L'Art Culinaire Francais published that year."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Ramos Gin Fizz",
+            "cocktail_description": "Henry C. Ramos invented the Ramos gin fizz in 1888 at his bar, the Imperial Cabinet Saloon on Gravier Street, New Orleans, Louisiana. It was originally called a \"New Orleans fizz\", and is one of the city's most famous cocktails. Before Prohibition, the drink's popularity and exceptionally long 12-minute mixing time had over 20 bartenders working at the Imperial at once making nothing but the Ramos gin fizz - and still struggling to keep up with demand. During the carnival of 1915, 32 staff members were on at once, just to shake the drink."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Hanky-Panky",
+            "cocktail_description": "The Hanky-Panky was the brainchild of Ada Coleman (known as \"Coley\") who began as a bartender at the Savoy Hotel in 1903. Her benefactor was Rupert D'Oyly Carte, a member of the family that first produced Gilbert and Sullivan operas in London and that built the Savoy Hotel. When Rupert became chairman of the Savoy, Ada was given a position at the hotel's American Bar, where she eventually became the head bartender and made cocktails for the likes of Mark Twain, the Prince of Wales, Prince Wilhelm of Sweden, and Sir Charles Hawtrey. Coleman created the Hanky-Panky for Hawtrey."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Paradise",
+            "cocktail_description": "The Paradise cocktail plays a key part in the 1933 Warner Bros. romantic film One Way Passage as the drink of the two star-crossed lovers played by Kay Francis and William Powell. On May 27, 2018, Snoop Dogg set the world record for the largest \"Gin and Juice\", a 500-litre (132 gallon) paradise cocktail that contained 180 bottles of gin, 154 bottles of apricot brandy, and 144 liters (38 gallons) of orange juice"
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Planter's Punch",
+            "cocktail_description": "Planter's punch is an IBA Official Cocktail made of Jamaican rum, fresh lime juice, and sugar cane juice. The cocktail has been said to have originated at the Planters Hotel in Charleston, South Carolina"
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Porto Flip",
+            "cocktail_description": "A Porto flip is a type of drink. It is typically made with brandy, ruby port, and one egg yolk. The Porto Flip was first recorded by Jerry Thomas in his 1862 book The Bartender’s Guide: How to Mix Drinks; A Bon Vivant’s Companion. albeit under the name \"Coffee Cocktail\", named for its appearance rather than its ingredients."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Rusty Nail",
+            "cocktail_description": "According to cocktail historian David Wondrich, \"the Rusty Nail took a while to find its proper place in the world.\" The combination of Drambuie—\"the world's most distinguished Scotch-based liqueur\"—and the whisky it is made from first appears in 1937 in the form of the B.I.F., credited to one F. Benniman and ostensibly named after the British Industries Fair. Wondrich goes on to note that \"it took another generation or so for the drink to assume its classic name and form, during which time it tried on several identities. Here it's a D&S...there a Little Club No. 1 (the Little Club being a rather swank sort of joint on East Fifty-fifth Street much haunted by showbiz types); at USAF Officers' Clubs in Thailand and the Republic of Viet-Nam, [sic] it's a Mig-21, while in the upper Midwest it's a Knucklehead.\""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Stinger",
+            "cocktail_description": "The Stinger originated about 1890. The cocktail may have been derived from The Judge, a cocktail made with brandy, crème de menthe, and simple syrup found in William Schmidt's 1892 cocktail book The Flowing Bowl. It was immediately popular in New York City, and quickly became known as a \"society\" drink (i.e. only for the upper classes). According to bartender Jere Sullivan in his 1930 volume The Drinks of Yesteryear: A Mixology, the Stinger remained a critical component of the bartender's repertoire until Prohibition."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Tuxedo",
+            "cocktail_description": "Related to the martini, the Tuxedo has had many variations since its inception in the 1880s.[2] The cocktail is named after the Tuxedo Club in Orange County, New York where it was first mixed. Tuxedo Park, the planned community where the club was built, is itself a derivation of the Lenape word tucseto. The form of menswear by the same name originated at the same country club around the same time."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Vieux Carre",
+            "cocktail_description": "Named using the French term for what's now known as the French Quarter, the Vieux Carré traces its origin to the bar back in the 1930s, and first appeared in print in 1937, in Famous New Orleans Drinks and How to Mix 'Em. With rye, Cognac, sweet vermouth, and plenty of bitters, it's as rich and decadent now as it was back then, and still remarkably evocative of the Big Easy."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Whiskey Sour",
+            "cocktail_description": "The Whiskey Sour was traditionally made with whiskey, lemon juice, sugar and egg white, an ingredient that tames the tart flavor and creates a richer, smoother texture. Today that egg is optional, and it’s common to find bars serving Whiskey Sours sans egg white. But if you want to taste the original incarnation of the drink, and get a little protein in your system, give it a try. "
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"New York Sour",
+            "cocktail_description": "The New York Sour boasts all the deliciousness of a classic Whiskey Sour, with the added boost of a dry red wine float. Egg whites add body and texture, but are optional."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"White Lady",
+            "cocktail_description": "Two of history’s great barkeeps lay claim to this classic cocktail; the first is Harry MacElhone. His 1919 recipe originally called for crème de menthe instead of gin, though he allegedly switched to the juniper spirit in 1929 when he moved to Harry’s New York Bar in Paris. The second contender for the title of inventor is Harry Craddock, who printed a recipe in The Savoy Cocktail Club Book (1930). Neither are here to arm wrestle over the mantel now, so who knows… Cheers to both is what we say!"
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Bellini",
+            "cocktail_description": "The Bellini was invented sometime between 1934 and 1948 by Giuseppe Cipriani, founder of Harry's Bar in Venice, Italy. He named the drink the Bellini because its unique pink color reminded him of the toga of a saint in a painting by 15th-century Venetian artist Giovanni Bellini."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Black Russian",
+            "cocktail_description": "This cocktail first appeared in 1949 and is ascribed to Gustave Tops, a Belgian barman, who created it at the Hotel Metropole in Brussels in honor of Perle Mesta, then United States Ambassador to Luxembourg. The cocktail owes its name to the use of vodka, a typical Russian spirit, and the blackness of the coffee liqueur."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Bloody Mary",
+            "cocktail_description": "A Bloody Mary is a cocktail containing vodka, tomato juice, and other spices and flavorings including Worcestershire sauce, hot sauces, garlic, herbs, horseradish, celery, olives, salt, black pepper, lemon juice, lime juice and celery salt. Some versions of the drink, such as the \"surf 'n turf\" Bloody Mary, include shrimp and bacon as garnishes. In the United States, it is usually consumed in the morning or early afternoon, and is popular as a hangover cure."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Caipirinha",
+            "cocktail_description": "Although the origin of the drink is unknown, one account says it came about around 1918 in the region of Alentejo in Portugal, with a popular recipe made with lemon, garlic, and honey, indicated for patients with the Spanish flu. Another account is that Caipirinha is based on Poncha, an alcoholic drink from Madeira, Portugal.[3] The main ingredient is aguardiente de cana, which is made from sugar cane. Sugar cane production switched from Madeira to Brazil by the Portuguese as they needed more land to plant it on. Before this people in Madeira had already created aguardiente de cana, which was the ancestor to cachaça."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Champagne Cocktail",
+            "cocktail_description": "A recipe for the cocktail appears as early as \"Professor\" Jerry Thomas' Bon Vivant's Companion (1862), which omits the brandy or cognac and is considered to be the \"classic\" American version. Harry Johnson was one of the bartenders who revived the model by adding other fruit to the mix."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Corpse Reviver №1",
+            "cocktail_description": "The first widely popularized Corpse Reviver cocktail is listed in The Savoy Cocktail Book and is a cognac-based cocktail that calls for two parts cognac, one part Calvados or apple brandy, and one part Italian vermouth. In bartender Craddock's notes he says \"To be taken before 11AM, or whenever steam or energy is needed\"."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Corpse Reviver №2",
+            "cocktail_description": "The Corpse Reviver №2 as described in the Savoy Cocktail Book is the most commonly drunk of the corpse revivers, and consists of equal parts gin, lemon juice, curaçao (commonly Cointreau), Kina Lillet (now usually replaced with Cocchi Americano, as a closer match to Kina Lillet than modern Lillet Blanc), and a dash of absinthe. The dash of absinthe can either be added to the mix before shaking, or added to the cocktail glass and moved around until the glass has been coated with a layer of absinthe to give a subtle absinthe aroma and flavor to the drink"
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Cosmopolitan (Cosmo)",
+            "cocktail_description": "The cosmopolitan gained popularity in the 1990s. It was further popularized among young women by its frequent mention on the television program Sex and the City,[8] where Sarah Jessica Parker's character, Carrie Bradshaw, commonly ordered the drink when out with her girlfriends. The film adaptation made a reference to its popularity when Miranda asks why they stopped drinking them, Carrie replies \"because everyone else started.\""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Cape Codder",
+            "cocktail_description": "The Cape Cod or Cape Codder (also known as vodka cranberry) is a type of cocktail consisting of vodka and cranberry juice. Some recipes also call for squeezing a lime wedge over the glass and dropping it into the drink. The name refers to Cape Cod, Massachusetts, a peninsula and popular tourist destination located in the eastern United States which is famous for growing cranberries."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Cuba Libre (Rum and Coke)",
+            "cocktail_description": "Rum and Coke, or the Cuba libre (/ˈkjuːbə ˈliːbreɪ/; Spanish pronunciation: [ˈkuβa ˈliβɾe], \"Free Cuba\"), is a highball cocktail consisting of cola, rum, and in many recipes lime juice on ice. Traditionally, the cola ingredient is Coca-Cola (\"Coke\") and the alcohol is a light rum such as Bacardi. However, the drink may be made with various types of rums and cola brands, and lime juice may or may not be included. The cocktail originated in the early 20th century in Cuba, after the country won independence in the Spanish–American War. It subsequently became popular across Cuba, the United States, and other countries. Its simple recipe and inexpensive, ubiquitous ingredients have made it one of the world's most-popular alcoholic drinks. Drink critics often consider the drink mediocre, but it has been noted for its historical significance."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"French 75",
+            "cocktail_description": "The drink with its current name and recipe developed over the 1920s, though similar drinks date to the 19th century. In the 19th century, the Champagne cup was a popular cocktail, consisting of champagne, lemon juice, sugar, and ice. Gin was sometimes added, yielding a drink much like the French 75."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"",
+            "cocktail_description": ""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"French Connection",
+            "cocktail_description": "Like the Godfather from which it’s derived, the French Connection takes its name from filmdom. This cocktail honors the 1971 thriller The French Connection, which starred Gene Hackman as detective Popeye Doyle and Roy Scheider as his partner, Buddy Russo. In place of the Godfather’s usual whiskey, this cocktail swaps in French Cognac, which enhances the nutty sweetness of the amaretto. Don’t let the friendly flavors fool you, though—with no non-alcoholic mixers, this cocktail’s four ounces of straight booze pack a punch tougher than detective Popeye."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"The Godfather",
+            "cocktail_description": "As with many cocktails, the origin of the Godfather's name is uncertain. The amaretto brand Disaronno claims the drink was the favorite cocktail of American actor Marlon Brando, known for playing the titular character in the popular American film adaptation of Mario Puzo's The Godfather, which prominently features the Italian mob. This may be an allusion to the cocktail's prominent use of amaretto, an Italian liqueur."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Golden Dream",
+            "cocktail_description": "The Golden Dream is said to have been invented by Raimundo Alvarez at the Old King Bar, Miami. The Old King bar appears to have closed long ago, unless it is the same place as either the Old King Grill in North Miami, or the King Cole hotel, which used to be on Miami Beach. The drink was dedicated to actress Joan Crawford, and was popular in the 1960s and 1970s. However, it became neglected in the cocktail wilderness years of the 1980s and 90s."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Grasshopper",
+            "cocktail_description": "A Grasshopper is a sweet, mint-flavored, after-dinner drink. The name of the drink derives from its green color, which comes from crème de menthe. A bar in the French Quarter of New Orleans, Louisiana, Tujague's, claims the drink was invented in 1918 by its owner, Philip Guichet. The drink gained popularity during the 1950s and 1960s throughout the American South."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Hemingway Special",
+            "cocktail_description": "While he was staying in Cuba, Ernest Hemingway tried the Floridita's signature drink, the Floridita Daiquiri, and said \"That's good but I prefer it without sugar and double rum,\" creating a cocktail now known as the Hemingway Daiquiri or the Papa Doble. This recipe was later modified further, adding grapefruit juice to the mix, at which point the drink was dubbed the Hemingway Special.\""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Floridita Daiquiri",
+            "cocktail_description": "Listed as “La Florida Daiquiri Number 4” in a 1935 souvenir recipe booklet, this drink more frequently sails under the Floridita Daiquiri flag and is the house cocktail at the venerable Floridita bar in Habana Vieja. Measurements are below, but head bartender Alejandro Bolívar Rodriguez and his cantinero colleagues prepare the drink by experience and feel, without the use of jiggers. “The blender is like your friend,” Bolívar Rodriguez says. “We add the rum in a slow stream, step by step, to make the right mix. When you look inside the blender, in the middle is a hole—if the hole is closed, the blender is telling you that you haven’t put in enough rum. You add rum until the hole opens, and you wind up with a circle,” he says, making a ring with his thumb and forefinger. “That tells you the ice is ready and the drink is done.”"
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Horse's Neck",
+            "cocktail_description": "Dating back to the 1890s, it was a non-alcoholic mixture of ginger ale, ice and lemon peel. By the 1910s, brandy, or bourbon would be added for a \"Horse's Neck with a Kick\" or a \"Stiff Horse's Neck\". The non-alcoholic version was still served in upstate New York in the late 1950s and early 60s, but eventually it was phased out."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Irish Coffee",
+            "cocktail_description": "Irish coffee is a cocktail consisting of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream. The coffee is drunk through the cream."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Kir Royal",
+            "cocktail_description": "Kir Royal is a French cocktail, a variation on Kir. It consists of crème de cassis topped with champagne, rather than the white wine used in traditional Kir. This apéritif is typically served in a flute glass."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Kir",
+            "cocktail_description": "r is a popular French cocktail made with a measure of crème de cassis (blackcurrant liqueur) topped up with white wine. In France it is usually drunk as an apéritif before a meal or snack. It was originally made with Bourgogne Aligoté[1], a white wine of Burgundy. Now, various white wines are used throughout France, according to the region and the whim of the barkeeper. Many prefer a white Chardonnay-based Burgundy, such as Chablis."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Long Island Iced Tea",
+            "cocktail_description": "Robert \"Rosebud\" Butt claims to have invented the Long Island iced tea as an entry in a contest to create a new mixed drink with triple sec in 1972 while he worked at the Oak Beach Inn on Long Island, New York. A slightly different drink is claimed to have been invented in the 1920s during Prohibition in the United States by an \"Old Man Bishop\" in a local community named Long Island in Kingsport, Tennessee. The drink was then perfected by Ransom Bishop, Old Man Bishop's son. This drink included whiskey and maple syrup, and varied quantities of the five liquors, rather than the modern one with cola and five equal portions of the five liquors."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Mai Tai",
+            "cocktail_description": "Victor J. Bergeron claimed to have invented the Mai Tai in 1944 at his restaurant, Trader Vic's, in Oakland, California. Trader Vic's forerunner, Donn Beach, claimed to have instead first created it in 1933, although a longtime colleague said that Beach was actually just alleging that the Mai Tai was based on his Q.B. Cooler cocktail. Don the Beachcomber's recipe is more complex than that of Vic's and some believe tastes quite different. Others believe that despite the difference in ingredients that they taste quite similar. The name was allegedly taken from maita'i, the Tahitian word for \"good\" or \"excellence\", although the drink is usually spelled as two words, sometimes hyphenated or capitalized."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Margarita",
+            "cocktail_description": "A margarita is a Mexican cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass. The drink is served shaken with ice (on the rocks), blended with ice (frozen margarita), or without ice (straight up). Although it has become acceptable to serve a margarita in a wide variety of glass types, ranging from cocktail and wine glasses to pint glasses and even large schooners, the drink is traditionally served in the eponymous margarita glass, a stepped-diameter variant of a cocktail glass or champagne coupe."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Mimosa",
+            "cocktail_description": "A mimosa cocktail is composed of champagne (or other sparkling wine) and chilled citrus juice, usually orange juice unless otherwise specified. It is traditionally served in a tall champagne flute at brunch, at weddings, or as part of business or first class service on some passenger railways and airlines. The mixing ratio of the \"classic mimosa\" differs based on the source. The cocktail is named after the yellow-flowered mimosa plant, Acacia dealbata."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Mint Julep",
+            "cocktail_description": "The mint julep originated in the southern United States, probably during the eighteenth century. The earliest known mentions come from 1770 and include a satirical play by Robert Munford, The Candidate, (where a drunkard character “Mr. Julip” appears), and \"A Short Poem on Hunting\" (which describes julep as a concoction \"Which doctors storm at, and which some adore\") published in the Williamsburg Virginia Gazette. Further evidence of mint julep as a prescription drink can be found in 1784 Medical communications: \"sickness at the stomach, with frequent retching, and, at times, a difficulty of swallowing. I then prescribed her an emetic, some opening powders, and a mint julep.\""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Mojito",
+            "cocktail_description": "Havana, Cuba, is the birthplace of the mojito, although its exact origin is the subject of debate. It was known that the local South American Indians had remedies for various tropical illnesses, so a small boarding party went ashore on Cuba and came back with ingredients for an effective medicine. The ingredients were aguardiente de caña (translated as \"burning water\", a crude form of rum made from sugar cane) mixed with local tropical ingredients: lime, sugarcane juice, and mint. Lime juice on its own would have significantly prevented scurvy and dysentery, and tafia/rum was soon added as it became widely available to the British (ca. 1650). Mint, lime and sugar were also helpful in hiding the harsh taste of this spirit. Another theory is that it was invented by Sir Francis Drake. The \"El Draque\" cocktail was prepared with brandy. While this drink was not called a mojito at this time, it was the original combination of these ingredients."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Moscow Mule",
+            "cocktail_description": "The Moscow mule is popularly served in a copper mug, which takes on the cold temperature of the liquid. Some public health advisories recommend copper mugs be plated with nickel or stainless steel on the inside and the lip, but it has been disputed whether the time and acidity involved in the drinking of a Moscow mule would be enough to leach out the 30 milligrams of copper per liter needed to cause copper toxicity."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Piña colada",
+            "cocktail_description": "The earliest known story states that in the 19th century, Puerto Rican pirate Roberto Cofresí, to boost his crew's morale, gave them a beverage or cocktail that contained coconut, pineapple and white rum.[4] This was what would be later known as the famous piña colada. With his death in 1825, the recipe for the piña colada was lost. Historian Haydée Reichard disputes this version of the story."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Pisco Sour",
+            "cocktail_description": "The pisco sour originated in Lima, Peru. It was created by bartender Victor Vaughen Morris, an American who had moved to Peru in 1904 to work in a railway company in Cerro de Pasco. Morris relocated to Lima in 1915 and, a year later, opened a saloon—Morris' Bar—which became popular with both the Peruvian upper class and English-speaking foreigners. Chilean historian Gonzalo Vial Correa also attributes the pisco sour's invention to Gringo Morris from the Peruvian Morris Bar, but with the minor difference of naming him William Morris. Morris often experimented with new drinks, and developed the pisco sour as a variant of the whiskey Sour."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Sea Breeze",
+            "cocktail_description": "The cocktail was born in the late 1920s, but the recipe was different from the one used today, as gin and grenadine were used in the original Sea Breeze.[5] This was near the end of the Prohibition era. In the 1930s, a Sea Breeze had gin, apricot brandy, grenadine, and lemon juice.[6] Later, a Sea Breeze recipe would contain vodka, dry vermouth, Galliano, and blue Curaçao."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Greyhound",
+            "cocktail_description": "The earliest known mention of a cocktail of this description is in bartender and author Harry Craddock's Savoy Cocktail Book of 1930. Craddock describes his recipe as \"...a variation of the Grapefruit Cocktail\", suggesting that such cocktails were already in common use before his book was written. His recipe consists of nothing but gin, grapefruit juice and ice."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Sex on the Beach",
+            "cocktail_description": "Sex on the Beach is a fun, fruity cocktail that's perfect for summer. Made with vodka, peach schnapps, orange juice, and cranberry juice, it's deliciously sweet and seriously refreshing. Ideal for summer parties, cookouts, or lazy days by the pool... and surprisingly easy to make! "
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Singapore Sling",
+            "cocktail_description": "The Singapore Sling is a gin-based sling cocktail from Singapore. This long drink was developed sometime before 1915 by bartender Ngiam Tong Boon (traditional Chinese: 嚴崇文; simplified Chinese: 严崇文; pinyin: Yán Chóngwén; Wade–Giles: Yen Ch'ung-wen), who was working at the Long Bar in Raffles Hotel, Singapore. It was initially called the gin sling[1] – a sling was originally a North American drink composed of spirit and water, sweetened and flavored."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Tequila sunrise",
+            "cocktail_description": "The tequila sunrise is a cocktail made of tequila, orange juice, and grenadine syrup. It's served unmixed in a tall glass. The modern drink originates from Sausalito, California in the early 1970s after an earlier one created in the 1930s in Phoenix, Arizona. The cocktail is named for its appearance when served—with gradations of color resembling a sunrise."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Vesper",
+            "cocktail_description": "The drink was invented and named by Ian Fleming in the 1953 James Bond novel Casino Royale."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Zombie",
+            "cocktail_description": "Legend has it that Donn Beach originally concocted the Zombie to help a hung-over customer get through a business meeting.[3][4] The customer returned several days later to complain that he had been turned into a zombie for his entire trip. Its smooth, fruity taste works to conceal its extremely high alcoholic content. Don the Beachcomber restaurants limit their customers to two Zombies apiece because of their potency, which Beach said could make one \"like the walking dead.\""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Tom Collins",
+            "cocktail_description": "The Tom Collins is a Collins cocktail made from gin, lemon juice, sugar, and carbonated water. First memorialized in writing in 1876 by Jerry Thomas, \"the father of American mixology\", this \"gin and sparkling lemonade\" drink is typically served in a Collins glass over ice. "
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Bee's Knees",
+            "cocktail_description": " Bees Knees (or Bee's Knees) is a Prohibition Era cocktail made with Gin, fresh lemon juice, and honey. It is served shaken and chilled, often with a lemon twist. The name comes from prohibition-era slang meaning \"the best.\""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Bramble",
+            "cocktail_description": "The Bramble was created in London, in 1984,[1] by Dick Bradsell. At the time, Bradsell worked at a bar in Soho called Fred's Club, and he wanted to create a British cocktail. Memories of going blackberrying in his childhood on the Isle of Wight provided the inspiration for the Bramble."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Dark 'n' Stormy",
+            "cocktail_description": "Dark ’n’ Stormy is a highball cocktail made with dark rum (the \"dark\") and ginger beer (the \"stormy\") served over ice and garnished with a slice of lime.[1] Lime juice and simple syrup are also frequently added. This drink is very similar to the Moscow mule except that the Dark 'n' Stormy has dark rum instead of vodka. The original Dark 'n' Stormy was made with Gosling Black Seal rum and Barritt's Ginger Beer, but after the partnership between the two failed and the companies parted ways, Goslings created their own ginger beer."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Espresso Martini",
+            "cocktail_description": "There are several claims for the origin of the espresso martini. One of the more common claims is that it was created by Dick Bradsell in the late 1980s while at Freds Club in London for a young lady who asked for something that would, \"Wake me up, and then fuck me up.\" Bradsell has confirmed this in a widely-circulated video.[3] Bradsell has also been quoted about the circumstances of his invention of the drink, \"The coffee machine at the Soho Brasseries was right next to the station where I served drinks. It was a nightmare, as there were coffee grounds everywhere, so coffee was very much on my mind. And it was all about vodka back then – it was all people were drinking.\""
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"French Martini",
+            "cocktail_description": "The French martini was invented in the 1980s at one of Keith McNally's New York City bars. It next appeared on the drinks menu at McNally's Balthazar in SoHo in 1996. The cocktail was produced during the 1980s–1990s cocktail renaissance. The key ingredient that makes a martini \"French\" is Chambord, a black raspberry liqueur that has been produced in France since 1685."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Lemon Drop",
+            "cocktail_description": "The lemon drop was invented sometime in the 1970s by Norman Jay Hobday, the founder and proprietor of Henry Africa's, a fern bar in the Russian Hill neighborhood of San Francisco, California that opened in 1969. It was originally served in a cocktail glass. The Lemon Drop was most likely named after lemon drop candy. After its invention, the drink swiftly spread to many San Francisco saloons. In the early 1990s, it was often prepared as a shooter or served in a shot glass."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Naked and Famous",
+            "cocktail_description": "Joaquín Simó originally created this variation while at New York speakeasy Death & Co. He describes it as “the bastard child born out of an illicit Oaxacan love affair between the classic Last Word and the Paper Plane,” which is Sam Ross’s variation on the Last Word. Opt for an aggressively smoky mezcal for best effect"
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Last Word",
+            "cocktail_description": "The Last Word was one of the first pre-Prohibition drinks to lead the cocktail revival of the early aughts. Murray Stenson of Seattle’s Zig Zag unearthed the equal-parts classic—gin, maraschino liqueur, Chartreuse and lime juice—in Ted Saucier’s 1962 book, “Bottoms Up.” Before long, the Last Word was a staple in cocktail bars across the country, revered for its heady balance of sweet, sour and herbal flavors. Whether you hew to the original recipe or stake out your own variation (mezcal can be a worthy substitute for gin), one thing is certain: The Last Word will leave you, um, speechless."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Old Cuban",
+            "cocktail_description": "The Old Cuban was invented by Audrey Saunders in 2001, and quickly made its way into bar books across America. Like all great classic cocktails, the recipe is deceptively simple, requiring just rum, sparkling wine, lime, mint and bitters. It shares heritage with two other better-known classics, the storied Mojito and French 75, a gin- and sparkling wine-based drink."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Paloma",
+            "cocktail_description": "The paloma (Spanish for \"dove\") is a tequila-based cocktail. This drink is most commonly prepared by mixing tequila, lime juice, and a grapefruit-flavored soda such as Fresca, Squirt, or Jarritos and served on the rocks with a lime wedge. Adding salt to the rim of the glass is also an option."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Paper Plane",
+            "cocktail_description": "The Paper Plane is an IBA official cocktail.[1] Developed around 2007 by Sasha Petraske and Sam Ross of Milk & Honey for their former colleague Toby Maloney's Chicago bar The Violet Hour, the recipe is a riff on the classic Last Word. The cocktail consists of equal parts Bourbon whiskey, Aperol, the amaro Amaro Nonino, and lemon juice. The cocktail's name is a reference to the M.I.A. track \"Paper Planes,\" which was apparently a guilty pleasure of Petraske's"
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Penicillin",
+            "cocktail_description": "The drink was created in 2005 by New York bartender Sam Ross. Its name derives from the drug penicillin hinting to the medicinal properties of some of its ingredients, with suggested effects similar to that of a hot toddy which is said to relieve the symptoms of cold and flu. It was first served in 2005 at Milk & Honey."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"South Side",
+            "cocktail_description": "Its origins are subject to speculation. It has been proposed that it gets its name from either the South Side district of the city of Chicago, Illinois, or from the Southside Sportsmen's Club on Long Island.[1] The drink may have been the preferred beverage of Al Capone, whose gang dominated Chicago's South Side. The gin imported by Capone's rivals on the North Side of Chicago was smooth, and usually consumed with ginger ale. However, the gin consumed by Al Capone's gang had a rougher finish, and required more sweeteners to make it palatable. Thus the South Side was born."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Aperol Spritz",
+            "cocktail_description": "Spritz was born during the period of the Habsburg domination in Veneto in the 1800s, under the Kingdom of Lombardy–Venetia. The soldiers, but also the various merchants, diplomats and employees of the Habsburg Empire in Veneto became quickly accustomed to drinking local wine in the taverns, but they were not familiar with the wide variety of wines from the Veneto, and the alcohol content was higher than they were accustomed to. The newcomers started to ask the local hosts to spray a drop of water into the wine (spritzen, in German) to make the wines lighter; the real original spritz was composed of sparkling white wine or red wine diluted with fresh water. The Italian aperitif Aperol was created in Padua in 1919 by the Barbieri brothers. The original recipe has supposedly remained unchanged over time but it wasn't until the 1950s that Aperol Spritz became a popular alternative to the usual Venetian mix of white wine and soda."
+        }
+    },
+    {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Bensonhurst",
+            "cocktail_description": "An alternative to the Brooklyn cocktail, this cocktail is a play on the Brooklyn and chooses neighborhood within as its name."
+        }
+    }
+]
