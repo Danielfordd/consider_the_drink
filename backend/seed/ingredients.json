@@ -261,12 +261,12 @@
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Lemon Peel"
+            "ingredient_name": "Lemon Twist"
         }
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Lime Peel"
+            "ingredient_name": "Lime Twist"
         }
     },
     { "model": "ingredient.Ingredient",

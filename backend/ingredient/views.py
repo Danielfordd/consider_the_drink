@@ -9,6 +9,6 @@ def all_ingredients(request):
     Queryes the database for all ingredients and returns them in a json
     formatted array under the key "ingredients"
     """
-    ingredientsQuery = Ingredient.objects.all()
+    ingredientsQuery = Ingredient.objects.all().order_by('ingredient_name')
     ingredients = [ing.ingredient_name for ing in ingredientsQuery]
     return JsonResponse({'ingredients': ingredients})

@@ -31,7 +31,7 @@
         "model":"cocktail.Recipe",
         "fields": {
             "cocktail": 1,
-            "ingredient": 3,
+            "ingredient": 99,
             "order": 0,
             "ingredient_quantity": "2 Parts"
         }
@@ -102,10 +102,185 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 2,
+            "served": 2
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 2,
+            "served": 7
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 2,
+            "ingredient": 99,
+            "order": 0,
+            "ingredient_quantity": "2 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 2,
+            "ingredient": 109,
+            "order": 1,
+            "ingredient_quantity": "1 ea"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 2,
+            "ingredient": 28,
+            "order": 2,
+            "ingredient_quantity": "3 Dashes"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 2,
+            "ingredient": 50,
+            "order": 3,
+            "ingredient_quantity": "1 Ea"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 2,
+            "ingredient": 49,
+            "order": 3,
+            "ingredient_quantity": "2 Ea"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 2,
+            "ingredient": 52,
+            "order": 4,
+            "ingredient_quantity": "1 Ea"
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 2,
+            "order": 0,
+            "instruction": "Place the sugar cube in a cocktail shaker with Angostura bitters, orange wheel, and one brandy cherry. Muddle together."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 2,
+            "order": 1,
+            "instruction": "Add whiskey and ice to the cocktail shaker. Shake until cold, approximately 10-15 seconds."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 2,
+            "order": 2,
+            "instruction": "Srain the cocktail over ice and add remaining orange twist and brandy cherry."
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Sazerac",
             "cocktail_description": "The defining feature of the Sazerac is its method of preparation, which commonly involves two chilled old-fashioned glasses. The first glass is swirled with a wash of absinthe for its flavor and strong scent. The second glass is used to combine the remaining ingredients, which are stirred with ice, then strained into the first glass. Various anisettes such as pastis, Pernod, or Herbsaint are common substitutes when absinthe is unavailable. In New Orleans, Herbsaint is most commonly used due to the absence of absinthe in the U.S. market from 1912 until 2007."
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 3,
+            "glass": 5
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 3,
+            "served": 3
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 3,
+            "ingredient": 99,
+            "order": 0,
+            "ingredient_quantity": "2 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 3,
+            "ingredient": 38,
+            "order": 1,
+            "ingredient_quantity": ".5 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 3,
+            "ingredient": 29,
+            "order": 2,
+            "ingredient_quantity": "2 Dashes"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 3,
+            "ingredient": 21,
+            "order": 3,
+            "ingredient_quantity": "Splash"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 3,
+            "ingredient": 53,
+            "order": 4,
+            "ingredient_quantity": "1 Ea"
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 3,
+            "order": 0,
+            "instruction": "Rinse a chilled glass with the absinthe and set aside."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 3,
+            "order": 1,
+            "instruction": "In a seperate glass, combine whiskey, simple syrup, and bitters with ice. Stir until chilled, approximately 20-30 seconds. "
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 3,
+            "order": 2,
+            "instruction": "Strain drink into absinthe rinsed glass and garnish with lemon twist."
         }
     },
     {
@@ -116,10 +291,79 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 1,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 4,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 4,
+            "glass": 2
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 4,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 4,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Brooklyn",
             "cocktail_description": "The Brooklyn is one of five cocktails named for the boroughs of New York City, along with the Bronx, the Manhattan, the Queens and the Staten Island Ferry. It resembles a Manhattan, but with a specific type of bitters (several types of bitters can be used in a Manhattan) and the addition of Maraschino liqueur. It largely fell into obscurity after the end of Prohibition, but experienced a resurgence in the 1990s."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 5,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 5,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 5,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 5,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -130,10 +374,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 6,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 6,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 6,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 6,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Queens",
             "cocktail_description": "Named after the borough of Queens, a Queens consists of gin, vermouth, and pineapple juice. The drink dates back to 1930, appearing in Harry Craddock's Savoy Cocktail Book."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 7,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 7,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 7,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 7,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -144,10 +450,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 8,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 8,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 8,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 8,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Americano",
             "cocktail_description": "It is the first drink ordered by James Bond in the first novel in Ian Fleming's series, Casino Royale. In From Russia With Love, Bond drinks \"two excellent Americanos\" in Rome during his flight to Istanbul. In the short story \"From a View to a Kill\", Bond chooses an Americano as an appropriate drink for a mere café; suggesting that \"in cafés you have to drink the least offensive of the musical comedy drinks that go with them.\" Bond always stipulates Perrier, for, in his opinion, expensive soda water was the cheapest way to improve a poor drink."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 9,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 9,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 9,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 9,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -158,10 +526,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 10,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 10,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 10,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 10,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Sidecar",
             "cocktail_description": "Like the daiquiri, the sidecar evolved from the original sour formula, but sidecars are often drier than sours, combining liqueurs like Curaçao with citrus. Sidecars are considered more of a challenge for bartenders because the proportion of ingredients is more difficult to balance for liqueurs of variable sweetness."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 11,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 11,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 11,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 11,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -172,10 +602,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 12,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 12,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 12,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 12,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Between the Sheets",
             "cocktail_description": "Created in the early 1930s during Prohibtion by Harry MacElhone of Harry's New York bar in Paris. This cocktail is derived from the Sidecar"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 13,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 13,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 13,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 13,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -186,10 +678,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 14,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 14,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 14,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 14,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Negroni",
             "cocktail_description": "While the drink's origins are unknown, the most widely reported account is that it was first mixed in Florence, Italy, in 1919, at Caffè Casoni (formerly Caffè Giacosa), on Via de' Tornabuoni and now called Caffè Roberto Cavalli. Count Camillo Negroni concocted it by asking the bartender, Fosco Scarselli, to strengthen his favorite cocktail, the Americano, by adding gin rather than the normal soda water. The bartender also added an orange garnish rather than the typical lemon garnish of the Americano to signify that it was a different drink."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 15,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 15,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 15,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 15,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -200,10 +754,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 16,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 16,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 16,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 16,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Brandy Crusta",
             "cocktail_description": "The cocktail, named for the crust of sugar on the rim, was invented by Joseph Santini, a bartender in New Orleans at his bar, Jewel of the South. Jerry Thomas was the first to publish the recipe in his 1862 cocktail manual."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 17,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 17,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 17,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 17,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -214,10 +830,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 18,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 18,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 18,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 18,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Daiquiri (Classic)",
             "cocktail_description": "Daiquirí is also the name of a beach and an iron mine near Santiago de Cuba, and is a word of Taíno origin. The drink was supposedly invented by an American mining engineer named Jennings Cox, who was in Cuba at the time of the Spanish–American War. It is also possible that William A. Chanler, a US congressman who purchased the Santiago iron mines in 1902, introduced the daiquiri to clubs in New York in that year."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 19,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 19,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 19,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 19,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -228,10 +906,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 20,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 20,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 20,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 20,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Martini (Dirty)",
             "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 21,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 21,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 21,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 21,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -242,10 +982,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 22,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 22,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 22,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 22,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Gin Fizz",
             "cocktail_description": "The first printed reference to \"fiz\" is in the appendix to the 1876 edition of Jerry Thomas's Bartender's Guide, which contains four such recipes. The fizz became widely popular in America between 1900 and the 1940s. Known as a hometown specialty of New Orleans, the gin fizz was so popular that bars would employ teams of bartenders that would take turns shaking the drinks. Demand for fizzes went international at least as early as 1950, as evidenced by its inclusion in the French cookbook L'Art Culinaire Francais published that year."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 23,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 23,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 23,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 23,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -256,10 +1058,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 24,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 24,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 24,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 24,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Hanky-Panky",
             "cocktail_description": "The Hanky-Panky was the brainchild of Ada Coleman (known as \"Coley\") who began as a bartender at the Savoy Hotel in 1903. Her benefactor was Rupert D'Oyly Carte, a member of the family that first produced Gilbert and Sullivan operas in London and that built the Savoy Hotel. When Rupert became chairman of the Savoy, Ada was given a position at the hotel's American Bar, where she eventually became the head bartender and made cocktails for the likes of Mark Twain, the Prince of Wales, Prince Wilhelm of Sweden, and Sir Charles Hawtrey. Coleman created the Hanky-Panky for Hawtrey."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 25,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 25,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 25,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 25,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -270,10 +1134,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 26,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 26,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 26,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 26,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Planter's Punch",
             "cocktail_description": "Planter's punch is an IBA Official Cocktail made of Jamaican rum, fresh lime juice, and sugar cane juice. The cocktail has been said to have originated at the Planters Hotel in Charleston, South Carolina"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 27,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 27,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 27,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 27,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -284,10 +1210,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 28,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 28,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 28,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 28,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Rusty Nail",
             "cocktail_description": "According to cocktail historian David Wondrich, \"the Rusty Nail took a while to find its proper place in the world.\" The combination of Drambuie—\"the world's most distinguished Scotch-based liqueur\"—and the whisky it is made from first appears in 1937 in the form of the B.I.F., credited to one F. Benniman and ostensibly named after the British Industries Fair. Wondrich goes on to note that \"it took another generation or so for the drink to assume its classic name and form, during which time it tried on several identities. Here it's a D&S...there a Little Club No. 1 (the Little Club being a rather swank sort of joint on East Fifty-fifth Street much haunted by showbiz types); at USAF Officers' Clubs in Thailand and the Republic of Viet-Nam, [sic] it's a Mig-21, while in the upper Midwest it's a Knucklehead.\""
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 29,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 29,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 29,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 29,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -298,10 +1286,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 30,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 30,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 30,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 30,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Tuxedo",
             "cocktail_description": "Related to the martini, the Tuxedo has had many variations since its inception in the 1880s.[2] The cocktail is named after the Tuxedo Club in Orange County, New York where it was first mixed. Tuxedo Park, the planned community where the club was built, is itself a derivation of the Lenape word tucseto. The form of menswear by the same name originated at the same country club around the same time."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 31,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 31,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 31,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 31,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -312,10 +1362,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 32,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 32,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 32,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 32,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Whiskey Sour",
             "cocktail_description": "The Whiskey Sour was traditionally made with whiskey, lemon juice, sugar and egg white, an ingredient that tames the tart flavor and creates a richer, smoother texture. Today that egg is optional, and it’s common to find bars serving Whiskey Sours sans egg white. But if you want to taste the original incarnation of the drink, and get a little protein in your system, give it a try. "
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 33,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 33,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 33,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 33,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -326,10 +1438,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 34,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 34,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 34,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 34,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"White Lady",
             "cocktail_description": "Two of history’s great barkeeps lay claim to this classic cocktail; the first is Harry MacElhone. His 1919 recipe originally called for crème de menthe instead of gin, though he allegedly switched to the juniper spirit in 1929 when he moved to Harry’s New York Bar in Paris. The second contender for the title of inventor is Harry Craddock, who printed a recipe in The Savoy Cocktail Club Book (1930). Neither are here to arm wrestle over the mantel now, so who knows… Cheers to both is what we say!"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 35,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 35,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 35,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 35,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -340,10 +1514,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 36,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 36,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 36,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 36,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Black Russian",
             "cocktail_description": "This cocktail first appeared in 1949 and is ascribed to Gustave Tops, a Belgian barman, who created it at the Hotel Metropole in Brussels in honor of Perle Mesta, then United States Ambassador to Luxembourg. The cocktail owes its name to the use of vodka, a typical Russian spirit, and the blackness of the coffee liqueur."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 37,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 37,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 37,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 37,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -354,10 +1590,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 38,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 38,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 38,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 38,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Caipirinha",
             "cocktail_description": "Although the origin of the drink is unknown, one account says it came about around 1918 in the region of Alentejo in Portugal, with a popular recipe made with lemon, garlic, and honey, indicated for patients with the Spanish flu. Another account is that Caipirinha is based on Poncha, an alcoholic drink from Madeira, Portugal.[3] The main ingredient is aguardiente de cana, which is made from sugar cane. Sugar cane production switched from Madeira to Brazil by the Portuguese as they needed more land to plant it on. Before this people in Madeira had already created aguardiente de cana, which was the ancestor to cachaça."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 39,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 39,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 39,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 39,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -368,10 +1666,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 40,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 40,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 40,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 40,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Corpse Reviver №1",
             "cocktail_description": "The first widely popularized Corpse Reviver cocktail is listed in The Savoy Cocktail Book and is a cognac-based cocktail that calls for two parts cognac, one part Calvados or apple brandy, and one part Italian vermouth. In bartender Craddock's notes he says \"To be taken before 11AM, or whenever steam or energy is needed\"."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 41,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 41,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 41,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 41,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -382,10 +1742,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 42,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 42,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 42,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 42,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Cosmopolitan (Cosmo)",
             "cocktail_description": "The cosmopolitan gained popularity in the 1990s. It was further popularized among young women by its frequent mention on the television program Sex and the City,[8] where Sarah Jessica Parker's character, Carrie Bradshaw, commonly ordered the drink when out with her girlfriends. The film adaptation made a reference to its popularity when Miranda asks why they stopped drinking them, Carrie replies \"because everyone else started.\""
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 43,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 43,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 43,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 43,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -396,10 +1818,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 44,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 44,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 44,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 44,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Cuba Libre (Rum and Coke)",
             "cocktail_description": "Rum and Coke, or the Cuba libre (/ˈkjuːbə ˈliːbreɪ/; Spanish pronunciation: [ˈkuβa ˈliβɾe], \"Free Cuba\"), is a highball cocktail consisting of cola, rum, and in many recipes lime juice on ice. Traditionally, the cola ingredient is Coca-Cola (\"Coke\") and the alcohol is a light rum such as Bacardi. However, the drink may be made with various types of rums and cola brands, and lime juice may or may not be included. The cocktail originated in the early 20th century in Cuba, after the country won independence in the Spanish–American War. It subsequently became popular across Cuba, the United States, and other countries. Its simple recipe and inexpensive, ubiquitous ingredients have made it one of the world's most-popular alcoholic drinks. Drink critics often consider the drink mediocre, but it has been noted for its historical significance."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 45,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 45,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 45,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 45,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -410,10 +1894,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 46,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 46,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 46,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 46,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"",
             "cocktail_description": ""
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 47,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 47,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 47,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 47,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -424,10 +1970,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 48,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 48,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 48,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 48,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"The Godfather",
             "cocktail_description": "As with many cocktails, the origin of the Godfather's name is uncertain. The amaretto brand Disaronno claims the drink was the favorite cocktail of American actor Marlon Brando, known for playing the titular character in the popular American film adaptation of Mario Puzo's The Godfather, which prominently features the Italian mob. This may be an allusion to the cocktail's prominent use of amaretto, an Italian liqueur."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 49,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 49,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 49,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 49,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -438,10 +2046,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 50,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 50,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 50,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 50,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Grasshopper",
             "cocktail_description": "A Grasshopper is a sweet, mint-flavored, after-dinner drink. The name of the drink derives from its green color, which comes from crème de menthe. A bar in the French Quarter of New Orleans, Louisiana, Tujague's, claims the drink was invented in 1918 by its owner, Philip Guichet. The drink gained popularity during the 1950s and 1960s throughout the American South."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 51,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 51,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 51,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 51,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -452,10 +2122,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 52,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 52,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 52,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 52,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Floridita Daiquiri",
             "cocktail_description": "Listed as “La Florida Daiquiri Number 4” in a 1935 souvenir recipe booklet, this drink more frequently sails under the Floridita Daiquiri flag and is the house cocktail at the venerable Floridita bar in Habana Vieja. Measurements are below, but head bartender Alejandro Bolívar Rodriguez and his cantinero colleagues prepare the drink by experience and feel, without the use of jiggers. “The blender is like your friend,” Bolívar Rodriguez says. “We add the rum in a slow stream, step by step, to make the right mix. When you look inside the blender, in the middle is a hole—if the hole is closed, the blender is telling you that you haven’t put in enough rum. You add rum until the hole opens, and you wind up with a circle,” he says, making a ring with his thumb and forefinger. “That tells you the ice is ready and the drink is done.”"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 53,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 53,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 53,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 53,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -466,10 +2198,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 54,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 54,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 54,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 54,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Irish Coffee",
             "cocktail_description": "Irish coffee is a cocktail consisting of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream. The coffee is drunk through the cream."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 55,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 55,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 55,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 55,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -480,10 +2274,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 56,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 56,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 56,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 56,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Kir",
             "cocktail_description": "r is a popular French cocktail made with a measure of crème de cassis (blackcurrant liqueur) topped up with white wine. In France it is usually drunk as an apéritif before a meal or snack. It was originally made with Bourgogne Aligoté[1], a white wine of Burgundy. Now, various white wines are used throughout France, according to the region and the whim of the barkeeper. Many prefer a white Chardonnay-based Burgundy, such as Chablis."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 57,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 57,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 57,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 57,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -494,10 +2350,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 58,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 58,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 58,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 58,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Mai Tai",
             "cocktail_description": "Victor J. Bergeron claimed to have invented the Mai Tai in 1944 at his restaurant, Trader Vic's, in Oakland, California. Trader Vic's forerunner, Donn Beach, claimed to have instead first created it in 1933, although a longtime colleague said that Beach was actually just alleging that the Mai Tai was based on his Q.B. Cooler cocktail. Don the Beachcomber's recipe is more complex than that of Vic's and some believe tastes quite different. Others believe that despite the difference in ingredients that they taste quite similar. The name was allegedly taken from maita'i, the Tahitian word for \"good\" or \"excellence\", although the drink is usually spelled as two words, sometimes hyphenated or capitalized."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 59,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 59,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 59,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 59,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -508,10 +2426,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 60,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 60,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 60,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 60,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Mimosa",
             "cocktail_description": "A mimosa cocktail is composed of champagne (or other sparkling wine) and chilled citrus juice, usually orange juice unless otherwise specified. It is traditionally served in a tall champagne flute at brunch, at weddings, or as part of business or first class service on some passenger railways and airlines. The mixing ratio of the \"classic mimosa\" differs based on the source. The cocktail is named after the yellow-flowered mimosa plant, Acacia dealbata."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 61,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 61,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 61,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 61,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -522,10 +2502,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 62,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 62,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 62,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 62,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Mojito",
             "cocktail_description": "Havana, Cuba, is the birthplace of the mojito, although its exact origin is the subject of debate. It was known that the local South American Indians had remedies for various tropical illnesses, so a small boarding party went ashore on Cuba and came back with ingredients for an effective medicine. The ingredients were aguardiente de caña (translated as \"burning water\", a crude form of rum made from sugar cane) mixed with local tropical ingredients: lime, sugarcane juice, and mint. Lime juice on its own would have significantly prevented scurvy and dysentery, and tafia/rum was soon added as it became widely available to the British (ca. 1650). Mint, lime and sugar were also helpful in hiding the harsh taste of this spirit. Another theory is that it was invented by Sir Francis Drake. The \"El Draque\" cocktail was prepared with brandy. While this drink was not called a mojito at this time, it was the original combination of these ingredients."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 63,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 63,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 63,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 63,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -536,10 +2578,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 64,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 64,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 64,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 64,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Piña colada",
             "cocktail_description": "The earliest known story states that in the 19th century, Puerto Rican pirate Roberto Cofresí, to boost his crew's morale, gave them a beverage or cocktail that contained coconut, pineapple and white rum.[4] This was what would be later known as the famous piña colada. With his death in 1825, the recipe for the piña colada was lost. Historian Haydée Reichard disputes this version of the story."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 65,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 65,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 65,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 65,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -550,10 +2654,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 66,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 66,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 66,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 66,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Sea Breeze",
             "cocktail_description": "The cocktail was born in the late 1920s, but the recipe was different from the one used today, as gin and grenadine were used in the original Sea Breeze.[5] This was near the end of the Prohibition era. In the 1930s, a Sea Breeze had gin, apricot brandy, grenadine, and lemon juice.[6] Later, a Sea Breeze recipe would contain vodka, dry vermouth, Galliano, and blue Curaçao."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 67,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 67,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 67,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 67,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -564,10 +2730,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 68,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 68,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 68,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 68,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Sex on the Beach",
             "cocktail_description": "Sex on the Beach is a fun, fruity cocktail that's perfect for summer. Made with vodka, peach schnapps, orange juice, and cranberry juice, it's deliciously sweet and seriously refreshing. Ideal for summer parties, cookouts, or lazy days by the pool... and surprisingly easy to make! "
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 69,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 69,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 69,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 69,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -578,10 +2806,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 70,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 70,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 70,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 70,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Tequila sunrise",
             "cocktail_description": "The tequila sunrise is a cocktail made of tequila, orange juice, and grenadine syrup. It's served unmixed in a tall glass. The modern drink originates from Sausalito, California in the early 1970s after an earlier one created in the 1930s in Phoenix, Arizona. The cocktail is named for its appearance when served—with gradations of color resembling a sunrise."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 71,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 71,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 71,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 71,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -592,10 +2882,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 72,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 72,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 72,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 72,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Zombie",
             "cocktail_description": "Legend has it that Donn Beach originally concocted the Zombie to help a hung-over customer get through a business meeting.[3][4] The customer returned several days later to complain that he had been turned into a zombie for his entire trip. Its smooth, fruity taste works to conceal its extremely high alcoholic content. Don the Beachcomber restaurants limit their customers to two Zombies apiece because of their potency, which Beach said could make one \"like the walking dead.\""
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 73,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 73,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 73,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 73,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -606,10 +2958,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 74,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 74,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 74,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 74,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Bee's Knees",
             "cocktail_description": " Bees Knees (or Bee's Knees) is a Prohibition Era cocktail made with Gin, fresh lemon juice, and honey. It is served shaken and chilled, often with a lemon twist. The name comes from prohibition-era slang meaning \"the best.\""
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 75,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 75,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 75,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 75,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -620,10 +3034,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 76,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 76,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 76,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 76,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Dark 'n' Stormy",
             "cocktail_description": "Dark ’n’ Stormy is a highball cocktail made with dark rum (the \"dark\") and ginger beer (the \"stormy\") served over ice and garnished with a slice of lime.[1] Lime juice and simple syrup are also frequently added. This drink is very similar to the Moscow mule except that the Dark 'n' Stormy has dark rum instead of vodka. The original Dark 'n' Stormy was made with Gosling Black Seal rum and Barritt's Ginger Beer, but after the partnership between the two failed and the companies parted ways, Goslings created their own ginger beer."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 77,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 77,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 77,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 77,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -634,10 +3110,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 78,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 78,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 78,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 78,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"French Martini",
             "cocktail_description": "The French martini was invented in the 1980s at one of Keith McNally's New York City bars. It next appeared on the drinks menu at McNally's Balthazar in SoHo in 1996. The cocktail was produced during the 1980s–1990s cocktail renaissance. The key ingredient that makes a martini \"French\" is Chambord, a black raspberry liqueur that has been produced in France since 1685."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 79,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 79,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 79,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 79,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -648,10 +3186,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 80,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 80,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 80,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 80,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Naked and Famous",
             "cocktail_description": "Joaquín Simó originally created this variation while at New York speakeasy Death & Co. He describes it as “the bastard child born out of an illicit Oaxacan love affair between the classic Last Word and the Paper Plane,” which is Sam Ross’s variation on the Last Word. Opt for an aggressively smoky mezcal for best effect"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 81,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 81,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 81,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 81,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -662,10 +3262,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 82,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 82,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 82,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 82,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Old Cuban",
             "cocktail_description": "The Old Cuban was invented by Audrey Saunders in 2001, and quickly made its way into bar books across America. Like all great classic cocktails, the recipe is deceptively simple, requiring just rum, sparkling wine, lime, mint and bitters. It shares heritage with two other better-known classics, the storied Mojito and French 75, a gin- and sparkling wine-based drink."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 83,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 83,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 83,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 83,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -676,10 +3338,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 84,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 84,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 84,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 84,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Paper Plane",
             "cocktail_description": "The Paper Plane is an IBA official cocktail.[1] Developed around 2007 by Sasha Petraske and Sam Ross of Milk & Honey for their former colleague Toby Maloney's Chicago bar The Violet Hour, the recipe is a riff on the classic Last Word. The cocktail consists of equal parts Bourbon whiskey, Aperol, the amaro Amaro Nonino, and lemon juice. The cocktail's name is a reference to the M.I.A. track \"Paper Planes,\" which was apparently a guilty pleasure of Petraske's"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 85,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 85,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 85,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 85,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -690,10 +3414,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 86,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 86,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 86,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 86,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"South Side",
             "cocktail_description": "Its origins are subject to speculation. It has been proposed that it gets its name from either the South Side district of the city of Chicago, Illinois, or from the Southside Sportsmen's Club on Long Island.[1] The drink may have been the preferred beverage of Al Capone, whose gang dominated Chicago's South Side. The gin imported by Capone's rivals on the North Side of Chicago was smooth, and usually consumed with ginger ale. However, the gin consumed by Al Capone's gang had a rougher finish, and required more sweeteners to make it palatable. Thus the South Side was born."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 87,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 87,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 87,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 87,
+            "order": 0,
+            "instruction": ""
         }
     },
     {
@@ -704,10 +3490,72 @@
         }
     },
     {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 88,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 88,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 88,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 88,
+            "order": 0,
+            "instruction": ""
+        }
+    },
+    {
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Bensonhurst",
             "cocktail_description": "An alternative to the Brooklyn cocktail, this cocktail is a play on the Brooklyn and chooses neighborhood within as its name."
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 89,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 89,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 89,
+            "ingredient": ,
+            "order": 0,
+            "ingredient_quantity": ""
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 89,
+            "order": 0,
+            "instruction": ""
         }
     }
 ]
