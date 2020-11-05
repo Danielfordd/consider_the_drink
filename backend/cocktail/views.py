@@ -43,3 +43,46 @@ def cocktail_data(request, cocktail_name):
                          'recipe': recipe,
                          'glassware': glassware,
                          'serving_styles': served})
+
+
+def cocktail_all(request):
+    """
+    Return all cocktail's names and ingredients
+    """
+    cocktails = list(Cocktail.objects.all())
+
+    cocktailResponse = {'cocktails': [res. cocktail_name for res in cocktails]}
+
+    return JsonResponse(cocktailResponse)
+
+
+def cocktail__sort(request, ingredients):
+    ingTest = ingredients.split(",")[:-1]
+    allCocktails = list(Cocktail.objects.all())
+    cts = {cocktail.cocktail_name: [i.ingredient.ingredient_name
+                                    for i in cocktail.recipe_set.all()]
+           for cocktail in allCocktails}
+    res = []
+    rone = []
+    rtwo = []
+    for ct in cts:
+        # print(ct)
+        ingCount = 0
+        ingCheck = {}
+        for ing in ingTest:
+            if ing in ingCheck:
+                continue
+            else:
+                ingCheck[ing] = True
+            if ing in cts[ct]:
+                ingCount += 1
+                if ingCount >= len(cts[ct]):
+                    # print(ct)
+                    res.append(ct)
+                    break
+        if ingCount == (len(cts[ct]) - 1):
+            rone.append(ct)
+        elif ingCount == (len(cts[ct]) - 2):
+            rtwo.append(ct)
+    print(res)
+    return JsonResponse({'exact': res, 'one_off': rone, 'two_off': rtwo})

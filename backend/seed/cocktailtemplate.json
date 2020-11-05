@@ -24,7 +24,7 @@
         "model":"cocktail.Recipe",
         "fields": {
             "cocktail": 52,
-            "ingredient": ,
+            "ingredient": 1,
             "order": 0,
             "ingredient_quantity": ""
         }
@@ -33,7 +33,7 @@
         "model":"cocktail.Garnish",
         "fields": {
             "cocktail": 52,
-            "garnish":
+            "garnish": 1
         }
     },
     {

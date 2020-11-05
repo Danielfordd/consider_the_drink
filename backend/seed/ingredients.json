@@ -834,6 +834,51 @@
             "ingredient_name": "Cherry Herring"
         }
     },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Passion Fruit Puree or Syrup"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Creme de Mure (Blackberry)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Blackberries"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Espresso Beans"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Yellow Chartreuse"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Green Chartreuse"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Grapefruit Soda"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Ginger"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Candied Ginger"
+        }
+    },
     { "model": "ingredient.IngredientCategory",
         "fields": {
             "category_name": "Spirit"
