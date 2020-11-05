@@ -281,12 +281,12 @@
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Red Wine"
+            "ingredient_name": "Wine, Red"
         }
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "White Wine"
+            "ingredient_name": "Wine, White"
         }
     },
     { "model": "ingredient.Ingredient",
@@ -456,12 +456,12 @@
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Sweet Vermouth"
+            "ingredient_name": "Vermouth, Sweet"
         }
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Dry Vermouth"
+            "ingredient_name": "Vermouth, Dry"
         }
     },
     { "model": "ingredient.Ingredient",
@@ -591,12 +591,12 @@
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Creme de Cacao"
+            "ingredient_name": "Creme de Cacao (Dark)"
         }
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Dramuie"
+            "ingredient_name": "Drambuie"
         }
     },
     { "model": "ingredient.Ingredient",
@@ -616,7 +616,7 @@
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Bluecheese stuffed Olives"
+            "ingredient_name": "Olives, Bluecheese stuffed"
         }
     },
     { "model": "ingredient.Ingredient",
@@ -631,7 +631,7 @@
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Coffee"
+            "ingredient_name": "Coffee (Hot)"
         }
     },
     { "model": "ingredient.Ingredient",
@@ -691,7 +691,7 @@
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Creme de Menthe"
+            "ingredient_name": "Creme de Menthe (White)"
         }
     },
     { "model": "ingredient.Ingredient",
@@ -712,6 +712,126 @@
     { "model": "ingredient.Ingredient",
         "fields": {
             "ingredient_name": "Honey"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Amaro CioCiaro"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Nutmeg, Grated"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Creme de Violette"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Orange Flower Water"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Apricot Brandy"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Port"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Egg Yolk"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Sherry (Fino)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Benedictine"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Peach Puree or Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Tomato Juice"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Worcestershire"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Black Pepper"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Celery Salt"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Hot Sauce"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Celery"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Lillet Blanc"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Vodka (Citron)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Coffee (Cold)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Creme de Cacao (White)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Creme de Menthe (Green)"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Irish Whiskey"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cockktail Umbrella"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Cherry Herring"
         }
     },
     { "model": "ingredient.IngredientCategory",

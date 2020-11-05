@@ -106,3 +106,8 @@ class CocktailTagJoin(models.Model):
 
     class Meta:
         db_table = "cocktail_tags_join"
+
+
+class Garnish(models.Model):
+    cocktail = models.ForeignKey(Cocktail, on_delete=models.CASCADE)
+    garnish = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
