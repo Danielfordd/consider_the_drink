@@ -1,11 +1,15 @@
 import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
 import thunk from 'redux-thunk';
 import authentication from "./authentication";
+import ingredients from "./ingredients"
+import cocktails from "./cocktails"
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const reducer = combineReducers({
   authentication,
+  ingredients,
+  cocktails
 });
 
 const storeEnhancer = composeEnhancers(applyMiddleware(thunk));

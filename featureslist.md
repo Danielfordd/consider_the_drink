@@ -1,12 +1,3 @@
-# FEATURES & User Stories
-A website that suggests cocktails based off of user ingredients.
-
-As a typical user I would like to put in ingredients and receive cocktail suggestions without logging in.
-
-As a typical user I would like to save my ingredients to my bar after logging in.
-
-MVP Features, User Stories, and Data Schema are outlined below, along withstretch goals/features.
-
 ## Features - MVP
 - [ ] Site-wide navigation element
 - [ ] Signed-out Homepage that includes information about the site,link to signup/login, and container to input ingredients with current ingredients container below and results to right.
@@ -41,6 +32,10 @@ MVP Features, User Stories, and Data Schema are outlined below, along withstretc
 ## Database Schema
 
 https://dbdiagram.io/d/5fa0692f3a78976d7b7a327d
+
+## Wireframe
+https://www.canva.com/design/DAEMY04EGyw/bZSbfOcRpF818PYuOI2OIw/view?utm_content=DAEMY04EGyw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+
 
 ## Frontend Routes
 - `/` Home/Landing Page with website info, ingredient search container, current ingredients container, and cocktail results

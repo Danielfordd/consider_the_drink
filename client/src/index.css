@@ -1,1 +1,291 @@
-/* TODO Add site wide styles */
+@import "css/reset.css";
+@import "css/NavBar.css";
+@import "css/Homepage.css";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: grid;
+    margin: auto;
+    width: 80vw;
+    height: 100vh;
+    /* background-color: magenta; */
+    grid-template-columns: 3fr 1fr;
+}
+
+.sidebar-container {
+    background-color: #F0F0F0;
+    height: 85%;
+    width: 95%;
+    margin-top: 25px;
+    justify-self: center;
+    border-radius: 6px;
+}
+
+.Ingredient-Container {
+    background-color: #F0F0F0;
+    width: 95%;
+    height: 85%;
+    margin-top: 25px;
+    border-radius: 6px;
+    justify-self: center;
+}
+
+.shadow {
+    box-shadow: 5px 7px #DCDCDC;
+    border-radius: 6px;
+}
+
+.SearchBar {
+    box-shadow: none;
+    background: none;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    line-height: 20px;
+    overflow: visible;
+    -webkit-writing-mode: horizontal-tb !important;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    appearance: textfield;
+    background-color:  white;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.Ingredient-Container input {
+    width:  50%;
+    margin: 10px;
+}
+
+.Ingredient-Search-Container {
+    background-color: inherit;
+    width: 95%;
+    height: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(30, 1fr);
+}
+
+.Ingredient-Search-Container span{
+    color: blue;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.Ingredient-Search-Container span:hover{
+    color: darkgrey;
+    cursor: pointer;
+}
+
+.Added-Ingredient_container {
+    background-color: inherit;
+    width: 95%;
+    height: 30%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.Added-Ingredient_container h1{
+    grid-column: 1 / span 4;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+
+.Added-Ingredient_container span {
+    margin-top: 4px;
+}
+.login-container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr;
+}
+
+.login-img {
+    /* width: 100%;
+    height: 100%; */
+    background-color: red;
+    background-size: 100% 100%;
+}
+
+.centered{
+    margin: auto;
+}
+
+main {
+    display: flex;
+    position: relative;
+    background-color: #FBFEFB;
+    background-color: white;
+    margin: auto;
+}
+
+.login-sidebar input {
+        border: 0;
+        border-bottom: 2px solid black;
+        color: black;
+        box-sizing: border-box;
+        display: block;
+        margin-bottom: 1.25em;
+        outline: 0;
+        padding: .25em .5em;
+        width: 100%;
+        background-color: #FBFEFB;
+        background-color: white;
+}
+
+.login-sidebar button {
+    background-color: #EFE5DC;
+    padding: 0;
+    border: black;
+    background: none;
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+    margin-left: 7px;
+    cursor: pointer;
+    margin-bottom: 10px !important;
+}
+
+.centered{
+    margin: auto !important;
+}
+
+.login-sidebar button:hover {
+    color: grey;
+}
+
+.login-sidebar a {
+    text-decoration: none;
+    color: blue;
+}
+
+.login-sidebar a:hover {
+    text-decoration: none;
+    color: grey
+}
+
+
+.item-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.t {
+    align-items: end !important;;
+}
+.item-container-name{
+    justify-self: end !important;;
+}
+
+.added-item-name{
+    display: flex;
+    align-items: center;
+}
+
+.material-icons.MuiIcon-root.fas.fa-times:hover {
+    color: red;
+}
+
+.CocktailCard-Container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    max-width: 900px !important;
+}
+
+
+.CocktailCard {
+    display: grid;
+    width: 125px;
+    height: 150px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    /* background-color: royalblue; */
+    grid-template-rows: 5fr 1fr;
+    border-radius: 6px;
+    box-shadow: 4px 4px #DCDCDC;
+}
+.CocktailCard:hover {
+    background-color: grey;
+}
+
+.CocktailCard img {
+    justify-self: center;
+    margin: auto;
+}
+.cocktail-name {
+    font-weight: 600!important;
+    justify-self: center;
+}
+
+.details-container {
+    display: grid;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    max-width: 900px !important;
+    grid-template-rows: 1fr 1fr;
+}
+
+.details-top {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+.details-bottom {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+
+.details-top img {
+    justify-self: center;
+    margin: auto;
+}
+
+.details-top div {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    margin: auto;
+    background-color: lightgray;
+    padding: 5%;
+}
+
+.details-recipe {
+    background-color: lightgrey;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    padding: 5%;
+}
+
+.details-instruction {
+    height: 90%;
+    width: 90%;
+    justify-self: right;
+    margin: auto;
+}

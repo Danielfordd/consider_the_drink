@@ -1,0 +1,56 @@
+.NavBar {
+    height: 50px;
+    background-color: #000000;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.NavBar button {
+    float: right;
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-size: inherit;
+    margin: 0;
+    padding: 16px 10px;
+}
+
+.NavBar li {
+    float: right;
+    margin: auto;
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 16px 10px;
+    text-align: center;
+}
+
+li .active {
+    background-color: grey;
+}
+
+.logo.active {
+    background-color: inherit;
+}
+
+li a:hover {
+    color: lightgray;
+}
+
+li button:hover {
+    color: grey;
+}
+
+.NavBar-search {
+    padding: 14px 10px;
+}
+
+.NavBar-search input:focus {
+    width: 250px !important;
+}

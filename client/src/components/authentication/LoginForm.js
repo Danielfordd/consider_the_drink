@@ -24,7 +24,8 @@ const LoginForm = () => {
 
   return (
     <div className="login-container">
-      <main className="centered middled">
+      <div className="login-img"></div>
+      <main className="login-sidebar">
         <form onSubmit={loginHandler} className="Login-form">
           <input type="text"
                 placeholder="Username"
@@ -36,7 +37,7 @@ const LoginForm = () => {
                 value={password}
                 onChange={e => setPassword(e.target.value)}
                 className="input"/>
-          <button type="submit" className="form-button">Login</button>
+          <button type="submit" className="form-button centered">Login</button><span> |</span>
           <LoginDemoUser />
           <div className="signup-form-login">
               <div>Dont have an account?</div><NavLink to="/signup"> Sign Up</NavLink>
