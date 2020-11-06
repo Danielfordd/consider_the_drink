@@ -33,25 +33,30 @@ const AllCocktails = () => {
     }
 
     return (
-        <div className="CocktailCard-Container" >
-        <div className="all-cocktails__title">All Cocktails</div>
-        <div className="all-cocktails__sort">
-            <span>Sort </span>
-            <select onChange={selectChange}>
-                <option value="name_asc">Name, Ascending</option>
-                <option value="name_desc">Name, Descending</option>
-            </select>
-        </div>
-        <div className="all-cocktails__tags">
-        {tags.map(tag => tag.clicked ?
-                            <div key={`tag-${tag.name}`} onClick={handleClick} style={{color:'red'}}>{tag.name}</div>
-                          : <div key={`tag-${tag.name}`} onClick={handleClick} >{tag.name}</div> )}
-        </div>
-        {cocktails.map(cocktail => <CocktailCard key={`card-${cocktail}`}
-                                                  cocktail={cocktail} />)}
-        <div className="pagination-container">
-            <Pagination count={5} onChange={handleChange} />
-        </div>
+        <div className="CocktailCard-Container">
+            <div className="CocktailCard-Container__left" >
+                <div className="all-cocktails__title">All Cocktails</div>
+                <div className="all-cocktails__sort">
+                    <span>Sort </span>
+                    <select onChange={selectChange}>
+                        <option value="name_asc">Name, Ascending</option>
+                        <option value="name_desc">Name, Descending</option>
+                    </select>
+                </div>
+                {cocktails.map(cocktail => <CocktailCard key={`card-${cocktail}`}
+                                                        cocktail={cocktail} />)}
+                <div className="pagination-container">
+                    <Pagination count={5} onChange={handleChange} />
+                </div>
+            </div>
+            <div className="CocktailCard-Container__right shadow">
+                <div className="CocktailCard-Container__right__inner">
+                <h1>Tags</h1>
+                {tags.map(tag => tag.clicked ?
+                                    <div key={`tag-${tag.name}`} onClick={handleClick}  className="clicked" >{tag.name}</div>
+                                : <div key={`tag-${tag.name}`} onClick={handleClick} >{tag.name}</div> )}
+                </div>
+            </div>
         </div>
     )
 }
