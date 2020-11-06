@@ -13,9 +13,8 @@ ul {
 .container {
     display: grid;
     margin: auto;
-    width: 80vw;
-    height: 100vh;
-    /* background-color: magenta; */
+    width: 80%;
+    height: 90vh;
     grid-template-columns: 3fr 1fr;
 }
 
@@ -204,8 +203,9 @@ main {
 }
 
 .CocktailCard-Container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(4, 1fr);;
     width: 90%;
     height: 80%;
     margin: auto;
@@ -222,13 +222,13 @@ main {
     height: 150px;
     margin-bottom: 15px;
     margin-right: 15px;
-    /* background-color: royalblue; */
     grid-template-rows: 5fr 1fr;
     border-radius: 6px;
     box-shadow: 4px 4px #DCDCDC;
 }
 .CocktailCard:hover {
-    background-color: grey;
+    background-color: #DCDCDC;
+    box-shadow: 4px 4px black;
 }
 
 .CocktailCard img {
@@ -255,6 +255,7 @@ main {
 .details-top {
     display: grid;
     grid-template-columns: 2fr 5fr;
+    margin: 20px;
 }
 
 .details-bottom {

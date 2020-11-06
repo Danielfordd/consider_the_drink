@@ -1,13 +1,11 @@
 import React from 'react';
 import Icon from '@material-ui/core/Icon';
 import { loadCSS } from 'fg-loadcss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { removeIngredientFromFilter } from '../store/ingredients'
-import { load_results } from './../store/cocktails'
 
 export default function FontAwesome({ ingredient }) {
   const dispatch = useDispatch()
-  const filteredIngredients = useSelector(state => state.ingredients.filter)
 
   React.useEffect(() => {
     const node = loadCSS(

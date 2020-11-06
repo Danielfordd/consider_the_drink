@@ -27,7 +27,7 @@ function App() {
                     <Route path="/login" component={LoginForm} />
                     <Route path="/signup" component={SignUpForm} />
                     <Route exact path="/cocktails/search/:query" component={CocktailSearchResults}/>
-                    <Route exact path="/cocktails/search" component={AllCocktails}/>
+                    <Route exact path="/cocktails/all/:page" component={AllCocktails}/>
                     <Route exact path="/cocktails/:cocktail" component={CocktailDetailPage} />
                     <Route path="/404" component={NotFound} />
                     <Route exact path="/" component={HomePage} />

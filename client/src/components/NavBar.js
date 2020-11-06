@@ -23,7 +23,7 @@ const NavBar = () => {
                 <li style={{float:'left'}} className="NavBar-search"><CocktailSearchBar /></li>
                 <li><NavLink to="/signup" activeClassName="active" className="NavBar-link">Sign Up</NavLink></li>
                 <li><NavLink to="/login" activeClassName="active" className="NavBar-link">Login</NavLink></li>
-                <li><NavLink to="/cocktails/search" activeClassName="active" className="NavBar-link">Cocktails</NavLink></li>
+                <li><NavLink to="/cocktails/all/1" activeClassName="active" className="NavBar-link">Cocktails</NavLink></li>
             </ul>
         )
     }

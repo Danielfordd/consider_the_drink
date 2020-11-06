@@ -45,7 +45,7 @@ def cocktail_data(request, cocktail_name):
                          'serving_styles': served})
 
 
-def cocktail_all(request):
+def cocktail_all(request, page):
     """
     Return all cocktail's names and ingredients
     """
@@ -66,7 +66,6 @@ def cocktail__sort(request, ingredients):
     rone = []
     rtwo = []
     for ct in cts:
-        # print(ct)
         ingCount = 0
         ingCheck = {}
         for ing in ingTest:
@@ -77,12 +76,10 @@ def cocktail__sort(request, ingredients):
             if ing in cts[ct]:
                 ingCount += 1
                 if ingCount >= len(cts[ct]):
-                    # print(ct)
                     res.append(ct)
                     break
         if ingCount == (len(cts[ct]) - 1):
             rone.append(ct)
         elif ingCount == (len(cts[ct]) - 2):
             rtwo.append(ct)
-    print(res)
     return JsonResponse({'exact': res, 'one_off': rone, 'two_off': rtwo})

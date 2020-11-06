@@ -32,8 +32,8 @@ export const loadCocktailDetails = (cocktail_name) => async dispatch => {
     }
 }
 
-export const loadAllCocktails = () => async dispatch => {
-  const response = await fetch('/api/cocktails/all/')
+export const loadAllCocktails = (page_num) => async dispatch => {
+  const response = await fetch(`/api/cocktails/all/${page_num}`)
 
   if (response.ok) {
     const cocktails = await response.json();
@@ -107,7 +107,6 @@ export default function reducer(state=defaultState, action) {
                             one_off: [...action.results.one_off],
                             two_off: [...action.results.two_off]
                            }
-        debugger
         return newState
       default:
         return state;
