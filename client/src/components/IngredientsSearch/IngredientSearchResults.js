@@ -11,7 +11,7 @@ const IngredientSearchResultsContainer = () => {
     }
 
     return(
-        <div className="Ingredient-Search-Container">
+        <div className="Ingredient-Search-Container shadow">
         {results.map(result => <span onClick={handleClick} key={`result-${result}`} className="test">{result}</span>)}
         </div>
     )

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .models import Cocktail
+from .models import Cocktail, CocktailTagJoin, CocktailTag
 
 
 def cocktail_search(request, query):
@@ -12,7 +12,6 @@ def cocktail_search(request, query):
     cocktail = [{'id': res.id,
                  'name': res.cocktail_name
                  } for res in results]
-    print(cocktail)
     return JsonResponse({'cocktails': cocktail})
 
 
@@ -45,15 +44,38 @@ def cocktail_data(request, cocktail_name):
                          'serving_styles': served})
 
 
-def cocktail_all(request, page):
+def cocktail_all(request,
+                 page=1,
+                 quantity=20,
+                 sort="name_asc",
+                 tags=False):
     """
     Return all cocktail's names and ingredients
     """
-    cocktails = list(Cocktail.objects.all())
+    start = 0
+    if page != 1:
+        start = quantity * (page - 1)
+    end = (start + quantity)
 
-    cocktailResponse = {'cocktails': [res. cocktail_name for res in cocktails]}
+    sort_by = ""
+    if "name_asc" == sort:
+        sort_by = "cocktail_name"
+    else:
+        sort_by = "-cocktail_name"
 
-    return JsonResponse(cocktailResponse)
+    if tags:
+        tags = tags.split(",")
+
+    if tags:
+        cocktails = list(Cocktail.objects
+                         .filter(cocktailtagjoin__tag__tag__in=tags)
+                         .order_by(sort_by)[start:end])
+        cocktailResponse = {'cocktails': [res.cocktail_name for res in cocktails]}  # noqa
+        return JsonResponse(cocktailResponse)
+    else:
+        cocktails = list(Cocktail.objects.all().order_by(sort_by)[start:end])
+        cocktailResponse = {'cocktails': [res.cocktail_name for res in cocktails]}  # noqa
+        return JsonResponse(cocktailResponse)
 
 
 def cocktail__sort(request, ingredients):
@@ -78,8 +100,16 @@ def cocktail__sort(request, ingredients):
                 if ingCount >= len(cts[ct]):
                     res.append(ct)
                     break
-        if ingCount == (len(cts[ct]) - 1):
+        if ingCount == (len(cts[ct]) - 1) > 0:
             rone.append(ct)
-        elif ingCount == (len(cts[ct]) - 2):
+        elif ingCount == (len(cts[ct]) - 2) > 0:
             rtwo.append(ct)
     return JsonResponse({'exact': res, 'one_off': rone, 'two_off': rtwo})
+
+
+def load_tags(request):
+    """
+    Query all tag names and returns them.
+    """
+    tags = [tag.tag for tag in CocktailTag.objects.all()]
+    return JsonResponse({'tags': tags})

@@ -1,0 +1,62 @@
+[
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 1
+    }
+},
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 11
+    }
+},
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 15
+    }
+},
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 42
+    }
+},
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 60
+    }
+},
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 88
+    }
+},
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 66
+    }
+},
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 34
+    }
+},
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 12
+    }
+},
+{ "model": "bar.FavCocktail",
+    "fields": {
+        "user": 1,
+        "cocktail": 9
+    }
+}
+]

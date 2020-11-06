@@ -7,7 +7,7 @@ const AddedIngredientList = () => {
 
     return(
 
-    <div className="Added-Ingredient_container">
+    <div className="Added-Ingredient_container shadow">
         <h1>Added ingredients</h1>
         {filteredIngredients.map(ingredient => <div className="item-container"><span className="added-item-name" ><span key={`filtered-${ingredient}`}>{ingredient}</span></span><XIcon className="icon-t" ingredient={ingredient}/></div>)}
     </div>

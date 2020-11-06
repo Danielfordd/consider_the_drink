@@ -14,26 +14,27 @@ ul {
     display: grid;
     margin: auto;
     width: 80%;
-    height: 90vh;
+    height: 50%;
     grid-template-columns: 3fr 1fr;
 }
 
 .sidebar-container {
     background-color: #F0F0F0;
-    height: 85%;
+    height: 80%;
     width: 95%;
-    margin-top: 25px;
+    margin-top: 20%;
     justify-self: center;
     border-radius: 6px;
 }
 
 .Ingredient-Container {
-    background-color: #F0F0F0;
+    background-color: white;
     width: 95%;
     height: 85%;
     margin-top: 25px;
     border-radius: 6px;
     justify-self: center;
+    /* grid-gap: 10px; */
 }
 
 .shadow {
@@ -66,6 +67,10 @@ ul {
 .Ingredient-Container input {
     width:  50%;
     margin: 10px;
+    /* border: 1px solid black !important; */
+    box-shadow: 3px 3px #DCDCDC;
+    border-radius: 6px;
+    background-color: #F0F0F0;
 }
 
 .Ingredient-Search-Container {
@@ -77,6 +82,8 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(30, 1fr);
+    background-color: #F0F0F0;
+    overflow-y: scroll;
 }
 
 .Ingredient-Search-Container span{
@@ -98,9 +105,11 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(10, 1fr);
+    background-color: #F0F0F0;
 }
 
 .Added-Ingredient_container h1{
+    padding: 10px;
     grid-column: 1 / span 4;
     font-weight: 600;
     border-bottom: 1px solid black;
@@ -212,19 +221,20 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
-    max-width: 900px !important;
+    max-width: 950px !important;
 }
 
 
 .CocktailCard {
     display: grid;
-    width: 125px;
-    height: 150px;
+    width: 200px;
+    height: 250px;
     margin-bottom: 15px;
     margin-right: 15px;
     grid-template-rows: 5fr 1fr;
     border-radius: 6px;
-    box-shadow: 4px 4px #DCDCDC;
+    box-shadow: 4px 5px #DCDCDC;
+    border: 2px solid  #DCDCDC;
 }
 .CocktailCard:hover {
     background-color: #DCDCDC;
@@ -289,4 +299,48 @@ main {
     width: 90%;
     justify-self: right;
     margin: auto;
+}
+
+.pagination-container {
+    grid-column: 1 / span 4;
+}
+
+
+.notfound-container {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    width: 80%;
+    height: 90vh;
+    grid-template-rows: 1fr 5fr;
+    max-width: 900px;
+}
+
+.notfound-container div {
+    display: grid;
+    justify-self: center;
+    margin: auto;
+    width: 100%;
+    height: 60%;
+    background-color:  #F0F0F0;
+    border-radius: 6px;
+}
+.notfound-container h1 {
+    justify-content: center;
+    margin: auto;
+    font-weight: 600;
+}
+
+.notfound-container iframe {
+}
+
+
+.all-cocktails__title{
+    grid-column: 1 / span 2;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.all-cocktails__sort {
+    grid-column: span 2;
 }

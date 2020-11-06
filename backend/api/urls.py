@@ -23,5 +23,6 @@ urlpatterns = [
     path('api/auth/token-auth/', obtain_jwt_token),
     path('api/auth/', include('authentication.urls')),
     path('api/ingredients/', include('ingredient.urls')),
-    path('api/cocktails/', include('cocktail.urls'))
+    path('api/cocktails/', include('cocktail.urls')),
+    path('api/user/', include('bar.urls'))
 ]

@@ -59,6 +59,7 @@ export default function reducer(state={ ingredients:[], results: [], filter:[] }
       case LOAD_ALL_INGREDIENTS:
         newState = { ...state }
         newState.ingredients = [...action.ingredients]
+        newState.results = [...action.ingredients]
         return newState
       case SET_INGREDIENT_RESULTS:
           newState = {...state}
@@ -66,6 +67,9 @@ export default function reducer(state={ ingredients:[], results: [], filter:[] }
           return newState
       case Add_INGREDIENT_TO_FILTER:
           newState = {...state}
+          if (newState.filter.includes(action.ingredient)) {
+              return newState
+          }
           newState.filter = [...newState.filter, action.ingredient]
           return newState
       case REMOVE_INGREDIENT_FROM_FILTER:

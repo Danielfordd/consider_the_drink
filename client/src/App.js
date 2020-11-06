@@ -9,14 +9,16 @@ import CocktailDetailPage from './components/cocktail/CocktailDetailPage'
 import CocktailSearchResults from './components/cocktail/CocktailSearchResults';
 import HomePage from './components/HomePage'
 import { loadAllIngredients } from './store/ingredients'
+import { loadCocktailTags } from './store/cocktails'
 import AllCocktails from './components/cocktail/AllCocktails'
-
+import MyBar from './components/MyBar'
 
 function App() {
     const dispatch = useDispatch()
 
     useEffect(()=>{
         dispatch(loadAllIngredients())
+        dispatch(loadCocktailTags())
     // eslint-disable-next-line
     }, [])
 
@@ -26,6 +28,7 @@ function App() {
                 <Switch>
                     <Route path="/login" component={LoginForm} />
                     <Route path="/signup" component={SignUpForm} />
+                    <Route exact path="/myBar" component={MyBar} />
                     <Route exact path="/cocktails/search/:query" component={CocktailSearchResults}/>
                     <Route exact path="/cocktails/all/:page" component={AllCocktails}/>
                     <Route exact path="/cocktails/:cocktail" component={CocktailDetailPage} />

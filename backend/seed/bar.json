@@ -199,12 +199,7 @@
     },
     { "model": "cocktail.CocktailTag",
         "fields": {
-            "tag": "Boozy"
-        }
-    },
-    { "model": "cocktail.CocktailTag",
-        "fields": {
-            "tag": "Spirit Forward"
+            "tag": "Strong"
         }
     },
     { "model": "cocktail.CocktailTag",
@@ -255,11 +250,6 @@
     { "model": "cocktail.CocktailTag",
         "fields": {
             "tag": "Fruity"
-        }
-    },
-    { "model": "cocktail.CocktailTag",
-        "fields": {
-            "tag": "Patio Pounder"
         }
     },
     { "model": "cocktail.CocktailTag",

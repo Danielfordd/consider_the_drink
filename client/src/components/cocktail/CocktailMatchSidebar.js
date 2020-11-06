@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { load_results } from '../../store/cocktails'
+import { load_results_by_ingredients } from '../../store/cocktails'
 
 const CocktailMatchSidebar = () => {
     const dispatch = useDispatch()
@@ -12,7 +12,7 @@ const CocktailMatchSidebar = () => {
     const history = useHistory()
 
     useEffect(()=>{
-        dispatch(load_results(filteredIngredients))
+        dispatch(load_results_by_ingredients(filteredIngredients))
     // eslint-disable-next-line
     }, [filteredIngredients])
 
