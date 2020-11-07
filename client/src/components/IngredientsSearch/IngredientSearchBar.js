@@ -23,7 +23,7 @@ const IngredientSearchBar = () => {
     }, [query])
 
     return (
-        <form onSubmit={handleEnter} >
+        <form onSubmit={handleEnter} className="ingredient-search">
             <input
                 onChange={handleSearch}
                 value={query}

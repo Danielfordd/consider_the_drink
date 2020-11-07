@@ -39,8 +39,8 @@ const AllCocktails = () => {
                 <div className="all-cocktails__sort">
                     <span>Sort </span>
                     <select onChange={selectChange}>
-                        <option value="name_asc">Name, Ascending</option>
-                        <option value="name_desc">Name, Descending</option>
+                        <option value="name_asc">A-Z</option>
+                        <option value="name_desc">Z-A</option>
                     </select>
                 </div>
                 {cocktails.map(cocktail => <CocktailCard key={`card-${cocktail}`}
@@ -53,7 +53,7 @@ const AllCocktails = () => {
                 <div className="CocktailCard-Container__right__inner">
                 <h1>Tags</h1>
                 {tags.map(tag => tag.clicked ?
-                                    <div key={`tag-${tag.name}`} onClick={handleClick}  className="clicked" >{tag.name}</div>
+                                  <div key={`tag-${tag.name}`} onClick={handleClick}  className="clicked" >{tag.name}</div>
                                 : <div key={`tag-${tag.name}`} onClick={handleClick} >{tag.name}</div> )}
                 </div>
             </div>

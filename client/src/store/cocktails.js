@@ -87,7 +87,7 @@ export const loadAllCocktails = (page_num, quantity, sort, tags) => async dispat
 
   let response;
 
-  if (filteredTags == "") {
+  if (filteredTags === "") {
     response = await fetch(`/api/cocktails/all/${page_num}/${quantity}/${sort}`)
   } else {
     response = await fetch(`/api/cocktails/all/${page_num}/${quantity}/${sort}/${filteredTags}`)
