@@ -10,7 +10,8 @@ def cocktail_search(request, query):
     """
     results = Cocktail.objects.filter(cocktail_name__icontains=query)
     cocktail = [{'id': res.id,
-                 'name': res.cocktail_name
+                 'name': res.cocktail_name,
+                 'image': res.cocktail_image
                  } for res in results]
     return JsonResponse({'cocktails': cocktail})
 
@@ -36,10 +37,14 @@ def cocktail_data(request, cocktail_name):
 
     served = [res.served.served_name
               for res in list(result.served_set.all())]
+
+    garnishes = 1
     return JsonResponse({'name': result.cocktail_name,
+                         'image': result.cocktail_image,
                          'description': result.cocktail_description,
                          'instructions': instructions,
                          'recipe': recipe,
+                         'garnish': garnishes,
                          'glassware': glassware,
                          'serving_styles': served})
 
@@ -69,12 +74,14 @@ def cocktail_all(request,
     if tags:
         cocktails = list(Cocktail.objects
                          .filter(cocktailtagjoin__tag__tag__in=tags)
+                         .distinct()
                          .order_by(sort_by)[start:end])
-        cocktailResponse = {'cocktails': [res.cocktail_name for res in cocktails]}  # noqa
+        print(cocktails)
+        cocktailResponse = {'cocktails': [{'name': res.cocktail_name, 'image': res.cocktail_image} for res in cocktails]}  # noqa
         return JsonResponse(cocktailResponse)
     else:
         cocktails = list(Cocktail.objects.all().order_by(sort_by)[start:end])
-        cocktailResponse = {'cocktails': [res.cocktail_name for res in cocktails]}  # noqa
+        cocktailResponse = {'cocktails': [{'name': res.cocktail_name, 'image': res.cocktail_image} for res in cocktails]}  # noqa
         return JsonResponse(cocktailResponse)
 
 

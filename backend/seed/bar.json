@@ -214,7 +214,7 @@
     },
     { "model": "cocktail.CocktailTag",
         "fields": {
-            "tag": "Fresh"
+            "tag": "Refreshing"
         }
     },
     { "model": "cocktail.CocktailTag",
@@ -239,12 +239,12 @@
     },
     { "model": "cocktail.CocktailTag",
         "fields": {
-            "tag": "Summer"
+            "tag": "Warm Weather"
         }
     },
     { "model": "cocktail.CocktailTag",
         "fields": {
-            "tag": "Winter"
+            "tag": "Cold Weather"
         }
     },
     { "model": "cocktail.CocktailTag",
