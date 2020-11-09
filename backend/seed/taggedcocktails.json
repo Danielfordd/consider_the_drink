@@ -656,5 +656,1622 @@
             "cocktail": 24,
             "tag": 7
         }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 25,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 25,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 25,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 25,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 25,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 26,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 26,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 26,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 26,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 27,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 27,
+            "tag": 8
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 27,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 27,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 28,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 28,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 28,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 29,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 29,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 29,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 29,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 29,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 30,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 30,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 30,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 31,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 31,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 31,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 31,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 32,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 32,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 32,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 32,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 32,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 33,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 33,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 34,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 34,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 34,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 35,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 35,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 35,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 36,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 36,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 36,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 36,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 37,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 37,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 37,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 38,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 39,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 39,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 39,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 39,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 40,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 40,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 41,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 41,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 41,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 41,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 42,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 42,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 42,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 42,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 42,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 43,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 43,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 43,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 44,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 44,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 45,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 45,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 46,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 46,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 46,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 46,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 47,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 47,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 47,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 48,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 48,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 48,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 49,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 49,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 49,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 50,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 50,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 51,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 51,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 51,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 52,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 52,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 52,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 52,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 53,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 53,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 53,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 54,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 55,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 55,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 56,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 56,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 56,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 56,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 57,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 57,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 57,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 57,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 56,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 58,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 58,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 59,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 59,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 59,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 59,
+            "tag": 8
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 59,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 60,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 60,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 60,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 60,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 61,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 61,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 61,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 61,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 62,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 62,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 62,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 63,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 63,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 63,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 63,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 64,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 64,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 65,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 65,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 65,
+            "tag": 8
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 65,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 65,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 66,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 66,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 66,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 66,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 67,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 67,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 68,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 68,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 68,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 68,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 68,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 69,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 69,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 69,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 70,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 70,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 71,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 71,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 72,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 72,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 72,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 73,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 73,
+            "tag": 8
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 73,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 74,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 74,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 74,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 75,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 75,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 75,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 76,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 76,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 77,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 78,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 10,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 79,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 79,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 79,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 79,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 80,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 80,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 80,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 80,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 81,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 81,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 82,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 82,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 82,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 83,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 83,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 83,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 84,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 84,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 84,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 84,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 85,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 85,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 85,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 86,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 86,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 87,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 87,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 87,
+            "tag": 9
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 87,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 88,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 88,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 88,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 88,
+            "tag": 11
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 89,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 89,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 89,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 90,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 90,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 90,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 92,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 92,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 92,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 91,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 91,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 93,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 93,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 94,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 94,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 94,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 95,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 95,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 96,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 96,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 97,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 97,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 98,
+            "tag": 5
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 98,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 98,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 98,
+            "tag": 12
+        }
      }
 ]
