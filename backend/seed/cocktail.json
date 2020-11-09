@@ -4083,7 +4083,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"The Godfather",
-            "cocktail_description": "As with many cocktails, the origin of the Godfather's name is uncertain. The amaretto brand Disaronno claims the drink was the favorite cocktail of American actor Marlon Brando, known for playing the titular character in the popular American film adaptation of Mario Puzo's The Godfather, which prominently features the Italian mob. This may be an allusion to the cocktail's prominent use of amaretto, an Italian liqueur."
+            "cocktail_description": "As with many cocktails, the origin of the Godfather's name is uncertain. The amaretto brand Disaronno claims the drink was the favorite cocktail of American actor Marlon Brando, known for playing the titular character in the popular American film adaptation of Mario Puzo's The Godfather, which prominently features the Italian mob. This may be an allusion to the cocktail's prominent use of amaretto, an Italian liqueur.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/rusty_nail.png"
         }
     },
     {
@@ -4145,7 +4146,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Golden Dream",
-            "cocktail_description": "The Golden Dream is said to have been invented by Raimundo Alvarez at the Old King Bar, Miami. The Old King bar appears to have closed long ago, unless it is the same place as either the Old King Grill in North Miami, or the King Cole hotel, which used to be on Miami Beach. The drink was dedicated to actress Joan Crawford, and was popular in the 1960s and 1970s. However, it became neglected in the cocktail wilderness years of the 1980s and 90s."
+            "cocktail_description": "The Golden Dream is said to have been invented by Raimundo Alvarez at the Old King Bar, Miami. The Old King bar appears to have closed long ago, unless it is the same place as either the Old King Grill in North Miami, or the King Cole hotel, which used to be on Miami Beach. The drink was dedicated to actress Joan Crawford, and was popular in the 1960s and 1970s. However, it became neglected in the cocktail wilderness years of the 1980s and 90s.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/queens.png"
         }
     },
     {
@@ -4225,7 +4227,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Grasshopper",
-            "cocktail_description": "A Grasshopper is a sweet, mint-flavored, after-dinner drink. The name of the drink derives from its green color, which comes from crème de menthe. A bar in the French Quarter of New Orleans, Louisiana, Tujague's, claims the drink was invented in 1918 by its owner, Philip Guichet. The drink gained popularity during the 1950s and 1960s throughout the American South."
+            "cocktail_description": "A Grasshopper is a sweet, mint-flavored, after-dinner drink. The name of the drink derives from its green color, which comes from crème de menthe. A bar in the French Quarter of New Orleans, Louisiana, Tujague's, claims the drink was invented in 1918 by its owner, Philip Guichet. The drink gained popularity during the 1950s and 1960s throughout the American South.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/grasshopper.png"
         }
     },
     {
@@ -4296,7 +4299,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Hemingway Daiquiri",
-            "cocktail_description": "While Ernest Hemingway was staying in Cuba, Ernest Hemingway tried the Floridita's signature drink, the Floridita Daiquiri, and said \"That's good but I prefer it without sugar and double rum,\" creating a cocktail now known as the Hemingway Daiquiri or the Papa Doble. This recipe was later modified further, adding grapefruit juice to the mix, at which point the drink was dubbed the Hemingway Special.\""
+            "cocktail_description": "While Ernest Hemingway was staying in Cuba, Ernest Hemingway tried the Floridita's signature drink, the Floridita Daiquiri, and said \"That's good but I prefer it without sugar and double rum,\" creating a cocktail now known as the Hemingway Daiquiri or the Papa Doble. This recipe was later modified further, adding grapefruit juice to the mix, at which point the drink was dubbed the Hemingway Special.\"",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/hemingway.png"
         }
     },
     {
@@ -4390,7 +4394,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Floridita Daiquiri",
-            "cocktail_description": "Listed as “La Florida Daiquiri Number 4” in a 1935 souvenir recipe booklet, this drink more frequently sails under the Floridita Daiquiri flag and is the house cocktail at the venerable Floridita bar in Habana Vieja. Measurements are below, but head bartender Alejandro Bolívar Rodriguez and his cantinero colleagues prepare the drink by experience and feel, without the use of jiggers. “The blender is like your friend,” Bolívar Rodriguez says. “We add the rum in a slow stream, step by step, to make the right mix. When you look inside the blender, in the middle is a hole—if the hole is closed, the blender is telling you that you haven’t put in enough rum. You add rum until the hole opens, and you wind up with a circle,” he says, making a ring with his thumb and forefinger. “That tells you the ice is ready and the drink is done.”"
+            "cocktail_description": "Listed as “La Florida Daiquiri Number 4” in a 1935 souvenir recipe booklet, this drink more frequently sails under the Floridita Daiquiri flag and is the house cocktail at the venerable Floridita bar in Habana Vieja. Measurements are below, but head bartender Alejandro Bolívar Rodriguez and his cantinero colleagues prepare the drink by experience and feel, without the use of jiggers. “The blender is like your friend,” Bolívar Rodriguez says. “We add the rum in a slow stream, step by step, to make the right mix. When you look inside the blender, in the middle is a hole—if the hole is closed, the blender is telling you that you haven’t put in enough rum. You add rum until the hole opens, and you wind up with a circle,” he says, making a ring with his thumb and forefinger. “That tells you the ice is ready and the drink is done.”",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/floridita.png"
         }
     },
     {
@@ -4477,7 +4482,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Horse's Neck",
-            "cocktail_description": "Dating back to the 1890s, it was a non-alcoholic mixture of ginger ale, ice and lemon peel. By the 1910s, brandy, or bourbon would be added for a \"Horse's Neck with a Kick\" or a \"Stiff Horse's Neck\". The non-alcoholic version was still served in upstate New York in the late 1950s and early 60s, but eventually it was phased out."
+            "cocktail_description": "Dating back to the 1890s, it was a non-alcoholic mixture of ginger ale, ice and lemon peel. By the 1910s, brandy, or bourbon would be added for a \"Horse's Neck with a Kick\" or a \"Stiff Horse's Neck\". The non-alcoholic version was still served in upstate New York in the late 1950s and early 60s, but eventually it was phased out.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/horses_neck.png"
         }
     },
     {
@@ -4539,7 +4545,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Irish Coffee",
-            "cocktail_description": "Irish coffee is a cocktail consisting of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream. The coffee is drunk through the cream."
+            "cocktail_description": "Irish coffee is a cocktail consisting of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream. The coffee is drunk through the cream.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/irish_coffee.png"
         }
     },
     {
@@ -4618,7 +4625,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Kir Royale",
-            "cocktail_description": "Kir Royale is a French cocktail, a variation on Kir. It consists of crème de cassis topped with champagne, rather than the white wine used in traditional Kir. This apéritif is typically served in a flute glass."
+            "cocktail_description": "Kir Royale is a French cocktail, a variation on Kir. It consists of crème de cassis topped with champagne, rather than the white wine used in traditional Kir. This apéritif is typically served in a flute glass.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/kir_royale.png"
         }
     },
     {
@@ -4680,7 +4688,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Kir",
-            "cocktail_description": "Kir is a popular French cocktail made with a measure of crème de cassis (blackcurrant liqueur) topped up with white wine. In France it is usually drunk as an apéritif before a meal or snack. It was originally made with Bourgogne Aligoté[1], a white wine of Burgundy. Now, various white wines are used throughout France, according to the region and the whim of the barkeeper. Many prefer a white Chardonnay-based Burgundy, such as Chablis."
+            "cocktail_description": "Kir is a popular French cocktail made with a measure of crème de cassis (blackcurrant liqueur) topped up with white wine. In France it is usually drunk as an apéritif before a meal or snack. It was originally made with Bourgogne Aligoté[1], a white wine of Burgundy. Now, various white wines are used throughout France, according to the region and the whim of the barkeeper. Many prefer a white Chardonnay-based Burgundy, such as Chablis.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/kir.png"
         }
     },
     {
@@ -4742,7 +4751,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Long Island Iced Tea",
-            "cocktail_description": "Robert \"Rosebud\" Butt claims to have invented the Long Island iced tea as an entry in a contest to create a new mixed drink with triple sec in 1972 while he worked at the Oak Beach Inn on Long Island, New York. A slightly different drink is claimed to have been invented in the 1920s during Prohibition in the United States by an \"Old Man Bishop\" in a local community named Long Island in Kingsport, Tennessee. The drink was then perfected by Ransom Bishop, Old Man Bishop's son. This drink included whiskey and maple syrup, and varied quantities of the five liquors, rather than the modern one with cola and five equal portions of the five liquors."
+            "cocktail_description": "Robert \"Rosebud\" Butt claims to have invented the Long Island iced tea as an entry in a contest to create a new mixed drink with triple sec in 1972 while he worked at the Oak Beach Inn on Long Island, New York. A slightly different drink is claimed to have been invented in the 1920s during Prohibition in the United States by an \"Old Man Bishop\" in a local community named Long Island in Kingsport, Tennessee. The drink was then perfected by Ransom Bishop, Old Man Bishop's son. This drink included whiskey and maple syrup, and varied quantities of the five liquors, rather than the modern one with cola and five equal portions of the five liquors.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/long_island.png"
         }
     },
     {
@@ -4866,7 +4876,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Mai Tai",
-            "cocktail_description": "Victor J. Bergeron claimed to have invented the Mai Tai in 1944 at his restaurant, Trader Vic's, in Oakland, California. Trader Vic's forerunner, Donn Beach, claimed to have instead first created it in 1933, although a longtime colleague said that Beach was actually just alleging that the Mai Tai was based on his Q.B. Cooler cocktail. Don the Beachcomber's recipe is more complex than that of Vic's and some believe tastes quite different. Others believe that despite the difference in ingredients that they taste quite similar. The name was allegedly taken from maita'i, the Tahitian word for \"good\" or \"excellence\", although the drink is usually spelled as two words, sometimes hyphenated or capitalized."
+            "cocktail_description": "Victor J. Bergeron claimed to have invented the Mai Tai in 1944 at his restaurant, Trader Vic's, in Oakland, California. Trader Vic's forerunner, Donn Beach, claimed to have instead first created it in 1933, although a longtime colleague said that Beach was actually just alleging that the Mai Tai was based on his Q.B. Cooler cocktail. Don the Beachcomber's recipe is more complex than that of Vic's and some believe tastes quite different. Others believe that despite the difference in ingredients that they taste quite similar. The name was allegedly taken from maita'i, the Tahitian word for \"good\" or \"excellence\", although the drink is usually spelled as two words, sometimes hyphenated or capitalized.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/maitai.png"
         }
     },
     {
@@ -4984,7 +4995,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Margarita",
-            "cocktail_description": "A margarita is a Mexican cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass. The drink is served shaken with ice (on the rocks), blended with ice (frozen margarita), or without ice (straight up). Although it has become acceptable to serve a margarita in a wide variety of glass types, ranging from cocktail and wine glasses to pint glasses and even large schooners, the drink is traditionally served in the eponymous margarita glass, a stepped-diameter variant of a cocktail glass or champagne coupe."
+            "cocktail_description": "A margarita is a Mexican cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass. The drink is served shaken with ice (on the rocks), blended with ice (frozen margarita), or without ice (straight up). Although it has become acceptable to serve a margarita in a wide variety of glass types, ranging from cocktail and wine glasses to pint glasses and even large schooners, the drink is traditionally served in the eponymous margarita glass, a stepped-diameter variant of a cocktail glass or champagne coupe.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/marg.png"
         }
     },
     {
@@ -5078,7 +5090,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Mimosa",
-            "cocktail_description": "A mimosa cocktail is composed of champagne (or other sparkling wine) and chilled citrus juice, usually orange juice unless otherwise specified. It is traditionally served in a tall champagne flute at brunch, at weddings, or as part of business or first class service on some passenger railways and airlines. The mixing ratio of the \"classic mimosa\" differs based on the source. The cocktail is named after the yellow-flowered mimosa plant, Acacia dealbata."
+            "cocktail_description": "A mimosa cocktail is composed of champagne (or other sparkling wine) and chilled citrus juice, usually orange juice unless otherwise specified. It is traditionally served in a tall champagne flute at brunch, at weddings, or as part of business or first class service on some passenger railways and airlines. The mixing ratio of the \"classic mimosa\" differs based on the source. The cocktail is named after the yellow-flowered mimosa plant, Acacia dealbata.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/mimosa.png"
         }
     },
     {
@@ -5125,7 +5138,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Mint Julep",
-            "cocktail_description": "The mint julep originated in the southern United States, probably during the eighteenth century. The earliest known mentions come from 1770 and include a satirical play by Robert Munford, The Candidate, (where a drunkard character “Mr. Julip” appears), and \"A Short Poem on Hunting\" (which describes julep as a concoction \"Which doctors storm at, and which some adore\") published in the Williamsburg Virginia Gazette. Further evidence of mint julep as a prescription drink can be found in 1784 Medical communications: \"sickness at the stomach, with frequent retching, and, at times, a difficulty of swallowing. I then prescribed her an emetic, some opening powders, and a mint julep.\""
+            "cocktail_description": "The mint julep originated in the southern United States, probably during the eighteenth century. The earliest known mentions come from 1770 and include a satirical play by Robert Munford, The Candidate, (where a drunkard character “Mr. Julip” appears), and \"A Short Poem on Hunting\" (which describes julep as a concoction \"Which doctors storm at, and which some adore\") published in the Williamsburg Virginia Gazette. Further evidence of mint julep as a prescription drink can be found in 1784 Medical communications: \"sickness at the stomach, with frequent retching, and, at times, a difficulty of swallowing. I then prescribed her an emetic, some opening powders, and a mint julep.\"",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/julep.png"
         }
     },
     {
@@ -5218,7 +5232,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Mojito",
-            "cocktail_description": "Havana, Cuba, is the birthplace of the mojito, although its exact origin is the subject of debate. It was known that the local South American Indians had remedies for various tropical illnesses, so a small boarding party went ashore on Cuba and came back with ingredients for an effective medicine. The ingredients were aguardiente de caña (translated as \"burning water\", a crude form of rum made from sugar cane) mixed with local tropical ingredients: lime, sugarcane juice, and mint. Lime juice on its own would have significantly prevented scurvy and dysentery, and tafia/rum was soon added as it became widely available to the British (ca. 1650). Mint, lime and sugar were also helpful in hiding the harsh taste of this spirit. Another theory is that it was invented by Sir Francis Drake. The \"El Draque\" cocktail was prepared with brandy. While this drink was not called a mojito at this time, it was the original combination of these ingredients."
+            "cocktail_description": "Havana, Cuba, is the birthplace of the mojito, although its exact origin is the subject of debate. It was known that the local South American Indians had remedies for various tropical illnesses, so a small boarding party went ashore on Cuba and came back with ingredients for an effective medicine. The ingredients were aguardiente de caña (translated as \"burning water\", a crude form of rum made from sugar cane) mixed with local tropical ingredients: lime, sugarcane juice, and mint. Lime juice on its own would have significantly prevented scurvy and dysentery, and tafia/rum was soon added as it became widely available to the British (ca. 1650). Mint, lime and sugar were also helpful in hiding the harsh taste of this spirit. Another theory is that it was invented by Sir Francis Drake. The \"El Draque\" cocktail was prepared with brandy. While this drink was not called a mojito at this time, it was the original combination of these ingredients.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/mojito.png"
         }
     },
     {
@@ -5339,7 +5354,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Moscow Mule",
-            "cocktail_description": "The Moscow mule is popularly served in a copper mug, which takes on the cold temperature of the liquid. Some public health advisories recommend copper mugs be plated with nickel or stainless steel on the inside and the lip, but it has been disputed whether the time and acidity involved in the drinking of a Moscow mule would be enough to leach out the 30 milligrams of copper per liter needed to cause copper toxicity."
+            "cocktail_description": "The Moscow mule is popularly served in a copper mug, which takes on the cold temperature of the liquid. Some public health advisories recommend copper mugs be plated with nickel or stainless steel on the inside and the lip, but it has been disputed whether the time and acidity involved in the drinking of a Moscow mule would be enough to leach out the 30 milligrams of copper per liter needed to cause copper toxicity.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/moscow_mule.png"
         }
     },
     {
@@ -5424,7 +5440,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Piña colada",
-            "cocktail_description": "The earliest known story states that in the 19th century, Puerto Rican pirate Roberto Cofresí, to boost his crew's morale, gave them a beverage or cocktail that contained coconut, pineapple and white rum.[4] This was what would be later known as the famous piña colada. With his death in 1825, the recipe for the piña colada was lost. Historian Haydée Reichard disputes this version of the story."
+            "cocktail_description": "The earliest known story states that in the 19th century, Puerto Rican pirate Roberto Cofresí, to boost his crew's morale, gave them a beverage or cocktail that contained coconut, pineapple and white rum.[4] This was what would be later known as the famous piña colada. With his death in 1825, the recipe for the piña colada was lost. Historian Haydée Reichard disputes this version of the story.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/pina.png"
         }
     },
     {
@@ -5525,7 +5542,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Pisco Sour",
-            "cocktail_description": "The pisco sour originated in Lima, Peru. It was created by bartender Victor Vaughen Morris, an American who had moved to Peru in 1904 to work in a railway company in Cerro de Pasco. Morris relocated to Lima in 1915 and, a year later, opened a saloon—Morris' Bar—which became popular with both the Peruvian upper class and English-speaking foreigners. Chilean historian Gonzalo Vial Correa also attributes the pisco sour's invention to Gringo Morris from the Peruvian Morris Bar, but with the minor difference of naming him William Morris. Morris often experimented with new drinks, and developed the pisco sour as a variant of the whiskey Sour."
+            "cocktail_description": "The pisco sour originated in Lima, Peru. It was created by bartender Victor Vaughen Morris, an American who had moved to Peru in 1904 to work in a railway company in Cerro de Pasco. Morris relocated to Lima in 1915 and, a year later, opened a saloon—Morris' Bar—which became popular with both the Peruvian upper class and English-speaking foreigners. Chilean historian Gonzalo Vial Correa also attributes the pisco sour's invention to Gringo Morris from the Peruvian Morris Bar, but with the minor difference of naming him William Morris. Morris often experimented with new drinks, and developed the pisco sour as a variant of the whiskey Sour.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/floridita.png"
         }
     },
     {
@@ -5627,7 +5645,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Sea Breeze",
-            "cocktail_description": "The cocktail was born in the late 1920s, but the recipe was different from the one used today, as gin and grenadine were used in the original Sea Breeze.[5] This was near the end of the Prohibition era. In the 1930s, a Sea Breeze had gin, apricot brandy, grenadine, and lemon juice.[6] Later, a Sea Breeze recipe would contain vodka, dry vermouth, Galliano, and blue Curaçao."
+            "cocktail_description": "The cocktail was born in the late 1920s, but the recipe was different from the one used today, as gin and grenadine were used in the original Sea Breeze.[5] This was near the end of the Prohibition era. In the 1930s, a Sea Breeze had gin, apricot brandy, grenadine, and lemon juice.[6] Later, a Sea Breeze recipe would contain vodka, dry vermouth, Galliano, and blue Curaçao.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/cranberry.png"
         }
     },
     {
@@ -5698,7 +5717,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Greyhound",
-            "cocktail_description": "The earliest known mention of a cocktail of this description is in bartender and author Harry Craddock's Savoy Cocktail Book of 1930. Craddock describes his recipe as \"...a variation of the Grapefruit Cocktail\", suggesting that such cocktails were already in common use before his book was written. His recipe consists of nothing but gin, grapefruit juice and ice."
+            "cocktail_description": "The earliest known mention of a cocktail of this description is in bartender and author Harry Craddock's Savoy Cocktail Book of 1930. Craddock describes his recipe as \"...a variation of the Grapefruit Cocktail\", suggesting that such cocktails were already in common use before his book was written. His recipe consists of nothing but gin, grapefruit juice and ice.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/cranberry.png"
         }
     },
     {
@@ -5760,7 +5780,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Sex on the Beach",
-            "cocktail_description": "Sex on the Beach is a fun, fruity cocktail that's perfect for summer. Made with vodka, peach schnapps, orange juice, and cranberry juice, it's deliciously sweet and seriously refreshing. Ideal for summer parties, cookouts, or lazy days by the pool... and surprisingly easy to make! "
+            "cocktail_description": "Sex on the Beach is a fun, fruity cocktail that's perfect for summer. Made with vodka, peach schnapps, orange juice, and cranberry juice, it's deliciously sweet and seriously refreshing. Ideal for summer parties, cookouts, or lazy days by the pool... and surprisingly easy to make! ",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/sotb.png"
         }
     },
     {
@@ -5849,7 +5870,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Singapore Sling",
-            "cocktail_description": "The Singapore Sling is a gin-based sling cocktail from Singapore. This long drink was developed sometime before 1915 by bartender Ngiam Tong Boon (traditional Chinese: 嚴崇文; simplified Chinese: 严崇文; pinyin: Yán Chóngwén; Wade–Giles: Yen Ch'ung-wen), who was working at the Long Bar in Raffles Hotel, Singapore. It was initially called the gin sling[1] – a sling was originally a North American drink composed of spirit and water, sweetened and flavored."
+            "cocktail_description": "The Singapore Sling is a gin-based sling cocktail from Singapore. This long drink was developed sometime before 1915 by bartender Ngiam Tong Boon (traditional Chinese: 嚴崇文; simplified Chinese: 严崇文; pinyin: Yán Chóngwén; Wade–Giles: Yen Ch'ung-wen), who was working at the Long Bar in Raffles Hotel, Singapore. It was initially called the gin sling[1] – a sling was originally a North American drink composed of spirit and water, sweetened and flavored.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/americano.png"
         }
     },
     {
@@ -5940,7 +5962,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Tequila sunrise",
-            "cocktail_description": "The tequila sunrise is a cocktail made of tequila, orange juice, and grenadine syrup. It's served unmixed in a tall glass. The modern drink originates from Sausalito, California in the early 1970s after an earlier one created in the 1930s in Phoenix, Arizona. The cocktail is named for its appearance when served—with gradations of color resembling a sunrise."
+            "cocktail_description": "The tequila sunrise is a cocktail made of tequila, orange juice, and grenadine syrup. It's served unmixed in a tall glass. The modern drink originates from Sausalito, California in the early 1970s after an earlier one created in the 1930s in Phoenix, Arizona. The cocktail is named for its appearance when served—with gradations of color resembling a sunrise.",
+            "cocktail_image": "https://s3.console.aws.amazon.com/s3/object/considerthedrink?region=us-east-2&prefix=sunrise.png"
         }
     },
     {
@@ -6026,7 +6049,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Vesper",
-            "cocktail_description": "The drink was invented and named by Ian Fleming in the 1953 James Bond novel Casino Royale."
+            "cocktail_description": "The drink was invented and named by Ian Fleming in the 1953 James Bond novel Casino Royale.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/Martini.png"
         }
     },
     {
@@ -6097,7 +6121,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Zombie",
-            "cocktail_description": "Legend has it that Donn Beach originally concocted the Zombie to help a hung-over customer get through a business meeting.[3][4] The customer returned several days later to complain that he had been turned into a zombie for his entire trip. Its smooth, fruity taste works to conceal its extremely high alcoholic content. Don the Beachcomber restaurants limit their customers to two Zombies apiece because of their potency, which Beach said could make one \"like the walking dead.\""
+            "cocktail_description": "Legend has it that Donn Beach originally concocted the Zombie to help a hung-over customer get through a business meeting.[3][4] The customer returned several days later to complain that he had been turned into a zombie for his entire trip. Its smooth, fruity taste works to conceal its extremely high alcoholic content. Don the Beachcomber restaurants limit their customers to two Zombies apiece because of their potency, which Beach said could make one \"like the walking dead.\"",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/zombie.png"
         }
     },
     {
@@ -6229,7 +6254,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Tom Collins",
-            "cocktail_description": "The Tom Collins is a Collins cocktail made from gin, lemon juice, sugar, and carbonated water. First memorialized in writing in 1876 by Jerry Thomas, \"the father of American mixology\", this \"gin and sparkling lemonade\" drink is typically served in a Collins glass over ice. "
+            "cocktail_description": "The Tom Collins is a Collins cocktail made from gin, lemon juice, sugar, and carbonated water. First memorialized in writing in 1876 by Jerry Thomas, \"the father of American mixology\", this \"gin and sparkling lemonade\" drink is typically served in a Collins glass over ice. ",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/tom_collins.png"
         }
     },
     {
@@ -6316,7 +6342,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Bee's Knees",
-            "cocktail_description": " Bees Knees (or Bee's Knees) is a Prohibition Era cocktail made with Gin, fresh lemon juice, and honey. It is served shaken and chilled, often with a lemon twist. The name comes from prohibition-era slang meaning \"the best.\""
+            "cocktail_description": " Bees Knees (or Bee's Knees) is a Prohibition Era cocktail made with Gin, fresh lemon juice, and honey. It is served shaken and chilled, often with a lemon twist. The name comes from prohibition-era slang meaning \"the best.\"",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/crusta.png"
         }
     },
     {
@@ -6394,7 +6421,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Bramble",
-            "cocktail_description": "The Bramble was created in London, in 1984,[1] by Dick Bradsell. At the time, Bradsell worked at a bar in Soho called Fred's Club, and he wanted to create a British cocktail. Memories of going blackberrying in his childhood on the Isle of Wight provided the inspiration for the Bramble."
+            "cocktail_description": "The Bramble was created in London, in 1984,[1] by Dick Bradsell. At the time, Bradsell worked at a bar in Soho called Fred's Club, and he wanted to create a British cocktail. Memories of going blackberrying in his childhood on the Isle of Wight provided the inspiration for the Bramble.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/bramble.png"
         }
     },
     {
@@ -6488,7 +6516,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Dark 'n' Stormy",
-            "cocktail_description": "Dark ’n’ Stormy is a highball cocktail made with dark rum (the \"dark\") and ginger beer (the \"stormy\") served over ice and garnished with a slice of lime.[1] Lime juice and simple syrup are also frequently added. This drink is very similar to the Moscow mule except that the Dark 'n' Stormy has dark rum instead of vodka. The original Dark 'n' Stormy was made with Gosling Black Seal rum and Barritt's Ginger Beer, but after the partnership between the two failed and the companies parted ways, Goslings created their own ginger beer."
+            "cocktail_description": "Dark ’n’ Stormy is a highball cocktail made with dark rum (the \"dark\") and ginger beer (the \"stormy\") served over ice and garnished with a slice of lime.[1] Lime juice and simple syrup are also frequently added. This drink is very similar to the Moscow mule except that the Dark 'n' Stormy has dark rum instead of vodka. The original Dark 'n' Stormy was made with Gosling Black Seal rum and Barritt's Ginger Beer, but after the partnership between the two failed and the companies parted ways, Goslings created their own ginger beer.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/horses_neck.png"
         }
     },
     {
@@ -6559,7 +6588,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Espresso Martini",
-            "cocktail_description": "There are several claims for the origin of the espresso martini. One of the more common claims is that it was created by Dick Bradsell in the late 1980s while at Freds Club in London for a young lady who asked for something that would, \"Wake me up, and then fuck me up.\" Bradsell has confirmed this in a widely-circulated video.[3] Bradsell has also been quoted about the circumstances of his invention of the drink, \"The coffee machine at the Soho Brasseries was right next to the station where I served drinks. It was a nightmare, as there were coffee grounds everywhere, so coffee was very much on my mind. And it was all about vodka back then – it was all people were drinking.\""
+            "cocktail_description": "There are several claims for the origin of the espresso martini. One of the more common claims is that it was created by Dick Bradsell in the late 1980s while at Freds Club in London for a young lady who asked for something that would, \"Wake me up, and then fuck me up.\" Bradsell has confirmed this in a widely-circulated video.[3] Bradsell has also been quoted about the circumstances of his invention of the drink, \"The coffee machine at the Soho Brasseries was right next to the station where I served drinks. It was a nightmare, as there were coffee grounds everywhere, so coffee was very much on my mind. And it was all about vodka back then – it was all people were drinking.\"",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/brooklyn.png"
         }
     },
     {
@@ -6646,7 +6676,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"French Martini",
-            "cocktail_description": "The French martini was invented in the 1980s at one of Keith McNally's New York City bars. It next appeared on the drinks menu at McNally's Balthazar in SoHo in 1996. The cocktail was produced during the 1980s–1990s cocktail renaissance. The key ingredient that makes a martini \"French\" is Chambord, a black raspberry liqueur that has been produced in France since 1685."
+            "cocktail_description": "The French martini was invented in the 1980s at one of Keith McNally's New York City bars. It next appeared on the drinks menu at McNally's Balthazar in SoHo in 1996. The cocktail was produced during the 1980s–1990s cocktail renaissance. The key ingredient that makes a martini \"French\" is Chambord, a black raspberry liqueur that has been produced in France since 1685.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/jack_rose.png"
         }
     },
     {
@@ -6724,7 +6755,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Lemon Drop",
-            "cocktail_description": "The lemon drop was invented sometime in the 1970s by Norman Jay Hobday, the founder and proprietor of Henry Africa's, a fern bar in the Russian Hill neighborhood of San Francisco, California that opened in 1969. It was originally served in a cocktail glass. The Lemon Drop was most likely named after lemon drop candy. After its invention, the drink swiftly spread to many San Francisco saloons. In the early 1990s, it was often prepared as a shooter or served in a shot glass."
+            "cocktail_description": "The lemon drop was invented sometime in the 1970s by Norman Jay Hobday, the founder and proprietor of Henry Africa's, a fern bar in the Russian Hill neighborhood of San Francisco, California that opened in 1969. It was originally served in a cocktail glass. The Lemon Drop was most likely named after lemon drop candy. After its invention, the drink swiftly spread to many San Francisco saloons. In the early 1990s, it was often prepared as a shooter or served in a shot glass.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/sidecar.png"
         }
     },
     {
@@ -6810,7 +6842,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Naked and Famous",
-            "cocktail_description": "Joaquín Simó originally created this variation while at New York speakeasy Death & Co. He describes it as “the bastard child born out of an illicit Oaxacan love affair between the classic Last Word and the Paper Plane,” which is Sam Ross’s variation on the Last Word. Opt for an aggressively smoky mezcal for best effect"
+            "cocktail_description": "Joaquín Simó originally created this variation while at New York speakeasy Death & Co. He describes it as “the bastard child born out of an illicit Oaxacan love affair between the classic Last Word and the Paper Plane,” which is Sam Ross’s variation on the Last Word. Opt for an aggressively smoky mezcal for best effect",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/martinez.png"
         }
     },
     {
@@ -6897,7 +6930,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Last Word",
-            "cocktail_description": "The Last Word was one of the first pre-Prohibition drinks to lead the cocktail revival of the early aughts. Murray Stenson of Seattle’s Zig Zag unearthed the equal-parts classic—gin, maraschino liqueur, Chartreuse and lime juice—in Ted Saucier’s 1962 book, “Bottoms Up.” Before long, the Last Word was a staple in cocktail bars across the country, revered for its heady balance of sweet, sour and herbal flavors. Whether you hew to the original recipe or stake out your own variation (mezcal can be a worthy substitute for gin), one thing is certain: The Last Word will leave you, um, speechless."
+            "cocktail_description": "The Last Word was one of the first pre-Prohibition drinks to lead the cocktail revival of the early aughts. Murray Stenson of Seattle’s Zig Zag unearthed the equal-parts classic—gin, maraschino liqueur, Chartreuse and lime juice—in Ted Saucier’s 1962 book, “Bottoms Up.” Before long, the Last Word was a staple in cocktail bars across the country, revered for its heady balance of sweet, sour and herbal flavors. Whether you hew to the original recipe or stake out your own variation (mezcal can be a worthy substitute for gin), one thing is certain: The Last Word will leave you, um, speechless.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/grasshopper.png"
         }
     },
     {
@@ -6984,7 +7018,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Old Cuban",
-            "cocktail_description": "The Old Cuban was invented by Audrey Saunders in 2001, and quickly made its way into bar books across America. Like all great classic cocktails, the recipe is deceptively simple, requiring just rum, sparkling wine, lime, mint and bitters. It shares heritage with two other better-known classics, the storied Mojito and French 75, a gin- and sparkling wine-based drink."
+            "cocktail_description": "The Old Cuban was invented by Audrey Saunders in 2001, and quickly made its way into bar books across America. Like all great classic cocktails, the recipe is deceptively simple, requiring just rum, sparkling wine, lime, mint and bitters. It shares heritage with two other better-known classics, the storied Mojito and French 75, a gin- and sparkling wine-based drink.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/brooklyn.png"
         }
     },
     {
@@ -7105,7 +7140,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Paloma",
-            "cocktail_description": "The paloma (Spanish for \"dove\") is a tequila-based cocktail. This drink is most commonly prepared by mixing tequila, lime juice, and a grapefruit-flavored soda such as Fresca, Squirt, or Jarritos and served on the rocks with a lime wedge. Adding salt to the rim of the glass is also an option."
+            "cocktail_description": "The paloma (Spanish for \"dove\") is a tequila-based cocktail. This drink is most commonly prepared by mixing tequila, lime juice, and a grapefruit-flavored soda such as Fresca, Squirt, or Jarritos and served on the rocks with a lime wedge. Adding salt to the rim of the glass is also an option.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/paloma.png"
         }
     },
     {
@@ -7192,7 +7228,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Paper Plane",
-            "cocktail_description": "The Paper Plane is an IBA official cocktail. Developed around 2007 by Sasha Petraske and Sam Ross of Milk & Honey for their former colleague Toby Maloney's Chicago bar The Violet Hour, the recipe is a riff on the classic Last Word. The cocktail consists of equal parts Bourbon whiskey, Aperol, the amaro Amaro Nonino, and lemon juice. The cocktail's name is a reference to the M.I.A. track \"Paper Planes,\" which was apparently a guilty pleasure of Petraske's"
+            "cocktail_description": "The Paper Plane is an IBA official cocktail. Developed around 2007 by Sasha Petraske and Sam Ross of Milk & Honey for their former colleague Toby Maloney's Chicago bar The Violet Hour, the recipe is a riff on the classic Last Word. The cocktail consists of equal parts Bourbon whiskey, Aperol, the amaro Amaro Nonino, and lemon juice. The cocktail's name is a reference to the M.I.A. track \"Paper Planes,\" which was apparently a guilty pleasure of Petraske's",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/martinez.png"
         }
     },
     {
@@ -7279,7 +7316,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Penicillin",
-            "cocktail_description": "The drink was created in 2005 by New York bartender Sam Ross. Its name derives from the drug penicillin hinting to the medicinal properties of some of its ingredients, with suggested effects similar to that of a hot toddy which is said to relieve the symptoms of cold and flu. It was first served in 2005 at Milk & Honey."
+            "cocktail_description": "The drink was created in 2005 by New York bartender Sam Ross. Its name derives from the drug penicillin hinting to the medicinal properties of some of its ingredients, with suggested effects similar to that of a hot toddy which is said to relieve the symptoms of cold and flu. It was first served in 2005 at Milk & Honey.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/Sazerac.png"
         }
     },
     {
@@ -7384,7 +7422,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"South Side",
-            "cocktail_description": "Its origins are subject to speculation. It has been proposed that it gets its name from either the South Side district of the city of Chicago, Illinois, or from the Southside Sportsmen's Club on Long Island.[1] The drink may have been the preferred beverage of Al Capone, whose gang dominated Chicago's South Side. The gin imported by Capone's rivals on the North Side of Chicago was smooth, and usually consumed with ginger ale. However, the gin consumed by Al Capone's gang had a rougher finish, and required more sweeteners to make it palatable. Thus the South Side was born."
+            "cocktail_description": "Its origins are subject to speculation. It has been proposed that it gets its name from either the South Side district of the city of Chicago, Illinois, or from the Southside Sportsmen's Club on Long Island.[1] The drink may have been the preferred beverage of Al Capone, whose gang dominated Chicago's South Side. The gin imported by Capone's rivals on the North Side of Chicago was smooth, and usually consumed with ginger ale. However, the gin consumed by Al Capone's gang had a rougher finish, and required more sweeteners to make it palatable. Thus the South Side was born.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/grasshopper.png"
         }
     },
     {
@@ -7471,7 +7510,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Aperol Spritz",
-            "cocktail_description": "Spritz was born during the period of the Habsburg domination in Veneto in the 1800s, under the Kingdom of Lombardy–Venetia. The soldiers, but also the various merchants, diplomats and employees of the Habsburg Empire in Veneto became quickly accustomed to drinking local wine in the taverns, but they were not familiar with the wide variety of wines from the Veneto, and the alcohol content was higher than they were accustomed to. The newcomers started to ask the local hosts to spray a drop of water into the wine (spritzen, in German) to make the wines lighter; the real original spritz was composed of sparkling white wine or red wine diluted with fresh water. The Italian aperitif Aperol was created in Padua in 1919 by the Barbieri brothers. The original recipe has supposedly remained unchanged over time but it wasn't until the 1950s that Aperol Spritz became a popular alternative to the usual Venetian mix of white wine and soda."
+            "cocktail_description": "Spritz was born during the period of the Habsburg domination in Veneto in the 1800s, under the Kingdom of Lombardy–Venetia. The soldiers, but also the various merchants, diplomats and employees of the Habsburg Empire in Veneto became quickly accustomed to drinking local wine in the taverns, but they were not familiar with the wide variety of wines from the Veneto, and the alcohol content was higher than they were accustomed to. The newcomers started to ask the local hosts to spray a drop of water into the wine (spritzen, in German) to make the wines lighter; the real original spritz was composed of sparkling white wine or red wine diluted with fresh water. The Italian aperitif Aperol was created in Padua in 1919 by the Barbieri brothers. The original recipe has supposedly remained unchanged over time but it wasn't until the 1950s that Aperol Spritz became a popular alternative to the usual Venetian mix of white wine and soda.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/aperol.png"
         }
     },
     {
@@ -7542,7 +7582,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Bensonhurst",
-            "cocktail_description": "An alternative to the Brooklyn cocktail, this cocktail is a play on the Brooklyn and chooses neighborhood within as its name."
+            "cocktail_description": "An alternative to the Brooklyn cocktail, this cocktail is a play on the Brooklyn and chooses neighborhood within as its name.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/manhattan.png"
         }
     },
     {
@@ -7614,7 +7655,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Martini, Vodka (Dry)",
-            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became a common drink order. Over the course of the 20th century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1. During the latter part of the 20th century, 6:1, 8:1, 12:1, 15:1 (the \"Montgomery\", after British Field Marshal Bernard Montgomery's supposed penchant for attacking only when in possession of great numerical superiority), or even 50:1 or 100:1 Martinis became considered the norm."
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became a common drink order. Over the course of the 20th century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1. During the latter part of the 20th century, 6:1, 8:1, 12:1, 15:1 (the \"Montgomery\", after British Field Marshal Bernard Montgomery's supposed penchant for attacking only when in possession of great numerical superiority), or even 50:1 or 100:1 Martinis became considered the norm.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/Martini.png"
         }
     },
     {
@@ -7697,7 +7739,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Martini, Vodka (Dirty)",
-            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/martini_dirty.png"
         }
     },
     {
@@ -7773,7 +7816,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Martini, Vodka (Extra Dry)",
-            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became a common drink order. Over the course of the 20th century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1. During the latter part of the 20th century, 6:1, 8:1, 12:1, 15:1 (the \"Montgomery\", after British Field Marshal Bernard Montgomery's supposed penchant for attacking only when in possession of great numerical superiority), or even 50:1 or 100:1 Martinis became considered the norm."
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became a common drink order. Over the course of the 20th century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1. During the latter part of the 20th century, 6:1, 8:1, 12:1, 15:1 (the \"Montgomery\", after British Field Marshal Bernard Montgomery's supposed penchant for attacking only when in possession of great numerical superiority), or even 50:1 or 100:1 Martinis became considered the norm.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/Martini.png"
         }
     },
     {
@@ -7847,7 +7891,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Martini, Vodka (Extra Dirty)",
-            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/martini_dirty.png"
         }
     },
     {
@@ -7923,7 +7968,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Martini, Gin (Extra Dry)",
-            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became a common drink order. Over the course of the 20th century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1. During the latter part of the 20th century, 6:1, 8:1, 12:1, 15:1 (the \"Montgomery\", after British Field Marshal Bernard Montgomery's supposed penchant for attacking only when in possession of great numerical superiority), or even 50:1 or 100:1 Martinis became considered the norm."
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became a common drink order. Over the course of the 20th century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1. During the latter part of the 20th century, 6:1, 8:1, 12:1, 15:1 (the \"Montgomery\", after British Field Marshal Bernard Montgomery's supposed penchant for attacking only when in possession of great numerical superiority), or even 50:1 or 100:1 Martinis became considered the norm.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/Martini.png"
         }
     },
     {
@@ -7997,7 +8043,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Martini, Gin (Extra Dirty)",
-            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/martini_dirty.png"
         }
     },
     {
@@ -8073,7 +8120,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Martini, Gin (Wet)",
-            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became a common drink order. Over the course of the 20th century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1. During the latter part of the 20th century, 6:1, 8:1, 12:1, 15:1 (the \"Montgomery\", after British Field Marshal Bernard Montgomery's supposed penchant for attacking only when in possession of great numerical superiority), or even 50:1 or 100:1 Martinis became considered the norm."
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dry martini is made with dry, white vermouth. By the Roaring Twenties, it became a common drink order. Over the course of the 20th century, the amount of vermouth steadily dropped. During the 1930s the ratio was 3:1 (gin to vermouth), and during the 1940s the ratio was 4:1. During the latter part of the 20th century, 6:1, 8:1, 12:1, 15:1 (the \"Montgomery\", after British Field Marshal Bernard Montgomery's supposed penchant for attacking only when in possession of great numerical superiority), or even 50:1 or 100:1 Martinis became considered the norm.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/Martini.png"
         }
     },
     {
@@ -8156,7 +8204,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Martini, Vodka (Wet)",
-            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+            "cocktail_description": "The exact origin of the martini is unclear. The name may derive from the Martini brand of vermouth. Another popular theory suggests it evolved from a cocktail called the Martinez served sometime in the early 1860s at the Occidental Hotel in San Francisco, which people frequented before taking an evening ferry to the nearby town of Martinez, California. Alternatively, residents of Martinez say a bartender in their town created the drink, while another source indicates that the drink was named after the town. A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/Martini.png"
         }
     },
     {
@@ -8208,14 +8257,14 @@
     {
         "model":"cocktail.Garnish",
         "fields": {
-            "cocktail": 96,
+            "cocktail": 97,
             "garnish": 53
         }
     },
     {
         "model":"cocktail.Garnish",
         "fields": {
-            "cocktail": 96,
+            "cocktail": 97,
             "garnish": 123
         }
     },
@@ -8239,7 +8288,8 @@
         "model": "cocktail.Cocktail",
         "fields": {
             "cocktail_name":"Salty Dog",
-            "cocktail_description": "The earliest known mention of a cocktail of this description is in bartender and author Harry Craddock's Savoy Cocktail Book of 1930. Craddock describes his recipe as \"...a variation of the Grapefruit Cocktail\", suggesting that such cocktails were already in common use before his book was written. His recipe consists of nothing but gin, grapefruit juice and ice."
+            "cocktail_description": "The earliest known mention of a cocktail of this description is in bartender and author Harry Craddock's Savoy Cocktail Book of 1930. Craddock describes his recipe as \"...a variation of the Grapefruit Cocktail\", suggesting that such cocktails were already in common use before his book was written. His recipe consists of nothing but gin, grapefruit juice and ice.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/cranberry.png"
         }
     },
     {
