@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { change_sort_by, loadAllCocktails, updateClicked } from '../../store/cocktails'
+import { change_sort_by, loadAllCocktails, updateClicked, clearAllTags } from '../../store/cocktails'
 import CocktailCard from './CocktailCard'
 import Pagination from '@material-ui/lab/Pagination';
 
@@ -18,6 +18,10 @@ const AllCocktails = () => {
         dispatch(loadAllCocktails(page, 12, sort, tags))
     // eslint-disable-next-line
     }, [page, sort, tags])
+
+    const handleClear = () => {
+        dispatch(clearAllTags())
+    }
 
     const handleChange = (event, value) => {
         let page_num = Number(value)
@@ -43,18 +47,22 @@ const AllCocktails = () => {
                         <option value="name_desc">Z-A</option>
                     </select>
                 </div>
-                {cocktails.map(cocktail => <CocktailCard key={`card-${cocktail}`}
-                                                        cocktail={cocktail} />)}
+                {cocktails.map(cocktail => <CocktailCard key={`card-${cocktail.name}`}
+                                                        cocktailName={cocktail.name}
+                                                        cocktailImage={cocktail.image} />)}
                 <div className="pagination-container">
                     <Pagination count={9} onChange={handleChange} />
                 </div>
             </div>
             <div className="CocktailCard-Container__right shadow">
                 <div className="CocktailCard-Container__right__inner">
-                <h1>Tags</h1>
+                <div className="tag-title">
+                    <span>Tags</span>
+                    <span className="tag-clear" onClick={handleClear}>Clear</span>
+                </div>
                 {tags.map(tag => tag.clicked ?
-                                  <div key={`tag-${tag.name}`} onClick={handleClick}  className="clicked" >{tag.name}</div>
-                                : <div key={`tag-${tag.name}`} onClick={handleClick} >{tag.name}</div> )}
+                                  <div key={`tag-${tag.name}`} onClick={handleClick}  className="clicked tag" >{tag.name}</div>
+                                : <div key={`tag-${tag.name}`} onClick={handleClick} className="tag" >{tag.name}</div> )}
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ const LOAD_ALL_INGREDIENTS = 'ctd/ingredients/LOAD_ALL_INGREDIENTS'
 const SET_INGREDIENT_RESULTS = 'ctd/ingredients/SET_INGREDIENT_RESULTS'
 const Add_INGREDIENT_TO_FILTER = 'ctd/ingredients/Add_INGREDIENT_TO_FILTER'
 const REMOVE_INGREDIENT_FROM_FILTER = 'ctd/ingredients/REMOVE_INGREDIENT_FROM_FILTER'
+const CLEAR_ALL_ADDED_INGREDIENTS = 'ctd/ingredients/CLEAR_ALL_ADDED_INGREDIENTS'
 
 const loadIngredients = (ingredients) => {
     return {
@@ -21,6 +22,12 @@ const addIngredientToFilt = (ingredient) => {
     return {
         type: Add_INGREDIENT_TO_FILTER,
         ingredient
+    }
+}
+
+const clearAll = () => {
+    return {
+        type: CLEAR_ALL_ADDED_INGREDIENTS
     }
 }
 
@@ -53,6 +60,10 @@ export const removeIngredientFromFilter = (ingredient) => async dispatch => {
     dispatch(remIngredientFromFilter(ingredient))
 }
 
+export const clearAllAddedIngredients = () => async dispatch => {
+    dispatch(clearAll())
+}
+
 export default function reducer(state={ ingredients:[], results: [], filter:[] }, action) {
     let newState;
     switch (action.type) {
@@ -77,6 +88,10 @@ export default function reducer(state={ ingredients:[], results: [], filter:[] }
           newState.ingredients = [...newState.ingredients]
           newState.results = [...newState.results]
           newState.filter = [...newState.filter.filter(ing => ing !== action.ingredient)]
+          return newState
+      case CLEAR_ALL_ADDED_INGREDIENTS:
+          newState = {...state}
+          newState.filter = []
           return newState
       default:
         return state;

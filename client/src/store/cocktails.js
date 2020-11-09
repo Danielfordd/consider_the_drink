@@ -5,6 +5,13 @@ const SEARCH_COCKTAIL_BY_QUERY = 'ctd/cocktails/SEARCH_COCKTAIL_BY_QUERY'
 const CHANGE_SORT = 'ctd/cocktails/CHANGE_SORT'
 const LOAD_COCKTAIL_TAGS = 'ctd/cocktails/LOAD_COCKTAIL_TAGS'
 const UPDATE_TAG_CLICKED = 'ctd/cocktails/UPDATE_TAG_CLICKED'
+const CLEAR_ALL_TAGS = 'ctd/cocktails/CLEAR_ALL_TAGS'
+
+const clear_tags = () => {
+  return {
+    type: CLEAR_ALL_TAGS
+  }
+}
 
 const update_clicked = (tag) => {
   return {
@@ -53,6 +60,10 @@ const change_sort = (sort) => {
     type: CHANGE_SORT,
     sort
   }
+}
+
+export const clearAllTags = () => async dispatch => {
+  dispatch(clear_tags())
 }
 
 export const loadCocktailTags = () => async dispatch => {
@@ -146,7 +157,8 @@ const defaultState = {
                           instructions:[],
                           recipe:[],
                           glassware:[],
-                          serving_styles:[]
+                          serving_styles:[],
+                          similar: []
                         },
                       sort: "name_asc",
                       tags: [{name:"", clicked:false}]
@@ -170,7 +182,8 @@ export default function reducer(state=defaultState, action) {
                             instructions:[],
                             recipe:[],
                             glassware:[],
-                            serving_styles:[]
+                            serving_styles:[],
+                            similar: []
                            }
         newState.cocktails = [...newState.cocktails]
         newState.matches = {exact: [...action.results.exact],
@@ -198,6 +211,13 @@ export default function reducer(state=defaultState, action) {
             tag.clicked = !tag.clicked
           }
           return {...tag}
+        })
+        return newState
+      case CLEAR_ALL_TAGS:
+        newState = {...state}
+        newState.tags = newState.tags.map(tag => {
+          tag.clicked = false
+          return tag
         })
         return newState
       default:

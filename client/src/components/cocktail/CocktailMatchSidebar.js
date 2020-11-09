@@ -23,9 +23,12 @@ const CocktailMatchSidebar = () => {
 
     return (
     <div className="sidebar-container shadow">
-        {exact.map(e => <div onClick={handleClick} >{e}</div>)}
-        {one_off.map(e => <div onClick={handleClick} >{e}</div>)}
-        {two_off.map(e => <div onClick={handleClick} >{e}</div>)}
+        {exact.length > 0 ? <div className="match-title">Make now</div> : <div></div>}
+        {exact.map(e => <div onClick={handleClick} className="match-result">{e}</div>)}
+        {one_off.length > 0 ? <div className="match-title">Just one more ingredient</div> : <div></div>}
+        {one_off.map(e => <div onClick={handleClick} className="match-result">{e}</div>)}
+        {two_off.length > 0 ? <div className="match-title" >Two more ingredients</div> : <div></div>}
+        {two_off.map(e => <div onClick={handleClick} className="match-result">{e}</div>)}
     </div>
     )
 }
