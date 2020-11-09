@@ -38,7 +38,35 @@ def cocktail_data(request, cocktail_name):
     served = [res.served.served_name
               for res in list(result.served_set.all())]
 
-    garnishes = 1
+    garnishes = [res.garnish.ingredient_name
+                 for res in list(result.garnish_set.all())]
+
+    ingredients = [rec['ingredient'] for rec in recipe]
+
+    allCocktails = list(Cocktail.objects.all())
+    cts = {cocktail.cocktail_name: { 'image': cocktail.cocktail_image, 'ingredients': [i.ingredient.ingredient_name
+                                    for i in cocktail.recipe_set.all()]}
+           for cocktail in allCocktails}
+
+    res = []
+    rone = []
+    rtwo = []
+    for ct in cts:
+        print(ct)
+        ingCount = 0
+        for ing in ingredients:
+            if ing in cts[ct]['ingredients']:
+                ingCount += 1
+                if (ingCount >= len(cts[ct])) & (ct != cocktail_name):
+                    res.append({'cocktail': ct, 'image': cts[ct]['image']})
+                    break
+        if ingCount == (len(cts[ct]['ingredients']) - 1) > 0:
+            rone.append({'cocktail': ct, 'image': cts[ct]['image']})
+        elif ingCount == (len(cts[ct]['ingredients']) - 2) > 0:
+            rtwo.append({'cocktail': ct, 'image': cts[ct]['image']})
+
+    [rone.append(cocktail) for cocktail in rtwo]
+    print(rone)
     return JsonResponse({'name': result.cocktail_name,
                          'image': result.cocktail_image,
                          'description': result.cocktail_description,
@@ -46,7 +74,8 @@ def cocktail_data(request, cocktail_name):
                          'recipe': recipe,
                          'garnish': garnishes,
                          'glassware': glassware,
-                         'serving_styles': served})
+                         'serving_styles': served,
+                         'similar': rone})
 
 
 def cocktail_all(request,
