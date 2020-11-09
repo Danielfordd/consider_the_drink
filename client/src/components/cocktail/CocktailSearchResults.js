@@ -15,7 +15,7 @@ const CocktailSearchResults = () => {
     }, [query])
 
     return (
-        <div className="CocktailCard-Container" >
+        <div className="Cocktail-search-results-Container" >
         {cocktails.map( cocktail => <CocktailCard key={`resultcard-${cocktail.name}`} cocktail={cocktail.name} />)}
         </div>
     )

@@ -15,7 +15,7 @@ const AllCocktails = () => {
     const { page } = useParams()
 
     useEffect(()=>{
-        dispatch(loadAllCocktails(page, 20, sort, tags))
+        dispatch(loadAllCocktails(page, 12, sort, tags))
     // eslint-disable-next-line
     }, [page, sort, tags])
 
@@ -46,7 +46,7 @@ const AllCocktails = () => {
                 {cocktails.map(cocktail => <CocktailCard key={`card-${cocktail}`}
                                                         cocktail={cocktail} />)}
                 <div className="pagination-container">
-                    <Pagination count={5} onChange={handleChange} />
+                    <Pagination count={9} onChange={handleChange} />
                 </div>
             </div>
             <div className="CocktailCard-Container__right shadow">

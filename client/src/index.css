@@ -430,3 +430,14 @@ main {
 .homepage-welcome{
     background-color: #F0F0F0;
 }
+
+
+.Cocktail-search-results-Container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-self: center;
+    width: 80%;
+    max-width: 1100px;
+    margin-top: 25px;
+}
