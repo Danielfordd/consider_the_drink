@@ -13,6 +13,7 @@ djangorestframework-simplejwt = "*"
 djangorestframework = "*"
 djangorestframework-jwt = "*"
 django-cors-headers = "*"
+simplejson = "*"
 
 [requires]
 python_version = "3.8"

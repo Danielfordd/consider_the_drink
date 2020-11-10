@@ -84,8 +84,6 @@ class CocktailNote(models.Model):
     cocktail = models.ForeignKey(Cocktail, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     note = models.TextField()
-    date_edited = models.DateTimeField
-    date_created = models.DateTimeField
 
     class Meta:
         db_table = "cocktail_notes"

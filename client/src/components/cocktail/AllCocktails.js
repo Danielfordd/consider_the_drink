@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
+import { load_favorites } from '../../store/bar'
 import { change_sort_by, loadAllCocktails, updateClicked, clearAllTags } from '../../store/cocktails'
 import CocktailCard from './CocktailCard'
 import Pagination from '@material-ui/lab/Pagination';
@@ -12,10 +13,12 @@ const AllCocktails = () => {
     const cocktails = useSelector(state => state.cocktails.cocktails)
     const sort = useSelector(state => state.cocktails.sort)
     const tags = useSelector(state => state.cocktails.tags)
+    const user_id = useSelector(state => state.authentication.user_id)
     const { page } = useParams()
 
     useEffect(()=>{
         dispatch(loadAllCocktails(page, 12, sort, tags))
+        dispatch(load_favorites(user_id))
     // eslint-disable-next-line
     }, [page, sort, tags])
 

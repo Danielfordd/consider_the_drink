@@ -1,18 +1,21 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { loadCocktailDetails } from '../../store/cocktails'
+import { loadCocktailDetails, loadAllNotes } from '../../store/cocktails'
 import CocktailCard from './CocktailCard'
-
+import FavoriteButton from './FavoriteButton'
+import CocktailNote from './CocktailNote'
+import CocktailNoteWrite from './CocktailNoteWrite'
 
 const CocktailDetailPage = () =>{
     const { cocktail } = useParams()
     const dispatch = useDispatch()
     const cocktailInfo = useSelector(state => state.cocktails.current)
+    const userId = useSelector(state => state.authentication.user_id)
 
     useEffect(()=>{
         dispatch(loadCocktailDetails(cocktail))
-    // eslint-disable-next-line
+        // eslint-disable-next-line
     },[cocktail])
 
     return (
@@ -44,6 +47,10 @@ const CocktailDetailPage = () =>{
                     </div>
                 </div>
                 <div className="cocktail-details-side shadow">
+                    <span>My Notes</span>
+                    <FavoriteButton cocktailId={cocktailInfo.id} userId={userId}/>
+                    <CocktailNote cocktailId={cocktailInfo.id} />
+                    <CocktailNoteWrite cocktailId={cocktailInfo.id}/>
                 </div>
             </div>
 

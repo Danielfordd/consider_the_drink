@@ -1,3 +1,5 @@
+import Cookies from "js-cookie";
+
 const LOAD_SINGLE_COCKTAIL = 'ctd/cocktails/LOAD_SINGLE_COCKTAIL'
 const LOAD_ALL_COCKTAILS = 'ctd/cocktails/LOAD_ALL_COCKTAILS'
 const SEARCH_COCKTAIL_BY_INGREDIENTS = 'ctd/cocktails/SEARCH_COCKTAIL_BY_INGREDIENTS'
@@ -6,6 +8,8 @@ const CHANGE_SORT = 'ctd/cocktails/CHANGE_SORT'
 const LOAD_COCKTAIL_TAGS = 'ctd/cocktails/LOAD_COCKTAIL_TAGS'
 const UPDATE_TAG_CLICKED = 'ctd/cocktails/UPDATE_TAG_CLICKED'
 const CLEAR_ALL_TAGS = 'ctd/cocktails/CLEAR_ALL_TAGS'
+const CHECK_FAVORITED = 'ctd/cocktails/CHECK_FAVORITED'
+const LOAD_ALL_NOTES = 'ctd/cocktails/LOAD_ALL_NOTES'
 
 const clear_tags = () => {
   return {
@@ -59,6 +63,71 @@ const change_sort = (sort) => {
   return {
     type: CHANGE_SORT,
     sort
+  }
+}
+
+const check_fav = (favorited) => {
+  return {
+    type: CHECK_FAVORITED,
+    favorited
+  }
+}
+
+const all_notes = (notes) => {
+  return {
+    type: LOAD_ALL_NOTES,
+    notes
+  }
+}
+
+export const loadAllNotes = (userId, cocktailId) => async dispatch => {
+  const response = await fetch(`/api/user/notes/all/${userId}/${cocktailId}`)
+
+  if (response.ok) {
+    const { notes } = await response.json()
+    dispatch(all_notes(notes))
+  }
+}
+
+export const saveNote = (note, cocktailId, userId) => async dispatch => {
+  const csrftoken = Cookies.get('csrftoken');
+  const response = await fetch("/api/user/notes/create", {
+    method:"POST",
+    headers: {
+      'Content-Type': 'application/json',
+      'X-CSRFTOKEN': csrftoken
+    },
+    body: JSON.stringify({'note': note, 'cocktailId':cocktailId, 'userId': userId})
+  })
+}
+
+export const check_favorited = (cocktailId, userId) => async dispatch => {
+  if (!cocktailId || !userId) {
+    return
+  }
+  const response = await fetch (`/api/user/fav/${cocktailId}/${userId}`)
+
+  if (response.ok) {
+    const { favorited } = await response.json()
+    dispatch(check_fav(favorited))
+  }
+}
+
+export const favoriteCocktail = (cocktailId, userId) => async dispatch => {
+  const csrftoken = Cookies.get('csrftoken');
+  const response = await fetch(`/api/user/favorite/change`,{
+    method:"POST",
+    headers: {
+      'Content-Type': 'application/json',
+      'X-CSRFTOKEN': csrftoken
+    },
+    body: JSON.stringify({'id':userId, 'cocktail':cocktailId})
+  })
+
+  if (response.ok) {
+    const { favorited } = await response.json()
+    console.log(favorited)
+    dispatch(check_fav(favorited))
   }
 }
 
@@ -158,10 +227,11 @@ const defaultState = {
                           recipe:[],
                           glassware:[],
                           serving_styles:[],
-                          similar: []
+                          similar: [],
                         },
                       sort: "name_asc",
-                      tags: [{name:"", clicked:false}]
+                      tags: [{name:"", clicked:false}],
+                      favorited: false
                       }
 
 export default function reducer(state=defaultState, action) {
@@ -183,7 +253,8 @@ export default function reducer(state=defaultState, action) {
                             recipe:[],
                             glassware:[],
                             serving_styles:[],
-                            similar: []
+                            similar: [],
+                            notes: []
                            }
         newState.cocktails = [...newState.cocktails]
         newState.matches = {exact: [...action.results.exact],
@@ -219,6 +290,14 @@ export default function reducer(state=defaultState, action) {
           tag.clicked = false
           return tag
         })
+        return newState
+      case CHECK_FAVORITED:
+        newState = {...state}
+        newState.favorited = action.favorited
+        return newState
+      case LOAD_ALL_NOTES:
+        newState = {...state}
+        newState.current.notes = action.notes
         return newState
       default:
         return state;

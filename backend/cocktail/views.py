@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import Cocktail, CocktailTagJoin, CocktailTag
+from django.views.decorators.csrf import ensure_csrf_cookie
 
 
 def cocktail_search(request, query):
@@ -15,7 +16,7 @@ def cocktail_search(request, query):
                  } for res in results]
     return JsonResponse({'cocktails': cocktail})
 
-
+@ensure_csrf_cookie
 def cocktail_data(request, cocktail_name):
     """
     Returns cocktail's information for cocktail page.
@@ -44,7 +45,7 @@ def cocktail_data(request, cocktail_name):
     ingredients = [rec['ingredient'] for rec in recipe]
 
     allCocktails = list(Cocktail.objects.all())
-    cts = {cocktail.cocktail_name: { 'image': cocktail.cocktail_image, 'ingredients': [i.ingredient.ingredient_name
+    cts = {cocktail.cocktail_name: {'image': cocktail.cocktail_image, 'ingredients': [i.ingredient.ingredient_name
                                     for i in cocktail.recipe_set.all()]}
            for cocktail in allCocktails}
 
@@ -52,7 +53,6 @@ def cocktail_data(request, cocktail_name):
     rone = []
     rtwo = []
     for ct in cts:
-        print(ct)
         ingCount = 0
         for ing in ingredients:
             if ing in cts[ct]['ingredients']:
@@ -66,8 +66,9 @@ def cocktail_data(request, cocktail_name):
             rtwo.append({'cocktail': ct, 'image': cts[ct]['image']})
 
     [rone.append(cocktail) for cocktail in rtwo]
-    print(rone)
-    return JsonResponse({'name': result.cocktail_name,
+
+    return JsonResponse({'id': result.id,
+                         'name': result.cocktail_name,
                          'image': result.cocktail_image,
                          'description': result.cocktail_description,
                          'instructions': instructions,
@@ -77,7 +78,7 @@ def cocktail_data(request, cocktail_name):
                          'serving_styles': served,
                          'similar': rone})
 
-
+@ensure_csrf_cookie
 def cocktail_all(request,
                  page=1,
                  quantity=20,
@@ -105,7 +106,6 @@ def cocktail_all(request,
                          .filter(cocktailtagjoin__tag__tag__in=tags)
                          .distinct()
                          .order_by(sort_by)[start:end])
-        print(cocktails)
         cocktailResponse = {'cocktails': [{'name': res.cocktail_name, 'image': res.cocktail_image} for res in cocktails]}  # noqa
         return JsonResponse(cocktailResponse)
     else:
