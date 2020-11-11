@@ -10,8 +10,8 @@ const MyBar = () => {
     const favCocktails = useSelector (state => state.bar.favorites)
 
     useEffect(()=> {
-        dispatch(load_mybar(user_id))
-        dispatch(load_favorites(user_id))
+        dispatch(load_mybar())
+        dispatch(load_favorites())
         // eslint-disable-next-line
     }, [user_id])
 

@@ -10,6 +10,7 @@ const UPDATE_TAG_CLICKED = 'ctd/cocktails/UPDATE_TAG_CLICKED'
 const CLEAR_ALL_TAGS = 'ctd/cocktails/CLEAR_ALL_TAGS'
 const CHECK_FAVORITED = 'ctd/cocktails/CHECK_FAVORITED'
 const LOAD_ALL_NOTES = 'ctd/cocktails/LOAD_ALL_NOTES'
+const DELETE_NOTE = 'ctd/cocktails/DELETE_NOTE'
 
 const clear_tags = () => {
   return {
@@ -77,6 +78,30 @@ const all_notes = (notes) => {
   return {
     type: LOAD_ALL_NOTES,
     notes
+  }
+}
+
+const deleteNote = (noteId) => {
+  return {
+    type: DELETE_NOTE,
+    noteId
+  }
+}
+
+export const deleteCocktailNote = (noteId) => async dispatch => {
+  const csrftoken = Cookies.get('csrftoken');
+  const response = await fetch("/api/user/notes/delete", {
+    method: "DELETE",
+    headers: {
+      'Content-Type': 'application/json',
+      'X-CSRFTOKEN': csrftoken
+    },
+    body: JSON.stringify({'noteId': noteId})
+  })
+
+  if (response.ok) {
+    const { deletedNoteId } = await response.json()
+    dispatch(deleteNote(deletedNoteId))
   }
 }
 
@@ -304,6 +329,10 @@ export default function reducer(state=defaultState, action) {
       case LOAD_ALL_NOTES:
         newState = {...state}
         newState.current.notes = action.notes
+        return newState
+      case DELETE_NOTE:
+        newState = {...state}
+        newState.current.notes = newState.current.notes.filter(note => note[1] !== action.noteId)
         return newState
       default:
         return state;

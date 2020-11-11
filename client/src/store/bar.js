@@ -16,8 +16,12 @@ const load_favs = (favorites) => {
     }
 }
 
-export const load_mybar = (id) => async dispatch => {
-    const response = await fetch(`/api/user/userbar/${id}`)
+export const load_mybar = () => async dispatch => {
+    const user = localStorage.getItem('token');
+    const payload = user.split(".")[1];
+    const decodedPayload = atob(payload);
+    const payloadObj = JSON.parse(decodedPayload);
+    const response = await fetch(`/api/user/userbar/${payloadObj.user_id}`)
 
     if (response.ok) {
         const userbar = await response.json()
@@ -25,8 +29,12 @@ export const load_mybar = (id) => async dispatch => {
     }
 }
 
-export const load_favorites = (id) => async dispatch => {
-    const response = await fetch(`/api/user/favorites/${id}`)
+export const load_favorites = () => async dispatch => {
+    const user = localStorage.getItem('token');
+    const payload = user.split(".")[1];
+    const decodedPayload = atob(payload);
+    const payloadObj = JSON.parse(decodedPayload);
+    const response = await fetch(`/api/user/favorites/${payloadObj.user_id}`)
 
     if (response.ok) {
         const userbar = await response.json()

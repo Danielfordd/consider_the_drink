@@ -1361,7 +1361,7 @@
         "model": "cocktail.CocktailTagJoin",
         "fields": {
             "cocktail": 56,
-            "tag": 7
+            "tag": 3
         }
      },
      {

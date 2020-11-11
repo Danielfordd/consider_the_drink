@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from .models import Cocktail, CocktailTagJoin, CocktailTag
 from django.views.decorators.csrf import ensure_csrf_cookie
+from django.db.models import Count
 
 
 def cocktail_search(request, query):
@@ -15,6 +16,7 @@ def cocktail_search(request, query):
                  'image': res.cocktail_image
                  } for res in results]
     return JsonResponse({'cocktails': cocktail})
+
 
 @ensure_csrf_cookie
 def cocktail_data(request, cocktail_name):
@@ -45,8 +47,10 @@ def cocktail_data(request, cocktail_name):
     ingredients = [rec['ingredient'] for rec in recipe]
 
     allCocktails = list(Cocktail.objects.all())
-    cts = {cocktail.cocktail_name: {'image': cocktail.cocktail_image, 'ingredients': [i.ingredient.ingredient_name
-                                    for i in cocktail.recipe_set.all()]}
+    cts = {cocktail.cocktail_name:
+           {'image': cocktail.cocktail_image,
+            'ingredients': [i.ingredient.ingredient_name
+                            for i in cocktail.recipe_set.all()]}
            for cocktail in allCocktails}
 
     res = []
@@ -78,6 +82,7 @@ def cocktail_data(request, cocktail_name):
                          'serving_styles': served,
                          'similar': rone})
 
+
 @ensure_csrf_cookie
 def cocktail_all(request,
                  page=1,
@@ -99,11 +104,13 @@ def cocktail_all(request,
         sort_by = "-cocktail_name"
 
     if tags:
-        tags = tags.split(",")
-
+        tags = tags.split(",")[:-1]
+    print(tags)
     if tags:
         cocktails = list(Cocktail.objects
                          .filter(cocktailtagjoin__tag__tag__in=tags)
+                         .annotate(num_tags=Count('cocktailtagjoin__tag'))
+                         .filter(num_tags=len(tags))
                          .distinct()
                          .order_by(sort_by)[start:end])
 

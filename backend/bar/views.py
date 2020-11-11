@@ -69,3 +69,12 @@ def all_notes(request, userId, cocktailId):
     notes = [(note.note, note.id) for note in cocktail_notes]
 
     return JsonResponse({'notes': notes})
+
+
+def delete_note(request):
+    body_unicode = request.body.decode('utf-8')
+    noteId = int(json.loads(body_unicode)['noteId'])
+    print(noteId)
+    note_to_delete = CocktailNote.objects.get(pk=noteId)
+    note_to_delete.delete()
+    return JsonResponse({'deletedNoteId': noteId})

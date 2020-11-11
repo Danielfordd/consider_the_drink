@@ -16,15 +16,10 @@ const removeUser = () => {
 
 export const login = (username, password) => {
   return async dispatch => {
-    // const XSRFTOKEN = await fetch('/api/auth/getToken')
-    // const token = (await XSRFTOKEN.json())
-
     const response = await fetch(`/api/auth/token-auth/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        //set header to the token from above fetch call
-        // 'csrf-token':token.XSRFTOKEN
       },
       body: JSON.stringify({ username, password }),
     });
@@ -41,14 +36,10 @@ export const login = (username, password) => {
 };
 
 export const signup = (first_name, last_name, username, email, password) => async dispatch => {
-    // const XSRFTOKEN = await fetch('/api/auth/getToken')
-    // const token = (await XSRFTOKEN.json())
-
     const response = await fetch(`/api/auth/users/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        // 'csrf-token':token.XSRFTOKEN
       },
       body: JSON.stringify({first_name, last_name, username, email, password}),
     });
@@ -61,8 +52,6 @@ export const signup = (first_name, last_name, username, email, password) => asyn
       const decodedPayload = atob(payload);
       const payloadObj = JSON.parse(decodedPayload);
       dispatch(setUser(payloadObj));
-    } else {
-      // const res = await response.json()
     }
 }
 
