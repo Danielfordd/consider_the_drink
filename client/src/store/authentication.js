@@ -81,11 +81,8 @@ function loadUser() {
 }
 
 export default function reducer(state=loadUser(), action) {
-  let newState;
   switch (action.type) {
     case SET_USER:
-      // newState = {...state}
-      // newState.username = action.user
       return action.user
     case REMOVE_USER:
       return {user_id: false, username: "", exp: false, email: "" };

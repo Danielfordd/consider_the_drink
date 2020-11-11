@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { loadCocktailDetails, loadAllNotes } from '../../store/cocktails'
+import { loadCocktailDetails } from '../../store/cocktails'
 import CocktailCard from './CocktailCard'
 import FavoriteButton from './FavoriteButton'
 import CocktailNote from './CocktailNote'

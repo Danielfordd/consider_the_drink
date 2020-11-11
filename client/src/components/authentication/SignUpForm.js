@@ -25,7 +25,7 @@ const SignupForm = () => {
   return (
 <div className="login-container">
 <div className="login-img">
-        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/americano.png" alt="cocktail" />
+<img src="https://considerthedrink.s3.us-east-2.amazonaws.com/americano.png" alt="cocktail" />
         <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/black_russian+(1).png" alt="cocktail" />
         <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/zombie.png" alt="cocktail" />
         <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/rusty_nail.png" alt="cocktail" />
@@ -45,6 +45,22 @@ const SignupForm = () => {
         <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/ti_punch.png" alt="cocktail" />
         <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/Negroni.png" alt="cocktail" />
         <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/tuxedo.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/aviation.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/bramble.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/cosmo.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/champagne.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/cranberry.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/crusta.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/grasshopper.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/martinez.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/martini_dirty.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/mimosa.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/mojito.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/screwdriver.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/white_russian.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/sotb.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/old_fashioned.png" alt="cocktail" />
+        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/pina.png" alt="cocktail" />
       </div>
     <main className="login-sidebar">
        <form onSubmit={SignupHandler}>

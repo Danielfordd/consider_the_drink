@@ -9,6 +9,7 @@ const CocktailNote = ({cocktailId}) => {
 
     useEffect(()=>{
         dispatch(loadAllNotes(userId, cocktailId))
+        // eslint-disable-next-line
     },[cocktailId])
 
     const handleDelete = (e) => {
