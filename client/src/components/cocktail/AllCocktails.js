@@ -20,7 +20,7 @@ const AllCocktails = () => {
         dispatch(loadAllCocktails(page, 12, sort, tags))
         dispatch(load_favorites(user_id))
     // eslint-disable-next-line
-    }, [page, sort, tags])
+    }, [page, sort, tags, user_id])
 
     const handleClear = () => {
         dispatch(clearAllTags())

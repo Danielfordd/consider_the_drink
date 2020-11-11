@@ -516,3 +516,8 @@ main {
     background-color: #DCDCDC;
     cursor: pointer;
 }
+
+.loading{
+    margin-left: 50%;
+    margin-top: 10%;
+}

@@ -6,6 +6,7 @@ import CocktailCard from './CocktailCard'
 import FavoriteButton from './FavoriteButton'
 import CocktailNote from './CocktailNote'
 import CocktailNoteWrite from './CocktailNoteWrite'
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const CocktailDetailPage = () =>{
     const { cocktail } = useParams()
@@ -17,8 +18,14 @@ const CocktailDetailPage = () =>{
         dispatch(loadCocktailDetails(cocktail))
         // eslint-disable-next-line
     },[cocktail])
-
-    return (
+    if (cocktailInfo.name === "") {
+        return (
+            <div className="loading">
+                <CircularProgress size={200} color={'black'}/>
+            </div>
+        )
+    } else {
+        return (
         <div className="details-outside-container">
             <div className="details-container">
                 <div>
@@ -49,7 +56,7 @@ const CocktailDetailPage = () =>{
                 <div className="cocktail-details-side shadow">
                     <span>My Notes</span>
                     <FavoriteButton cocktailId={cocktailInfo.id} userId={userId}/>
-                    <CocktailNote cocktailId={cocktailInfo.id} />
+                    <CocktailNote cocktailId={cocktailInfo.id} userId={userId}/>
                     <CocktailNoteWrite cocktailId={cocktailInfo.id}/>
                 </div>
             </div>
@@ -62,6 +69,7 @@ const CocktailDetailPage = () =>{
             </div>
         </div>
     )
+}
 }
 
 export default CocktailDetailPage

@@ -99,6 +99,11 @@ export const saveNote = (note, cocktailId, userId) => async dispatch => {
     },
     body: JSON.stringify({'note': note, 'cocktailId':cocktailId, 'userId': userId})
   })
+
+  if (response.ok) {
+    const { notes } = await response.json()
+    dispatch(all_notes(notes))
+  }
 }
 
 export const check_favorited = (cocktailId, userId) => async dispatch => {
@@ -228,6 +233,7 @@ const defaultState = {
                           glassware:[],
                           serving_styles:[],
                           similar: [],
+                          notes: []
                         },
                       sort: "name_asc",
                       tags: [{name:"", clicked:false}],
@@ -239,7 +245,7 @@ export default function reducer(state=defaultState, action) {
     switch (action.type) {
       case LOAD_SINGLE_COCKTAIL:
         newState = {...state}
-        newState.current = action.cocktail
+        newState.current = {...action.cocktail, notes: []}
         return newState
       case LOAD_ALL_COCKTAILS:
         newState = { ...state }

@@ -55,12 +55,10 @@ def create_note(request):
 
     new_note = CocktailNote(cocktail=cocktail, user=user, note=note)
     new_note.save()
-    return JsonResponse({'note': 1})
+    notes = [(note.note, note.id) for note in CocktailNote.objects.filter(user__id=userId, cocktail__id=cocktailId)]
+    return JsonResponse({'notes': notes})
 
 
 def all_notes(request, userId, cocktailId):
-    print(userId, cocktailId)
-    notes = CocktailNote.objects.filter(user__id=userId, cocktail__id=cocktailId)
-    # print(list(notes))
-
-    return JsonResponse({'notes': 1})
+    notes = [(note.note, note.id) for note in CocktailNote.objects.filter(user__id=userId, cocktail__id=cocktailId)]
+    return JsonResponse({'notes': notes})
