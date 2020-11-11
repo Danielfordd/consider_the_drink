@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import LoginForm from './components/authentication/LoginForm'
 import SignUpForm from './components/authentication/SignUpForm'
@@ -12,13 +12,17 @@ import { loadAllIngredients } from './store/ingredients'
 import { loadCocktailTags } from './store/cocktails'
 import AllCocktails from './components/cocktail/AllCocktails'
 import MyBar from './components/MyBar'
+import { load_mybar, load_favorites } from './store/bar'
 
 function App() {
     const dispatch = useDispatch()
+    const user_id = useSelector(state => state.authentication.user_id)
 
     useEffect(()=>{
         dispatch(loadAllIngredients())
         dispatch(loadCocktailTags())
+        dispatch(load_mybar())
+        dispatch(load_favorites())
     // eslint-disable-next-line
     }, [])
 

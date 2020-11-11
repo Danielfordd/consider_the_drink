@@ -3,8 +3,9 @@ import Icon from '@material-ui/core/Icon';
 import { loadCSS } from 'fg-loadcss';
 import { useDispatch } from 'react-redux';
 import { removeIngredientFromFilter } from '../store/ingredients'
+import { removeIngredientFromBar } from '../store/bar'
 
-export default function FontAwesome({ ingredient }) {
+export default function FontAwesome({ ingredient, myBar }) {
   const dispatch = useDispatch()
 
   React.useEffect(() => {
@@ -23,9 +24,22 @@ export default function FontAwesome({ ingredient }) {
     // dispatch(load_results(filteredIngredients))
   }
 
-  return (
+  const handleMyBarClick = (e) => {
+    dispatch(removeIngredientFromBar(ingredient))
+  }
+
+  if (myBar) {
+    return (
+      <div onClick={handleMyBarClick}>
+        <Icon className="fas fa-times" />
+      </div>
+    )
+  } else {
+    return (
       <div onClick={handleClick}>
         <Icon className="fas fa-times" />
       </div>
-  );
+    );
+  }
+
 }

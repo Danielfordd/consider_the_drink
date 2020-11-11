@@ -3,6 +3,22 @@ const SET_INGREDIENT_RESULTS = 'ctd/ingredients/SET_INGREDIENT_RESULTS'
 const Add_INGREDIENT_TO_FILTER = 'ctd/ingredients/Add_INGREDIENT_TO_FILTER'
 const REMOVE_INGREDIENT_FROM_FILTER = 'ctd/ingredients/REMOVE_INGREDIENT_FROM_FILTER'
 const CLEAR_ALL_ADDED_INGREDIENTS = 'ctd/ingredients/CLEAR_ALL_ADDED_INGREDIENTS'
+const ADD_MYBAR_TO_ADDED_INGREDIENTS = 'ctd/ingredients/ADD_MYBAR_TO_ADDED_INGREDIENTS'
+const REMOVE_MYBAR_TO_ADDED_INGREDIENTS = 'ctd/ingredients/REMOVE_MYBAR_TO_ADDED_INGREDIENTS'
+
+const remove_myBar = (ingredients) => {
+    return {
+        type: REMOVE_MYBAR_TO_ADDED_INGREDIENTS,
+        ingredients
+    }
+}
+
+const add_myBar = (ingredients) => {
+    return {
+        type: ADD_MYBAR_TO_ADDED_INGREDIENTS,
+        ingredients
+    }
+}
 
 const loadIngredients = (ingredients) => {
     return {
@@ -36,6 +52,14 @@ const remIngredientFromFilter = (ingredient) =>{
         type: REMOVE_INGREDIENT_FROM_FILTER,
         ingredient
     }
+}
+
+export const addMyBarToAdded = (ingredients) => async dispatch => {
+    dispatch(add_myBar(ingredients))
+}
+
+export const removeMyBarToAdded = (ingredients) => async dispatch => {
+    dispatch(remove_myBar(ingredients))
 }
 
 export const loadAllIngredients = () => async dispatch => {
@@ -92,6 +116,11 @@ export default function reducer(state={ ingredients:[], results: [], filter:[] }
       case CLEAR_ALL_ADDED_INGREDIENTS:
           newState = {...state}
           newState.filter = []
+          return newState
+      case ADD_MYBAR_TO_ADDED_INGREDIENTS:
+          newState = {...state}
+          const toAdd = action.ingredients.filter(ingredient => !newState.filter.includes(ingredient))
+          newState.filter = [...newState.filter, ...toAdd]
           return newState
       default:
         return state;

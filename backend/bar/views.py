@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from .models import Bar, FavCocktail
 from cocktail.models import Cocktail, CocktailNote
+from ingredient.models import Ingredient
 from django.contrib.auth.models import User
 import simplejson as json
 
@@ -13,7 +14,8 @@ def user_bar(request, id):
 
 
 def user_favorites(request, id):
-    favorites = [cocktail.cocktail.cocktail_name for cocktail in
+    favorites = [[cocktail.cocktail.cocktail_name,
+                  cocktail.cocktail.cocktail_image] for cocktail in
                  FavCocktail.objects.filter(user__id=id)]
     return JsonResponse({"favorites": favorites})
 
@@ -78,3 +80,27 @@ def delete_note(request):
     note_to_delete = CocktailNote.objects.get(pk=noteId)
     note_to_delete.delete()
     return JsonResponse({'deletedNoteId': noteId})
+
+
+def delete_ingredient(request):
+    body_unicode = request.body.decode('utf-8')
+    ingredient = json.loads(body_unicode)['ingredient']
+
+    toDelete = Bar.objects.filter(ingredient__ingredient_name=ingredient)
+    toDelete.delete()
+
+    return JsonResponse({'ingredientToRemove': ingredient})
+
+
+def create_ingredient(request):
+    body_unicode = request.body.decode('utf-8')
+    ingredient = json.loads(body_unicode)['ingredient']
+    userId = int(json.loads(body_unicode)['userId'])
+
+    user = User.objects.get(pk=userId)
+    ingredientMatch = Ingredient.objects.filter(ingredient_name=ingredient)[0]
+
+    new_mybar_ing = Bar(user=user, ingredient=ingredientMatch)
+    new_mybar_ing.save()
+    print(ingredient)
+    return JsonResponse({'addedIngredient': ingredient})

@@ -18,7 +18,7 @@ const AllCocktails = () => {
 
     useEffect(()=>{
         dispatch(loadAllCocktails(page, 12, sort, tags))
-        dispatch(load_favorites(user_id))
+        dispatch(load_favorites())
     // eslint-disable-next-line
     }, [page, sort, tags, user_id])
 

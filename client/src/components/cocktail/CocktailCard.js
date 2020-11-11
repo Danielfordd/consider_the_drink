@@ -5,7 +5,7 @@ import FavoriteOutlinedIcon from '@material-ui/icons/FavoriteOutlined';
 
 const CocktailCard = ({cocktailName, cocktailImage}) => {
     const history = useHistory()
-    const favorited = useSelector(state => state.bar.favorites)
+    const favorited = useSelector(state => state.bar.favorites.map(fav => fav[0]))
 
     const handleClick = () =>{
         history.push(`/cocktails/${cocktailName}`)

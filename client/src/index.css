@@ -151,6 +151,14 @@ ul {
     margin-left: 50px;
 }
 
+.Added-Ingredient-top__mybar {
+    margin-left: 50px;
+}
+.Added-Ingredient-top__mybar:hover {
+    cursor: pointer;
+    color: grey;
+}
+
 .Added-Ingredient-top__clear:hover{
     color: red;
     cursor: pointer;
@@ -168,8 +176,6 @@ ul {
     height: 80%;
     justify-self: center;
     margin: auto;
-    /* background-color: red; */
-    /* background-size: 0% 100%; */
 }
 
 .login-img img {
@@ -225,6 +231,7 @@ main {
 
 .login-sidebar button:hover {
     color: grey;
+    cursor: pointer;
 }
 
 .login-sidebar a {
@@ -234,7 +241,8 @@ main {
 
 .login-sidebar a:hover {
     text-decoration: none;
-    color: grey
+    color: grey;
+    cursor: pointer;
 }
 
 
@@ -257,6 +265,7 @@ main {
 
 .material-icons.MuiIcon-root.fas.fa-times:hover {
     color: red;
+    cursor: pointer;
 }
 
 .CocktailCard-Container {
@@ -316,10 +325,12 @@ main {
 
 .tag-clear:hover {
     color: red;
+    cursor: pointer;
 }
 
 .tag:hover {
     background-color: #DCDCDC;
+    cursor: pointer;
 }
 .all-cocktails__title{
     grid-column: 1 / span 2;
@@ -346,6 +357,7 @@ main {
 .CocktailCard:hover {
     background-color: #DCDCDC;
     box-shadow: 4px 4px black;
+    cursor: pointer;
 }
 
 .CocktailCard img {
@@ -520,4 +532,82 @@ main {
 .loading{
     margin-left: 50%;
     margin-top: 10%;
+}
+
+.mybar-container {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+}
+
+.mybar-favorites {
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.mybar-favorites__inside {
+    display: flex;
+    overflow: hidden;
+}
+
+.mybar-ingredients-container {
+    margin-top: 20px;
+    display:grid !important;
+    grid-template-columns: 1fr 1fr;
+    height: 95%;
+    width: 100%;
+}
+
+.mybar-ingredients__left{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid #DCDCDC;
+    padding-left: 15px;
+    padding-top: 20px;
+    max-height: 500px;
+}
+.mybar-ingredients__left h1 {
+    font-weight: 600;
+}
+.mybar-ingredients__right {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    overflow-y: auto;
+    display: grid;
+    /* grid-template-rows: 1f; */
+    /* background-color: red; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    font-size: 13px;
+    border: 2px solid #DCDCDC;
+    padding-left: 15px;
+    padding-top: 20px;
+    max-height: 500px;
+}
+
+
+.mybar-container input {
+    width:  50%;
+    /* margin: 10px; */
+    box-shadow: 3px 3px #DCDCDC;
+    border: 1px solid #DCDCDC;
+    border-radius: 6px;
+    grid-column: 0 / span 3;
+}
+
+.mybar-ingredients__right span {
+    color: blue;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.mybar-ingredients__right span:hover {
+    color: darkgrey;
+    cursor: pointer;
 }

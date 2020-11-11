@@ -105,7 +105,7 @@ def cocktail_all(request,
 
     if tags:
         tags = tags.split(",")[:-1]
-    print(tags)
+
     if tags:
         cocktails = list(Cocktail.objects
                          .filter(cocktailtagjoin__tag__tag__in=tags)

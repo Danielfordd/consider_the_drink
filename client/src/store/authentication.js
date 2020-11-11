@@ -30,6 +30,7 @@ export const login = (username, password) => {
       const payload = user.token.split(".")[1];
       const decodedPayload = atob(payload);
       const payloadObj = JSON.parse(decodedPayload);
+
       dispatch(setUser(payloadObj));
     }
   };
@@ -76,18 +77,18 @@ function loadUser() {
       localStorage.removeItem("token")
     }
   }
-  return {};
+  return {user_id: false, username: "", exp: false, email: "" };
 }
 
 export default function reducer(state=loadUser(), action) {
   let newState;
   switch (action.type) {
     case SET_USER:
-      newState = {...state}
-      newState.username = action.user
-      return newState
+      // newState = {...state}
+      // newState.username = action.user
+      return action.user
     case REMOVE_USER:
-      return {};
+      return {user_id: false, username: "", exp: false, email: "" };
     default:
       return state;
   }
