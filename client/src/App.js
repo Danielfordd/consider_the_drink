@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import LoginForm from './components/authentication/LoginForm'
 import SignUpForm from './components/authentication/SignUpForm'
 import NavBar from './components/NavBar';
@@ -33,11 +33,12 @@ function App() {
                     <Route path="/login" component={LoginForm} />
                     <Route path="/signup" component={SignUpForm} />
                     <Route exact path="/myBar" component={MyBar} />
+                    <Route exact path="/ingredients/search" component={HomePage} />
                     <Route exact path="/cocktails/search/:query" component={CocktailSearchResults}/>
                     <Route exact path="/cocktails/all/:page" component={AllCocktails}/>
                     <Route exact path="/cocktails/:cocktail" component={CocktailDetailPage} />
                     <Route path="/404" component={NotFound} />
-                    <Route exact path="/" component={HomePage} />
+                    <Route exact path="/"><Redirect to="/cocktails/all/1" /></ Route>
                 </Switch>
         </BrowserRouter>
     );

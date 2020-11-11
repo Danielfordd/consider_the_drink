@@ -14,8 +14,11 @@ const AllCocktails = () => {
     const sort = useSelector(state => state.cocktails.sort)
     const tags = useSelector(state => state.cocktails.tags)
     const user_id = useSelector(state => state.authentication.user_id)
-    const { page } = useParams()
-
+    let { page } = useParams()
+    if( page == undefined) {
+        page = 1
+    }
+    console.log(page == undefined)
     useEffect(()=>{
         dispatch(loadAllCocktails(page, 12, sort, tags))
         dispatch(load_favorites())
