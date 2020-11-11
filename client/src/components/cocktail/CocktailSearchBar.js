@@ -13,10 +13,13 @@ const CocktailSearchBar = () => {
             const results = await response.json()
             if (results.cocktails.length === 1) {
                 history.push(`/cocktails/${results.cocktails[0].name}`)
+                setCocktailQuery("")
             } else if (results.cocktails.length === 0) {
                 history.push('/404')
+                setCocktailQuery("")
             } else {
                 history.push(`/cocktails/search/${cocktailQuery}`)
+                setCocktailQuery("")
             }
         }
     }

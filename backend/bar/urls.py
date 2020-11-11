@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import all_notes, user_bar, user_favorites, change_favorite, is_favorite, create_note
+from .views import (all_notes, user_bar, user_favorites, change_favorite,
+                    is_favorite, create_note)
 
 urlpatterns = [
     path("notes/create", create_note),

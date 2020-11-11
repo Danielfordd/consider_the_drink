@@ -306,7 +306,7 @@ main {
 }
 
 .clicked {
-    color: seagreen;
+    background-color: #DCDCDC;
 }
 
 .tag-clear {

@@ -106,11 +106,19 @@ def cocktail_all(request,
                          .filter(cocktailtagjoin__tag__tag__in=tags)
                          .distinct()
                          .order_by(sort_by)[start:end])
-        cocktailResponse = {'cocktails': [{'name': res.cocktail_name, 'image': res.cocktail_image} for res in cocktails]}  # noqa
+
+        cocktailResponse = {'cocktails': [{'name': res.cocktail_name,
+                                           'image': res.cocktail_image}
+                            for res in cocktails]}
+
         return JsonResponse(cocktailResponse)
     else:
         cocktails = list(Cocktail.objects.all().order_by(sort_by)[start:end])
-        cocktailResponse = {'cocktails': [{'name': res.cocktail_name, 'image': res.cocktail_image} for res in cocktails]}  # noqa
+
+        cocktailResponse = {'cocktails': [{'name': res.cocktail_name,
+                                           'image': res.cocktail_image}
+                            for res in cocktails]}
+
         return JsonResponse(cocktailResponse)
 
 
