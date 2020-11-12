@@ -356,6 +356,7 @@ main {
     border-radius: 6px;
     box-shadow: 4px 5px #DCDCDC;
     border: 2px solid  #DCDCDC;
+    position: relative;
 }
 .CocktailCard:hover {
     background-color: #DCDCDC;
@@ -697,4 +698,11 @@ main {
 }
 .details-recipe__bottom {
     padding-bottom: 10px;
+}
+
+.similar-cocktails__fav_icon {
+    color: red;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
 }

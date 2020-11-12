@@ -13,7 +13,7 @@ const CocktailCard = ({cocktailName, cocktailImage}) => {
 
     return (
         <span className="CocktailCard" onClick={handleClick}>
-            {(favorited.includes(cocktailName)) ? <FavoriteOutlinedIcon style={{color:'red', float:'right', margin: '10px', position:'absolute'}} onClick={handleClick} /> : null}
+            {(favorited.includes(cocktailName)) ? <FavoriteOutlinedIcon className="similar-cocktails__fav_icon" onClick={handleClick} /> : null}
             <img src={cocktailImage} alt="default" />
             <div className="cocktail-name">{cocktailName}</div>
         </span>
