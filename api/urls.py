@@ -26,5 +26,5 @@ urlpatterns = [
     path('api/ingredients/', include('ingredient.urls')),
     path('api/cocktails/', include('cocktail.urls')),
     path('api/user/', include('bar.urls')),
-    re_path(r'^', views.FrontendAppView.as_view()),
+    re_path(r'^', FrontendAppView.as_view()),
 ]
