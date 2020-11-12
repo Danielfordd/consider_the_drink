@@ -7,6 +7,7 @@ class Cocktail(models.Model):
     cocktail_name = models.CharField(max_length=255, unique=True)
     cocktail_description = models.TextField()
     cocktail_image = models.CharField(max_length=255)
+    # instructions = models.
 
     class Meta:
         db_table = "cocktails"

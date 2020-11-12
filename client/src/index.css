@@ -72,7 +72,6 @@ ul {
     border-image: initial;
     line-height: 20px;
     overflow: visible;
-    -webkit-writing-mode: horizontal-tb !important;
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;

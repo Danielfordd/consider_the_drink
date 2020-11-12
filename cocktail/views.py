@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from .models import Cocktail, CocktailTagJoin, CocktailTag
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.db.models import Count
+from django.db  import connection
 
 
 def cocktail_search(request, query):
@@ -23,7 +24,7 @@ def cocktail_data(request, cocktail_name):
     """
     Returns cocktail's information for cocktail page.
     """
-    result = list(Cocktail.objects.filter(cocktail_name=cocktail_name))[0]
+    result = Cocktail.objects.filter(cocktail_name=cocktail_name).prefetch_related('instruction_set', 'recipe_set','glassware_set', 'glassware_set__glass', 'garnish_set', 'garnish_set__garnish', 'served_set', 'served_set__served')[0]
 
     instructions = [{'order': res.order,
                      'instruction': res.instruction
@@ -33,7 +34,7 @@ def cocktail_data(request, cocktail_name):
     recipe = [{'order': res.order,
                'ingredient': res.ingredient.ingredient_name,
                'ingredient_quantity': res.ingredient_quantity
-               } for res in list(result.recipe_set.all().order_by('order'))]
+               } for res in result.recipe_set.all().order_by('order')]
 
     glassware = [res.glass.glass_name
                  for res in list(result.glassware_set.all())]
@@ -46,7 +47,8 @@ def cocktail_data(request, cocktail_name):
 
     ingredients = [rec['ingredient'] for rec in recipe]
 
-    allCocktails = list(Cocktail.objects.all())
+    allCocktails = list(Cocktail.objects.all().prefetch_related('recipe_set', 'recipe_set__ingredient'))
+
     cts = {cocktail.cocktail_name:
            {'image': cocktail.cocktail_image,
             'ingredients': [i.ingredient.ingredient_name
@@ -131,7 +133,7 @@ def cocktail_all(request,
 
 def cocktail__sort(request, ingredients):
     ingTest = ingredients.split(",")[:-1]
-    allCocktails = list(Cocktail.objects.all())
+    allCocktails = list(Cocktail.objects.all().prefetch_related('recipe_set', 'recipe_set__ingredient'))
     cts = {cocktail.cocktail_name: [i.ingredient.ingredient_name
                                     for i in cocktail.recipe_set.all()]
            for cocktail in allCocktails}

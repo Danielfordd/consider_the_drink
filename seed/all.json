@@ -1680,7 +1680,7 @@
         "fields": {
             "cocktail_name":"The Bronx",
             "cocktail_description": "Named after the borough of The Bronx, a Bronx consists of gin, vermouth, and orange juice. It was formerly listed as an IBA official cocktail and was ranked as the third most famous cocktail in the world in 1934. A pre-Prohibition cocktail, the Bronx appears in the 1908 book The World's Drinks and How to Mix Them. Some accounts say the Bronx originated in Philadelphia and was later popularized in New York. Others say that it was invented by a bartender in the Waldorf-Astoria Hotel. According to Alcoholics Anonymous founder Bill W., the first drink he ever had was a Bronx cocktail, after which he became an alcoholic.",
-            "cocktail_image": "https://s3.console.aws.amazon.com/s3/object/considerthedrink?region=us-east-2&prefix=bronx.png"
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/bronx.png"
         }
     },
     {
@@ -7191,7 +7191,7 @@
         "fields": {
             "cocktail_name":"Tequila sunrise",
             "cocktail_description": "The tequila sunrise is a cocktail made of tequila, orange juice, and grenadine syrup. It's served unmixed in a tall glass. The modern drink originates from Sausalito, California in the early 1970s after an earlier one created in the 1930s in Phoenix, Arizona. The cocktail is named for its appearance when served—with gradations of color resembling a sunrise.",
-            "cocktail_image": "https://s3.console.aws.amazon.com/s3/object/considerthedrink?region=us-east-2&prefix=sunrise.png"
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/sunrise.png"
         }
     },
     {

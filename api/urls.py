@@ -17,9 +17,12 @@ from django.contrib import admin
 from rest_framework_jwt.views import obtain_jwt_token
 from django.urls import path, include, re_path
 from .views import FrontendAppView
+import debug_toolbar
+from django.conf import settings
 
 
 urlpatterns = [
+    path('__debug__/', include(debug_toolbar.urls)),
     path('admin/', admin.site.urls),
     path('api/auth/token-auth/', obtain_jwt_token),
     path('api/auth/', include('authentication.urls')),

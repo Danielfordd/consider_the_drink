@@ -18,6 +18,8 @@ python-dotenv = "*"
 gunicorn = "*"
 whitenoise = "*"
 dj-database-url = "*"
+django-debug-toolbar = "*"
+django-extensions = "*"
 
 [requires]
 python_version = "3.8"

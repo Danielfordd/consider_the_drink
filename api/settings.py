@@ -55,11 +55,13 @@ INSTALLED_APPS = [
     'authentication.apps.AuthenticationConfig',
     'ingredient.apps.IngredientConfig',
     'bar.apps.BarConfig',
-    'cocktail.apps.CocktailConfig'
+    'cocktail.apps.CocktailConfig',
+    'debug_toolbar',
 ]
 
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -92,9 +94,23 @@ CORS_ORIGIN_WHITELIST = (
 
 ROOT_URLCONF = 'api.urls'
 
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
+
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'public'),
 )
+
+# LOGGING = {
+#     'version': 1,
+#     'loggers': {
+#         'django.db.backends': {
+#             'level': 'DEBUG',
+#         },
+#     },
+# }
+
 
 TEMPLATES = [
     {
