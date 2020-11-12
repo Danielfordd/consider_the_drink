@@ -348,6 +348,8 @@ main {
     display: grid;
     width: 200px;
     height: 250px;
+    min-height: 250px;
+    min-width: 200px;
     margin-bottom: 15px;
     margin-right: 15px;
     grid-template-rows: 5fr 1fr;
@@ -418,11 +420,72 @@ main {
     grid-row: 0 / span 2;
     margin: 20px;
     border: 2px solid  #DCDCDC;
+    max-height: 475px;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    overflow-y: auto;
+    padding: 12px;
+}
+.cocktail-details-side span {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    font-weight: 600;
 }
 
+.cocktail-note-container{
+    margin-bottom: 10px;
+}
+.cocktail-note__delete{
+    margin-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+}
+.cocktail-note__delete:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.cocktail-note__write{
+    display: grid;
+}
+
+.cocktail-note__write textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.cocktail-note__write button {
+    background-color: rgba(255,255,255,0.9);
+    padding: 0;
+    border: black;
+    background: none;
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+    margin-left: 7px;
+    cursor: pointer;
+    margin-bottom: 10px !important;
+}
+.cocktail-note__write button:hover {
+    background-color: #DCDCDC;
+}
 .details-similar h1 {
     font-weight: 600;
 }
+
+.loggedOut{
+    display: flex;
+    height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.cocktail-detail-loggedOut {
+    justify-self: auto;
+    margin: auto;
+}
+
 .detail-similar-cards {
     display: flex;
     margin: 10px;
@@ -446,6 +509,8 @@ main {
 
 .details-top h1 {
     font-weight: 600;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
 }
 
 .details-recipe {

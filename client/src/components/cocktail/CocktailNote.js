@@ -18,12 +18,12 @@ const CocktailNote = ({cocktailId}) => {
     }
     return(
         <>
-            {notes.map(note => <div key={`note-${userId}-${note[1]}`}>
+            {notes.map(note => <div key={`note-${userId}-${note[1]}`} className="cocktail-note-container">
                                     <div
                                          className="cocktail-note">
                                          {note[0]}
                                     </div>
-                                    <div onClick={handleDelete} id={`note-${note[1]}`} >Delete</div>
+                                    <div onClick={handleDelete} id={`note-${note[1]}`} className="cocktail-note__delete">Delete Note</div>
                                 </div>)}
         </>
     )

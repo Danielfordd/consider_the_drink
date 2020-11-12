@@ -57,12 +57,20 @@ const CocktailDetailPage = () =>{
                         </div>
                     </div>
                 </div>
-                <div className="cocktail-details-side shadow">
-                    <span>My Notes</span>
-                    <FavoriteButton cocktailId={cocktailInfo.id} userId={userId}/>
-                    <CocktailNote cocktailId={cocktailInfo.id} userId={userId}/>
-                    <CocktailNoteWrite cocktailId={cocktailInfo.id}/>
-                </div>
+                {/* <div className="cocktail-details-side shadow"> */}
+                    {userId ? <div className="cocktail-details-side shadow">
+                    <span>My Notes<FavoriteButton cocktailId={cocktailInfo.id} userId={userId}/></span>
+                    <div>
+                        <CocktailNote cocktailId={cocktailInfo.id} userId={userId}/>
+                    </div>
+                    <div>
+                        <CocktailNoteWrite cocktailId={cocktailInfo.id}/>
+                    </div>
+                    </div>:
+                    <div className="cocktail-details-side loggedOut shadow">
+                        <div className="cocktail-detail-loggedOut"><a href="/login">Login</a> or <a href="/signup">signup</a> to favorite cocktails and write yourself notes.</div>
+                    </div>}
+                {/* </div> */}
             </div>
 
             <div className="details-similar">

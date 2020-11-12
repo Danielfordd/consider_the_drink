@@ -20,8 +20,8 @@ const FavoriteButton = ({cocktailId, userId}) => {
 
     return(
         <>
-        {favorited ? <FavoriteOutlinedIcon style={{color:'red', float:'right', margin: '10px'}} onClick={handleClick} />
-                   : <FavoriteBorderOutlinedIcon style={{color:'red', float:'right', margin: '10px'}} onClick={handleClick} />}
+        {favorited ? <FavoriteOutlinedIcon style={{color:'red'}} onClick={handleClick} />
+                   : <FavoriteBorderOutlinedIcon style={{color:'red'}} onClick={handleClick} />}
         </>
     )
 }

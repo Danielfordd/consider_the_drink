@@ -14,13 +14,13 @@ const CocktailNoteWrite = ({cocktailId}) => {
     }
 
     return(
-        <form onSubmit={writeNote}>
+        <form onSubmit={writeNote} className="cocktail-note__write">
             <textarea
             placeholder="test"
             value={note}
             onChange={e => setNote(e.target.value)}
             />
-            <button>Add Notes</button>
+            <button>Add Note</button>
         </form>
     )
 }
