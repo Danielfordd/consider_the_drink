@@ -37,9 +37,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = env('DEBUG')
-DEBUG = os.environ.get('DEBUG', False)
+DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = ['https://considerthedrink.herokuapp.com/',]
+ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
@@ -90,10 +90,14 @@ CORS_ORIGIN_WHITELIST = (
 
 ROOT_URLCONF = 'api.urls'
 
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), 'public'),
+)
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
