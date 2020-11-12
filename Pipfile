@@ -17,6 +17,7 @@ simplejson = "*"
 python-dotenv = "*"
 gunicorn = "*"
 whitenoise = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.8"

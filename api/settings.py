@@ -14,6 +14,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
 import os
+import dj_database_url
 # import environ
 
 # env_var = os.environ
@@ -121,15 +122,20 @@ WSGI_APPLICATION = 'api.wsgi.application'
 #     'default': env.db(),
 # }
 
-DATABASES = {
-    'default': {
+DATABASECONFIG = {
+    'development': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ctd_db',
         'USER': 'consider_the_drink',
         'PASSWORD': os.environ.get('DATABASE_PW'),
         'HOST': '127.0.0.1',
         'PORT': '5432',
-    }
+    },
+    # 'production': dj_database_url.config(conn_max_age=600, ssl_require=True)
+}
+
+DATABASES = {
+    'default': DATABASECONFIG[os.environ.get('DJANGO_ENV')]
 }
 
 # Password validation
