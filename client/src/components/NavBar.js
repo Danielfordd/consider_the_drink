@@ -10,7 +10,7 @@ const NavBar = () => {
     if(loggedIn) {
         return (
             <ul className="NavBar">
-                       <li style={{float:'left'}}><NavLink exact to="/" className="NavBar-link logo"><img src="/logo.png" alt="logo" className="logo" /></NavLink></li>
+                       <li style={{float:'left'}}><NavLink exact to="/" className="NavBar-link logo"><img src="/staticfiles/logo.png" alt="logo" className="logo" /></NavLink></li>
             <li style={{float:'left'}} className="NavBar-search"><CocktailSearchBar /></li>
             <li><LogoutButton /></li>
             <li><NavLink to="/myBar" activeClassName="active" className="NavBar-link">My Bar</NavLink></li>
