@@ -111,13 +111,13 @@ class FrontendAppView(View):
 ```bash
 from django.contrib import admin
 from django.urls import path, include, re_path
-from data.views import FrontendAppView
+from .views import FrontendAppView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 	.... other urlpatterns.....
 	# have it as the last urlpattern for BrowserHistory urls to work
-    re_path(r'^', views.FrontendAppView.as_view()),
+    re_path(r'^', FrontendAppView.as_view()),
 ]
 ```
 
