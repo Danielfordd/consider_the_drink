@@ -11,14 +11,20 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import environ
+from dotenv import load_dotenv
+load_dotenv()
+import os
+# import environ
 
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
+# env_var = os.environ
+# print(env_var)
+
+# env = environ.Env(
+#     # set casting, default value
+#     DEBUG=(bool, False)
+# )
 # reading .env file
-environ.Env.read_env()
+# environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,12 +33,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
-
+# SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
+print("secretkey", SECRET_KEY)
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+# DEBUG = env('DEBUG')
+DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.localhost', '127.0.0.1',]
 # Application definition
 
 INSTALLED_APPS = [
@@ -105,8 +113,19 @@ WSGI_APPLICATION = 'api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': env.db(),
+# }
+
 DATABASES = {
-    'default': env.db(),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ctd_db',
+        'USER': 'consider_the_drink',
+        'PASSWORD': os.environ.get('DATABASE_PW'),
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
 }
 
 # Password validation
