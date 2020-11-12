@@ -131,7 +131,7 @@ DATABASECONFIG = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
     },
-    # 'production': dj_database_url.config(conn_max_age=600, ssl_require=True)
+    'production': dj_database_url.config(conn_max_age=600, ssl_require=True)
 }
 
 DATABASES = {
