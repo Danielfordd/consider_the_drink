@@ -182,6 +182,7 @@ DATABASECONFIG = {
     },
     #dj_database_url package formats heroku database url into django format, dont forget to import it at the top of your file
     'production': dj_database_url.config(conn_max_age=600, ssl_require=True)
+    #This must be commented out to run locally
 }
 
 DATABASES = {
@@ -189,9 +190,8 @@ DATABASES = {
 }
 
 #in .env
-#for local dev (database_url is needed locally by dj_database_url package to not error out)
 DJANGO_ENV=development
-DATABASE_URL=t
+# do not set a DATABASE_URL in local .env
 
 #on heroku
 DJANGO_ENV=production
