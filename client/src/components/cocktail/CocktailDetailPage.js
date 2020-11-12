@@ -21,7 +21,7 @@ const CocktailDetailPage = () =>{
     if (cocktailInfo.name === "") {
         return (
             <div className="loading">
-                <CircularProgress size={200} color={'black'}/>
+                <CircularProgress size={200} color={'primary'}/>
             </div>
         )
     } else {
@@ -39,17 +39,21 @@ const CocktailDetailPage = () =>{
                     <div className="details-bottom">
                         <div className="details-recipe">
                             <div>
-                                <ul>{cocktailInfo.recipe.map(rec => (
-                                    <li>{rec.ingredient}: {rec.ingredient_quantity}</li>))}
-                                </ul>
-                                <div>Glassware: {cocktailInfo.glassware.map(glass=><span>{glass}</span>)}</div>
-                                <div>Serving Styles: {cocktailInfo.serving_styles.map(style=><span>{style} </span>)}</div>
+                                <div className="details-recipe__top">
+                                    {cocktailInfo.recipe.map(rec => (
+                                        <><div key={`recipe-${rec.ingredient}`}>{rec.ingredient}</div> <div>{rec.ingredient_quantity}</div></>))}
+                                </div>
+                                <div className="details-recipe__bottom">
+                                    <div>Garnish: {cocktailInfo.garnish.map(garn => <span key={garn}>{garn}</span>)} </div>
+                                    <div>Glassware: {cocktailInfo.glassware.map(glass=><span key={`glass-${glass}`}>{glass}</span>)}</div>
+                                    <div>Serving Styles: {cocktailInfo.serving_styles.map(style=><span key={style}>{style} </span>)}</div>
+                                </div>
                             </div>
                         </div>
                         <div className="details-instruction">
-                            <ul>{cocktailInfo.instructions.map(instruction => (
-                                <li>{instruction.order+1}{instruction.instruction}</li>))}
-                            </ul>
+                            <div>{cocktailInfo.instructions.map(instruction => (
+                                <div className="details-instruction__each" key={`instruction-${instruction.order}`}>{instruction.order+1}. {instruction.instruction}</div>))}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -64,7 +68,7 @@ const CocktailDetailPage = () =>{
             <div className="details-similar">
                 <h1>Similar Cocktails</h1>
                 <div className="detail-similar-cards">
-                    {cocktailInfo.similar.map(cocktail => <CocktailCard cocktailName={cocktail.cocktail} cocktailImage={cocktail.image} />)}
+                    {cocktailInfo.similar.map(cocktail => <CocktailCard key={`similar-${cocktail.cocktail}`} cocktailName={cocktail.cocktail} cocktailImage={cocktail.image} />)}
                 </div>
             </div>
         </div>

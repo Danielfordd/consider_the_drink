@@ -1,16 +1,106 @@
 ## Features - MVP
-- [ ] Site-wide navigation element
-- [ ] Signed-out Homepage that includes information about the site,link to signup/login, and container to input ingredients with current ingredients container below and results to right.
-- [ ] Search feature that lists matching ingredient results dynamically as you type
-- [ ] Authentication - sign up with username/email/password, login/logout, demo user login. If user tries to navigate to protected portions of site, will be redirected to Signed-out homepage.
-- [ ] Landing page that user is directed to upon login that gives diplay of their bar, and container to input ingredients with results container to right.
-- [ ] "Explore All cocktails" page that serves list of all cocktails, with sorting options and pagination.
-- [ ] Search functionality to view details for particular cocktail.
-- [ ] Cocktail detail page that contains details of specified Cocktail and market and variations of the cocktail. If signed in also an area that contains user notes and allows the user to edit / create / delete      those notes
+- [Features Overview](#Features-Overview)
+- [Cocktail Recommender](#Cocktail-Recommender)
+- [Cocktail Filtering](#Cocktail-Filtering)
+- [User Favorites](#User-Favorites)
+- [User Cocktail Notes](#User-Cocktail-Notes)
+- [User Authentication](#User-Authentication)
+- Site-wide navigation element
+- Signed-out Homepage that includes information about the site,link to signup/login, and container to input ingredients with current ingredients container below and results to right.
+- Search feature that lists matching ingredient results dynamically as you type
+- Authentication - sign up with username/email/password, login/logout, demo user login. If user tries to navigate to protected portions of site, will be redirected to Signed-out homepage.
+- Landing page that user is directed to upon login that gives diplay of their bar, and container to input ingredients with results container to right.
+- "Explore All cocktails" page that serves list of all cocktails, with sorting options and pagination.
+- Search functionality to view details for particular cocktail.
+- Cocktail detail page that contains details of specified Cocktail and market and variations of the cocktail. If signed in also an area that contains user notes and allows the user to edit / create / delete      those notes
 
-## Stretch
-- [ ] External API access.
-- [ ] Oauth with facebook / google
+## Technologies
+- React
+- Redux
+- Django
+- PostgreSQL
+- Heroku
+
+## Installation
+1. Clone the repository
+
+   ```bash
+   $ git clone https://github.com/Danielfordd/consider_the_drink.git
+   ```
+
+2. Install python dependencies
+   ```bash
+   $ pipenv install --dev -r dev-requirements.txt --python=python3 && pipenv install -r requirements.txt
+   ```
+
+3. Open psql and create user and database
+   - Create user "consider_the_drink" with password "<<super_strong_secret_password>>"
+   - Create database ctd_db with owner consider_the_drink
+
+4. In backend/api create a .env and add configuration modeled from .env.example
+
+5. Enter pipenv and cd into /backend
+   ```bash
+   $ pipenv shell
+   $ cd backend/
+   ```
+6. Run migration
+   ```bash
+   $ python manage.py migrate
+   ```
+
+7. Seed data
+   ```bash
+    $ python manage.py loaddata seed/users.json
+    $ python manage.py loaddata seed/ingredients.json
+    $ python manage.py loaddata seed/bar.json
+    $ python manage.py loaddata seed/cocktail.json
+    $ python manage.py loaddata seed/favcocktails.json
+    $ python manage.py loaddata seed/taggedcocktails.json
+   ```
+
+8. Run Django server
+   ```bash
+   $ python manage.py runserver
+   ```
+
+9. Install Javascript dependencies
+   ```bash
+   #in root directory
+   $ cd client/
+   $ npm install
+   ```
+
+10. Run front-end
+   ```bash
+   #in client/
+   $ npm start
+   ```
+
+*IMPORTANT!*
+If you add any python dependencies to your pipfiles, you'll need to regenerate your requirements.txt before deployment.
+You can do this by running:
+```bash
+$ pipenv lock -r > requirements.txt
+```
+
+## Features Overview
+-test
+
+## Cocktail Recommender
+-test
+
+## Cocktail Filtering
+-test
+
+## User Favorites
+-test
+
+## User Cocktail Notes
+-test
+
+## User Authentication
+-test
 
 ## User Stories
 1. As an unauthorized user, I want to view a home page that provides me with information about the site, and the ability to log in.

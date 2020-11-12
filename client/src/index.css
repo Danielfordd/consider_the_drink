@@ -436,12 +436,16 @@ main {
 
 .details-top div {
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 8fr;
     margin: auto;
     background-color: lightgray;
     padding: 5%;
     border-radius: 6px;
     box-shadow: 4px 4px black;
+}
+
+.details-top h1 {
+    font-weight: 600;
 }
 
 .details-recipe {
@@ -458,8 +462,12 @@ main {
 .details-instruction {
     height: 90%;
     width: 90%;
-    justify-self: right;
     margin: auto;
+    justify-self: center;
+}
+
+.details-instruction__each {
+    margin-bottom: 5px;
 }
 
 .pagination-container {
@@ -611,4 +619,17 @@ main {
 .mybar-ingredients__right span:hover {
     color: darkgrey;
     cursor: pointer;
+}
+
+.details-recipe__top {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding-bottom: 10px;
+}
+
+.details-recipe__top div {
+    margin-top: 2px;
+}
+.details-recipe__bottom {
+    padding-bottom: 10px;
 }

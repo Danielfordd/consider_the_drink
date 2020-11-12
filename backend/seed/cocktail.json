@@ -7648,7 +7648,15 @@
         "fields": {
             "cocktail": 89,
             "order": 0,
-            "instruction": ""
+            "instruction": "Combine all ingredients with ice and stir until chilled, approximately 20-30 seconds."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 89,
+            "order": 1,
+            "instruction": "Strain into preferred glass and serve."
         }
     },
     {
