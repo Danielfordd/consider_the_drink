@@ -135,6 +135,9 @@ export default function reducer(state={userBar:[], favorites:[]}, action) {
           newState.userBar = newState.userBar.filter(ingredient => ingredient !== action.ing)
           return newState
       case ADD_INGREDIENT_TO_MYBAR:
+        if (action.ingredient === 'duplicate') {
+            return state
+        }
         newState = {...state}
         newState.userBar = [...newState.userBar, action.ingredient]
         return newState

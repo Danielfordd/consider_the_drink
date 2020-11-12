@@ -97,6 +97,10 @@ def create_ingredient(request):
     ingredient = json.loads(body_unicode)['ingredient']
     userId = int(json.loads(body_unicode)['userId'])
 
+    exists = Bar.objects.filter(ingredient__ingredient_name=ingredient, user__id=userId)
+    if len(exists):
+            return JsonResponse({'addedIngredient': 'duplicate'})
+
     user = User.objects.get(pk=userId)
     ingredientMatch = Ingredient.objects.filter(ingredient_name=ingredient)[0]
 

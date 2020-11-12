@@ -28,7 +28,7 @@ const MyBar = () => {
             <div className="mybar-ingredients-container">
                 <div className="mybar-ingredients__left shadow">
                     <h1>My Bar</h1>
-                    {userBar.map(baritem => <div>
+                    {userBar.map(baritem => <div className="mybar-ingredients__left_ingredient">
                                                 <span key={`userbar-${baritem}`}>{baritem}</span>
                                                 <span><XIcon className="icon-t" myBar={true} ingredient={baritem} /></span>
                                             </div>)}

@@ -44,9 +44,9 @@ const CocktailDetailPage = () =>{
                                         <><div key={`recipe-${rec.ingredient}`}>{rec.ingredient}</div> <div>{rec.ingredient_quantity}</div></>))}
                                 </div>
                                 <div className="details-recipe__bottom">
-                                    <div>Garnish: {cocktailInfo.garnish.map(garn => <span key={garn}>{garn}</span>)} </div>
-                                    <div>Glassware: {cocktailInfo.glassware.map(glass=><span key={`glass-${glass}`}>{glass}</span>)}</div>
-                                    <div>Serving Styles: {cocktailInfo.serving_styles.map(style=><span key={style}>{style} </span>)}</div>
+                                    <div className="details-recipe__bottom-garnish" >Garnish:</div><div> {cocktailInfo.garnish.map(garn => <span key={garn}>{garn}</span>)} </div>
+                                    <div>Glassware: </div><div>{cocktailInfo.glassware.map(glass=><span key={`glass-${glass}`}>{glass}</span>)}</div>
+                                    <div>Serving Styles: </div><div>{cocktailInfo.serving_styles.map(style=><span key={style}>{style} </span>)}</div>
                                 </div>
                             </div>
                         </div>

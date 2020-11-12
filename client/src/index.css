@@ -611,8 +611,8 @@ main {
 
 .mybar-container {
     display: grid;
-    grid-template-rows: 3fr 1fr;
-    height: 90vh;
+    grid-template-rows: 2fr 1fr;
+    height: 100%;
     width: 80%;
     margin: auto;
 }
@@ -622,20 +622,20 @@ main {
     width: 100%;
     height: 100%;
     margin: 10px;
-    overflow: hidden;
+    overflow-x: auto;
 }
 
 .mybar-favorites__inside {
     display: flex;
-    overflow: hidden;
+    overflow-x: auto;
 }
 
 .mybar-ingredients-container {
-    margin-top: 20px;
-    display:grid !important;
+    display:grid;
     grid-template-columns: 1fr 1fr;
-    height: 95%;
+    height: 90%;
     width: 100%;
+    margin-top: 20px;
 }
 
 .mybar-ingredients__left{
@@ -646,19 +646,34 @@ main {
     padding-left: 15px;
     padding-top: 20px;
     max-height: 500px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
 }
+
 .mybar-ingredients__left h1 {
+    grid-column: 1 / span 3;
+    padding-bottom: 10px;
     font-weight: 600;
 }
+
+.mybar-ingredients__left_ingredient {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.mybar-ingredients__left_ingredient span {
+    margin-right: 10px;
+    align-items: center;
+}
+
 .mybar-ingredients__right {
     width: 95%;
     height: 100%;
     margin: auto;
     overflow-y: auto;
     display: grid;
-    /* grid-template-rows: 1f; */
-    /* background-color: red; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
     font-size: 13px;
     border: 2px solid #DCDCDC;
     padding-left: 15px;
@@ -698,6 +713,9 @@ main {
 }
 .details-recipe__bottom {
     padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 4px;
 }
 
 .similar-cocktails__fav_icon {
@@ -705,4 +723,8 @@ main {
     position: absolute;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.details-recipe__bottom span:not(:first-child):before{
+    content: ", ";
 }
