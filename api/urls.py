@@ -23,6 +23,10 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 import debug_toolbar
 
 urlpatterns = [
+    path(
+        "favicon.ico",
+        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
+    ),
     path('__debug__/', include(debug_toolbar.urls)),
     path('admin/', admin.site.urls),
     path('api/auth/token-auth/', obtain_jwt_token),
@@ -30,9 +34,5 @@ urlpatterns = [
     path('api/ingredients/', include('ingredient.urls')),
     path('api/cocktails/', include('cocktail.urls')),
     path('api/user/', include('bar.urls')),
-    path(
-        "favicon.ico",
-        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
-    ),
-    re_path(r'^', FrontendAppView.as_view()),
+    re_path(r'^', FrontendAppView.as_view())
 ]
