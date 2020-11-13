@@ -14,7 +14,9 @@ const AllCocktails = () => {
     const sort = useSelector(state => state.cocktails.sort)
     const tags = useSelector(state => state.cocktails.tags)
     const user_id = useSelector(state => state.authentication.user_id)
+    const totalResults = useSelector(state => state.cocktails.totalResults)
     let { page } = useParams()
+
     if( page === undefined) {
         page = 1
     }
@@ -57,7 +59,7 @@ const AllCocktails = () => {
                                                         cocktailName={cocktail.name}
                                                         cocktailImage={cocktail.image} />)}
                 <div className="pagination-container">
-                    <Pagination count={9} onChange={handleChange} />
+                    <Pagination count={Math.ceil((totalResults/12))} onChange={handleChange} />
                 </div>
             </div>
             <div className="CocktailCard-Container__right shadow">

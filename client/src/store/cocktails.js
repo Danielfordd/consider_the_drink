@@ -258,11 +258,11 @@ const defaultState = {
                           serving_styles:[],
                           similar: [],
                           notes: [],
-                          length: 1
                         },
                       sort: "name_asc",
                       tags: [{name:"", clicked:false}],
-                      favorited: false
+                      favorited: false,
+                      totalResults: 100
                       }
 
 export default function reducer(state=defaultState, action) {
@@ -275,7 +275,7 @@ export default function reducer(state=defaultState, action) {
       case LOAD_ALL_COCKTAILS:
         newState = { ...state }
         newState.cocktails = [...action.cocktails.cocktails]
-        newState.cocktails.length = action.cocktails.length
+        newState.totalResults = action.cocktails.total
         return newState
       case SEARCH_COCKTAIL_BY_INGREDIENTS:
         newState = {...state}
