@@ -46,7 +46,6 @@ export const signup = (first_name, last_name, username, email, password) => asyn
     });
 
     if (response.ok) {
-
       const user = await response.json();
       localStorage.setItem('token', user.token);
       const payload = user.token.split(".")[1];
@@ -68,10 +67,9 @@ function loadUser() {
   if (authToken) {
     try {
       const payload = authToken.split(".")[1];
-
       const decodedPayload = atob(payload);
-
       const payloadObj = JSON.parse(decodedPayload);
+
       return payloadObj
     } catch (e) {
       localStorage.removeItem("token")

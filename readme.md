@@ -76,7 +76,7 @@ $ pipenv lock -r > requirements.txt
 ***
 Consider the Drink is a website to discover new cocktails and get recommendations based off of the ingredients you have. The features listed below focus on the functionality of the finding and filtering cocktails as well as users interacting with them.
 
-> Current Status: ongoing development
+> Current Status: Ongoing Development
 
 ## Cocktail Recommender
 ***
@@ -84,9 +84,9 @@ The recommender receives a list of ingredients input by the user and returns coc
 
 --gif here--
 
-Upon navigation to "/ingredients/search" an asynchronous fetch call is made to the Django backend to query the Postgres database and receive a full list of ingredient names. The ingredient names received from the fetch call are stored in the ingredients slice of redux state and mapped into a react container.
+Upon navigation to "/ingredients/search" an asynchronous fetch call is made to the Django API to query the Postgres database and receive a full list of ingredient names. The ingredient names received from the fetch call are stored in the ingredients slice of redux state and mapped into a react container.
 
-When a user clicks an ingredient, that ingredient is added to a filter inside of the ingredient slice of state. Every click also makes an asynchronous fetch call, with the filtered ingredient, to the Django backend function cocktail__sort.
+When a user clicks an ingredient, that ingredient is added to a filter inside of the ingredient slice of state. Every click also makes an asynchronous fetch call, with the filtered ingredient, to the Django API function cocktail__sort.
 
 The cocktails are looped through and checked to see if they contain ingredients within the filtered ingredient. For every filtered ingredient the cocktail contains a match count is increased. If the cocktail has the same number of match count as ingredients contained it is added to the exact response "res". If it is one less it is added to "rone" and if it is two less it is added to "rtwo".
 
@@ -124,13 +124,13 @@ Users are able to filter cocktails alphabetically or by selecting provided tags.
 
 The cocktails that are rendered on the page are returned from an ascynchronous fetch call to the Django API. The cocktail sort function accepts 4 parameters, page number, quantity, sort, and tags passed with the fetch call.
 
-Pagination is acheived through slicing the cocktail query set where start = (multiplying quantity * page -1) and end = (start + quantity). When a user clicks a new page it re-fetches the Django backend.
+Pagination is acheived through slicing the cocktail query set where start = (multiplying quantity * page -1) and end = (start + quantity). When a user clicks a new page it re-fetches the Django API.
 
 ```bash
 Cocktail.objects.all().order_by(sort_by)[start:end]
 ```
 
-Alphabetical sort is acheived through the "A-Z" and "Z-A" select field. When the select changes it sends a new fetch request to the Django sorting function. If the value is "A-Z" it makes sets the variable sort_by and passes it into .order_by()
+Alphabetical sort is acheived through the "A-Z" and "Z-A" select field. When the select changes it sends a new fetch request to the Django API sorting function. If the value is "A-Z" it makes sets the variable sort_by and passes it into .order_by()
 
 ```bash
     sort_by = ""
@@ -166,7 +166,7 @@ A logged in user is able to favorite cocktails on a cocktail's detail page and s
 
 --gif--
 
-When a user clicks the heart (favorite icon) an api call is sent to the Django backend function change_favorite. First the function checks if there is an entry in the favcocktails database and if there is the it deletes the entry. After deleting it responds "False". If there is no entry it creates an entry and responds "True"
+When a user clicks the heart (favorite icon) an api call is sent to the Django API function change_favorite. First the function checks if there is an entry in the favcocktails database and if there is the it deletes the entry. After deleting it responds "False". If there is no entry it creates an entry and responds "True"
 
 ```bash
     exists = FavCocktail.objects.filter(cocktail=cocktailId, user=userId)
@@ -180,54 +180,84 @@ When a user clicks the heart (favorite icon) an api call is sent to the Django b
     return JsonResponse({'favorited': True})
 ```
 
-When cocktail cards are rendered they each send an API call to the Django backend function is_favorite that checks if there is an entry in favcocktails.
+When cocktail cards are rendered they each send a fetch call to the Django API function is_favorite that checks if there is an entry in favcocktails.
 
 ## User Cocktail Notes
-A logged in user is to able to leave notes on cocktails, view them, and delete them. The notes are rendered by an API call to the Django backend function all_notes which returns all notes for that cocktail and user.
+A logged in user is to able to leave notes on cocktails, view them, and delete them. The notes are rendered by a fetch call to the Django API function all_notes which returns all notes for that cocktail and user.
 
+Notes are written in the bottom textarea field, which keeps track of the typed value in a react useState hook. When the user submits the textarea field a fetch call is made to the Django API which creates a new note entry. The new note is sent back as a JSON response and put into the redux slice of state "Cocktail/current/notes". This slice of state is mapped over and displayed on the screen.
+
+--gif--
 
 
 ## User Authentication
--test
+A user is able to view cocktails and receive recommendations based off of ingredients without logging in. In order to save bar ingredients, favorite cocktails, and write notes for cocktails.
 
-## User Stories
-1. As an unauthorized user, I want to view a home page that provides me with information about the site, and the ability to log in.
+A user without an account can sign up by navigating to "/signup". The information in the signup form is kept track of through react useState hooks and on submit sends a fetch call with the information to the Django API. The API passes the form data into a serializer that validates the data and creates a JSON web token. The user is then created and saved into the database and a JSON response is sent back with the token.
 
-2. As an unauthorized user, I want to be able to sign up for the website via a signup form in order to access protected content.
+```bash
+class UserSerializerWithToken(serializers.ModelSerializer):
 
-3. As an unauthorized user, I want to be able to login to the website, via a form, in order to access my private bar information.
+    token = serializers.SerializerMethodField()
+    password = serializers.CharField(write_only=True)
 
-4. As an authorized user, I want to be able to log out of the application in order to protect my private bar information.
+    def get_token(self, obj):
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
 
-5. As an authorized user, I want a clear and consistent way to navigate across the site.
+        payload = jwt_payload_handler(obj)
+        token = jwt_encode_handler(payload)
+        return token
 
-6. As an authorized user, I want to be able to search for cocktails by name.
+    def create(self, validated_data):
+        password = validated_data.pop('password', None)
+        instance = self.Meta.model(**validated_data)
+        if password is not None:
+            instance.set_password(password)
+        instance.save()
+        return instance
+```
 
-7. As an authorized user, I want to be able to navigate to "My Bar" to view select details of all saved ingredients.
+On the frontend, the token from the response is set into local storage. The token is then decoded and the user id, user name and email is set into the redux slice of state "authentication".
 
-8. As an authorized user, I want to be able to browse through cocktails without providing a specific name or specific ingredients.
+```bash
+    if (response.ok) {
+      const user = await response.json();
+      localStorage.setItem('token', user.token);
+      const payload = user.token.split(".")[1];
+      const decodedPayload = atob(payload);
+      const payloadObj = JSON.parse(decodedPayload);
+      dispatch(setUser(payloadObj));
+    }
+```
+The default state of the authentication slice of state is loaded by checking for the JSON web token in local storage and if it exists loading it.
 
-## Database Schema
+```bash
+function loadUser() {
+  const authToken = localStorage.getItem("token");
 
-https://dbdiagram.io/d/5fa0692f3a78976d7b7a327d
+  if (authToken) {
+    try {
+      const payload = authToken.split(".")[1];
+      const decodedPayload = atob(payload);
+      const payloadObj = JSON.parse(decodedPayload);
 
-## Wireframe
-https://www.canva.com/design/DAEMY04EGyw/bZSbfOcRpF818PYuOI2OIw/view?utm_content=DAEMY04EGyw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+      return payloadObj
+    } catch (e) {
+      localStorage.removeItem("token")
+    }
+  }
+  return {user_id: false, username: "", exp: false, email: "" };
+}
+```
 
+To login, the user submits their information to the Django API which checks if a matching user exists in the database, if it does it sends a JSON web token back. The token is then decoded and the user id, user name and email is set into the redux slice of state "authentication".
 
-## Frontend Routes
-- `/` Home/Landing Page with website info, ingredient search container, current ingredients container, and cocktail results
-- `/login` Login Page
-- `/signup` Signup Page
-- `/mybar` Detail page for a signed in user's bar
-- `/cocktails` Explore Cocktails Page
-- `/cocktails/${id}}` Cocktail Detail Page (directed from search or recommendation)
-- `/api/documentation` API documentation page that lists endpoints structure and example queries / example json response
-- `/logout` Deletes user's local storage token and redirects to `/`. Not accessable if logged out.
+When a user clicks "Logout" it deletes the Json web token and sends an empty user object to the redux slice of state "authentication".
 
-## Backend Routes
-- `/api/users/login` Querys the database off email and validates user's email & password. If successful sends a jwt back that is put into localstorage. Redirects to `/`
-- `/api/users/signup` Validates user's submitted information. If successful creates a user and sends a jwt back that is put into localstorage. Redirects to `/`
-- `/api/cocktails/query` JSON response with filtered cocktail info + cocktail variations
-- `/api/cocktails/${id}}` JSON response with cocktail info + cocktail variations
-- `/api/ingredients` JSON response with all ingredients and associated ingredient categories
+```bash
+export const logout = () => async dispatch => {
+  localStorage.removeItem('token');
+  dispatch(removeUser());
+}
+```

@@ -26,10 +26,3 @@ class FrontendAppView(View):
                 """,
                 status=501,
             )
-
-
-def get_favicon(request):
-    print('here')
-    favicon = os.path.join(settings.REACT_APP_DIR, 'build', 'static', 'favicon.ico')
-    print(favicon)
-    return favicon
