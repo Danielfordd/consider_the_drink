@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from rest_framework_jwt.views import obtain_jwt_token
 from django.urls import path, include, re_path
-from .views import FrontendAppView,
+from .views import FrontendAppView
 from django.conf import settings
 from django.views.generic.base import RedirectView
 from django.contrib.staticfiles.storage import staticfiles_storage
