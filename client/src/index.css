@@ -29,6 +29,15 @@ ul {
     padding-bottom: 25px;
 }
 
+.no-matches{
+ margin-left: 15%;
+}
+
+.sidebar-container h1{
+    font-weight: 600;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
 .Ingredient-Container {
     background-color: white;
     width: 100%;
