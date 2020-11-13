@@ -11,6 +11,7 @@ const CocktailSearchBar = () => {
         if(!cocktailQuery.replace(/\s/g, '').length) {
             history.push("/cocktails/all/1")
             setCocktailQuery("")
+            return
         }
 
         const response = await fetch(`/api/cocktails/search/${cocktailQuery}`)

@@ -204,7 +204,7 @@ export const loadAllCocktails = (page_num, quantity, sort, tags) => async dispat
 
   if (response.ok) {
     const cocktails = await response.json();
-    dispatch (loadAll(cocktails.cocktails))
+    dispatch (loadAll(cocktails))
   }
 
 }
@@ -257,7 +257,8 @@ const defaultState = {
                           glassware:[],
                           serving_styles:[],
                           similar: [],
-                          notes: []
+                          notes: [],
+                          length: []
                         },
                       sort: "name_asc",
                       tags: [{name:"", clicked:false}],
@@ -273,7 +274,8 @@ export default function reducer(state=defaultState, action) {
         return newState
       case LOAD_ALL_COCKTAILS:
         newState = { ...state }
-        newState.cocktails = [...action.cocktails]
+        newState.cocktails = [...action.cocktails.cocktails]
+        newState.cocktails.length = action.cocktails.length
         return newState
       case SEARCH_COCKTAIL_BY_INGREDIENTS:
         newState = {...state}
