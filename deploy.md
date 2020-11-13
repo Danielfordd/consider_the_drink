@@ -197,7 +197,23 @@ DJANGO_ENV=development
 DJANGO_ENV=production
 ```
 
-16. Run heroku login, set heroku as a remote and set buildpacks (change <project_name>)
+16. Add code `mainappname`/urls.py to serve Favicon
+
+```bash
+##other imports
+from django.views.generic.base import RedirectView
+from django.contrib.staticfiles.storage import staticfiles_storage
+
+urlpatterns = [
+    path(
+        "favicon.ico",
+        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
+    ),
+    #...other paths
+]
+```
+
+17. Run heroku login, set heroku as a remote and set buildpacks (change <project_name>)
 
 ```bash
 heroku login
@@ -209,7 +225,7 @@ heroku config:set NODE_MODULES_CACHE=true
 git push heroku main
 ```
 
-17. Connect to heroku shell and seed database
+18. Connect to heroku shell and seed database
 ```bash
 heroku run bash
 
