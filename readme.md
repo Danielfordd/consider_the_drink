@@ -117,6 +117,7 @@ The cocktails are looped through and checked to see if they contain ingredients 
 The matches are sent back to react and stored in the redux slice of state "cocktail matches". The matches are mapped into a results container on the side.
 
 ## Cocktail Filtering
+***
 The website's home page is "/cocktails/all/1" which a user can also reach by clicking the logo or "Cocktails" in the navigation bar.
 
 Users are able to filter cocktails alphabetically or by selecting provided tags. The results of the filter are paginated at 16 cocktails per page.
@@ -163,6 +164,7 @@ cocktails = list(Cocktail.objects
 ```
 
 ## User Favorites
+***
 A logged in user is able to favorite cocktails on a cocktail's detail page and see that they have favorited the cocktail on any time that cocktail card is displayed.
 
 --gif--
@@ -184,6 +186,7 @@ When a user clicks the heart (favorite icon) an api call is sent to the Django A
 When cocktail cards are rendered they each send a fetch call to the Django API function is_favorite that checks if there is an entry in favcocktails.
 
 ## User Cocktail Notes
+***
 A logged in user is to able to leave notes on cocktails, view them, and delete them. The notes are rendered by a fetch call to the Django API function all_notes which returns all notes for that cocktail and user.
 
 Notes are written in the bottom textarea field, which keeps track of the typed value in a react useState hook. When the user submits the textarea field a fetch call is made to the Django API which creates a new note entry. The new note is sent back as a JSON response and put into the redux slice of state "Cocktail/current/notes". This slice of state is mapped over and displayed on the screen.
@@ -192,6 +195,7 @@ Notes are written in the bottom textarea field, which keeps track of the typed v
 
 
 ## User Authentication
+***
 A user is able to view cocktails and receive recommendations based off of ingredients without logging in. In order to save bar ingredients, favorite cocktails, and write notes for cocktails.
 
 A user without an account can sign up by navigating to "/signup". The information in the signup form is kept track of through react useState hooks and on submit sends a fetch call with the information to the Django API. The API passes the form data into a serializer that validates the data and creates a JSON web token. The user is then created and saved into the database and a JSON response is sent back with the token.
@@ -264,9 +268,15 @@ export const logout = () => async dispatch => {
 ```
 
 ## Future Features
-
+***
 ## Social
 Allow users to find other users and see their cocktail notes
 
 ## External API Access
 Allow outside users to access the backend for cocktail information. On the website documentation will be provided that includes sample queries and the output from the given query.
+
+
+## Known Bugs
+***
+
+- Design is not fully responsive is displays poorly on small screens.
