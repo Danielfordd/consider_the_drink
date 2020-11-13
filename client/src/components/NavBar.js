@@ -10,7 +10,7 @@ const NavBar = () => {
     if(loggedIn) {
         return (
             <ul className="NavBar">
-                       <li style={{float:'left'}}><NavLink exact to="/" className="NavBar-link logo"><img src="/staticfiles/logo.png" alt="logo" className="logo" /></NavLink></li>
+                       <li style={{float:'left'}}><NavLink exact to="/" className="NavBar-link logo"><img src="/static/logo.png" alt="logo" className="logo" /></NavLink></li>
             <li style={{float:'left'}} className="NavBar-search"><CocktailSearchBar /></li>
             <li><LogoutButton /></li>
             <li><NavLink to="/myBar" activeClassName="active" className="NavBar-link">My Bar</NavLink></li>
@@ -21,7 +21,7 @@ const NavBar = () => {
     } else {
         return (
             <ul className="NavBar">
-                <li style={{float:'left'}}><NavLink exact to="/cocktails/all/1" className="NavBar-link logo"><img src="/logo.png" alt="logo" className="logo" /></NavLink></li>
+                <li style={{float:'left'}}><NavLink exact to="/cocktails/all/1" className="NavBar-link logo"><img src="/static/logo.png" alt="logo" className="logo" /></NavLink></li>
                 <li style={{float:'left'}} className="NavBar-search"><CocktailSearchBar /></li>
                 <li><NavLink to="/signup" activeClassName="active" className="NavBar-link">Sign Up</NavLink></li>
                 <li><NavLink to="/login" activeClassName="active" className="NavBar-link">Login</NavLink></li>
