@@ -8,7 +8,7 @@ const CocktailSearchResults = () => {
     const { query } = useParams()
     const dispatch = useDispatch()
     const cocktails = useSelector(state => state.cocktails.searchResults)
-    console.log(cocktails)
+
     useEffect(() => {
         dispatch(load_results_by_query(query))
     // eslint-disable-next-line

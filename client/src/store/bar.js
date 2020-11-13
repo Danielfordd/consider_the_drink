@@ -55,7 +55,6 @@ export const addIngredientToMyBar = (ingredient) => async dispatch => {
 
     if (response.ok) {
         const { addedIngredient } = await response.json()
-        console.log(addedIngredient)
         dispatch(add_ing_mybar(addedIngredient))
     }
 }

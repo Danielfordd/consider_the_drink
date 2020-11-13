@@ -109,16 +109,17 @@ def cocktail_all(request,
         tags = tags.split(",")[:-1]
 
     if tags:
-        cocktails = list(Cocktail.objects
-                         .filter(cocktailtagjoin__tag__tag__in=tags)
-                         .annotate(num_tags=Count('cocktailtagjoin__tag'))
-                         .filter(num_tags=len(tags))
-                         .distinct()
-                         .order_by(sort_by)[start:end])
+        cocktails = Cocktail.objects.filter(cocktailtagjoin__tag__tag__in=tags).annotate(num_tags=Count('cocktailtagjoin__tag')).filter(num_tags=len(tags)).distinct().order_by(sort_by)
+
+        totalCocktails = len(cocktails)
+
+        cocktails = cocktails[start:end]
 
         cocktailResponse = {'cocktails': [{'name': res.cocktail_name,
                                            'image': res.cocktail_image}
                             for res in cocktails]}
+
+        cocktailResponse.total = totalCocktails
 
         return JsonResponse(cocktailResponse)
     else:
