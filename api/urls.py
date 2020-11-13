@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from rest_framework_jwt.views import obtain_jwt_token
 from django.urls import path, include, re_path
-from .views import FrontendAppView, get_favicon
-import debug_toolbar
+from .views import FrontendAppView,
 from django.conf import settings
 from django.views.generic.base import RedirectView
 from django.contrib.staticfiles.storage import staticfiles_storage
+import debug_toolbar
 
 urlpatterns = [
     path('__debug__/', include(debug_toolbar.urls)),
@@ -30,6 +30,9 @@ urlpatterns = [
     path('api/ingredients/', include('ingredient.urls')),
     path('api/cocktails/', include('cocktail.urls')),
     path('api/user/', include('bar.urls')),
-    path("favicon.ico", get_favicon),
+    path(
+        "favicon.ico",
+        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
+    ),
     re_path(r'^', FrontendAppView.as_view()),
 ]
