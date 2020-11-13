@@ -258,7 +258,7 @@ const defaultState = {
                           serving_styles:[],
                           similar: [],
                           notes: [],
-                          length: []
+                          length: 1
                         },
                       sort: "name_asc",
                       tags: [{name:"", clicked:false}],

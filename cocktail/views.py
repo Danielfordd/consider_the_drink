@@ -123,11 +123,15 @@ def cocktail_all(request,
 
         return JsonResponse(cocktailResponse)
     else:
-        cocktails = list(Cocktail.objects.all().order_by(sort_by)[start:end])
+        cocktails = Cocktail.objects.all().order_by(sort_by)[start:end]
+
+        totalCocktails = len(cocktails)
 
         cocktailResponse = {'cocktails': [{'name': res.cocktail_name,
                                            'image': res.cocktail_image}
                             for res in cocktails]}
+
+        cocktailResponse['total'] = totalCocktails
 
         return JsonResponse(cocktailResponse)
 
