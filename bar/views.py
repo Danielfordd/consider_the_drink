@@ -76,7 +76,6 @@ def all_notes(request, userId, cocktailId):
 def delete_note(request):
     body_unicode = request.body.decode('utf-8')
     noteId = int(json.loads(body_unicode)['noteId'])
-    print(noteId)
     note_to_delete = CocktailNote.objects.get(pk=noteId)
     note_to_delete.delete()
     return JsonResponse({'deletedNoteId': noteId})
@@ -106,5 +105,4 @@ def create_ingredient(request):
 
     new_mybar_ing = Bar(user=user, ingredient=ingredientMatch)
     new_mybar_ing.save()
-    print(ingredient)
     return JsonResponse({'addedIngredient': ingredient})

@@ -156,7 +156,6 @@ export const favoriteCocktail = (cocktailId, userId) => async dispatch => {
 
   if (response.ok) {
     const { favorited } = await response.json()
-    console.log(favorited)
     dispatch(check_fav(favorited))
   }
 }
