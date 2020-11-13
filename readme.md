@@ -1,10 +1,11 @@
-## Features - MVP
+## Major Features
 - [Features Overview](#Features-Overview)
 - [Cocktail Recommender](#Cocktail-Recommender)
 - [Cocktail Filtering](#Cocktail-Filtering)
 - [User's Favorites](#User's-Favorites)
 - [User's Cocktail Notes](#User's-Cocktail-Notes)
 - [User Authentication](#User-Authentication)
+- [Future Features](#Future-features)
 
 ## Technologies
 - React
@@ -261,3 +262,11 @@ export const logout = () => async dispatch => {
   dispatch(removeUser());
 }
 ```
+
+## Future Features
+
+## Social
+Allow users to find other users and see their cocktail notes
+
+## External API Access
+Allow outside users to access the backend for cocktail information. On the website documentation will be provided that includes sample queries and the output from the given query.
