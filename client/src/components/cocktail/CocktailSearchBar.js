@@ -7,6 +7,12 @@ const CocktailSearchBar = () => {
 
     const handleSearch = async (e) => {
         e.preventDefault()
+
+        if(!cocktailQuery.replace(/\s/g, '').length) {
+            history.push("/cocktails/all/1")
+            setCocktailQuery("")
+        }
+
         const response = await fetch(`/api/cocktails/search/${cocktailQuery}`)
 
         if (response.ok) {

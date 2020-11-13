@@ -113,13 +113,13 @@ def cocktail_all(request,
 
         totalCocktails = len(cocktails)
 
-        cocktailsList = list(cocktails[start:end])
+        cocktailsList = cocktails[start:end]
 
         cocktailResponse = {'cocktails': [{'name': res.cocktail_name,
                                            'image': res.cocktail_image}
                             for res in cocktailsList]}
 
-        cocktailResponse.total = totalCocktails
+        cocktailResponse['total'] = totalCocktails
 
         return JsonResponse(cocktailResponse)
     else:
