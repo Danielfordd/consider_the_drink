@@ -171,7 +171,7 @@
     },
     { "model": "ingredient.Ingredient",
         "fields": {
-            "ingredient_name": "Apple Juice"
+            "ingredient_name": "Apple Cider"
         }
     },
     { "model": "ingredient.Ingredient",

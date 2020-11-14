@@ -2,46 +2,54 @@
     {
         "model": "cocktail.Cocktail",
         "fields": {
-            "cocktail_name":"Hemingway Special",
-            "cocktail_description": "While he was staying in Cuba, Ernest Hemingway tried the Floridita's signature drink, the Floridita Daiquiri, and said \"That's good but I prefer it without sugar and double rum,\" creating a cocktail now known as the Hemingway Daiquiri or the Papa Doble. This recipe was later modified further, adding grapefruit juice to the mix, at which point the drink was dubbed the Hemingway Special.\""
+            "cocktail_name":"",
+            "cocktail_description": "",
+            "cocktail_image": ""
         }
     },
     {
         "model":"cocktail.Served",
         "fields": {
-            "cocktail": 52,
-            "served": 1
+            "cocktail": 99,
+            "served":
         }
     },
     {
         "model":"cocktail.Glassware",
         "fields": {
-            "cocktail": 52,
-            "glass": 8
+            "cocktail": 99,
+            "glass":
         }
     },
     {
         "model":"cocktail.Recipe",
         "fields": {
-            "cocktail": 52,
-            "ingredient": 1,
+            "cocktail": 99,
+            "ingredient": ,
             "order": 0,
-            "ingredient_quantity": ""
+            "ingredient_quantity": "1 Part"
         }
     },
     {
         "model":"cocktail.Garnish",
         "fields": {
-            "cocktail": 52,
-            "garnish": 1
+            "cocktail": 99,
+            "garnish":
         }
     },
     {
         "model":"cocktail.Instruction",
         "fields": {
-            "cocktail": 52,
+            "cocktail": 99,
             "order": 0,
-            "instruction": ""
+            "instruction": "Combine ingredients with ice and stir until chilled, approximately 20-30 seconds."
         }
-    }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 99,
+            "tag": 1
+        }
+     },
 ]
