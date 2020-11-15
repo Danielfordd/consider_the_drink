@@ -12021,5 +12021,809 @@
              "cocktail": 98,
              "tag": 12
          }
-      }
+      },
+      {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Roy Rogers",
+            "cocktail_description": "A Roy Rogers is a non-alcoholic mixed drink made with cola and grenadine syrup, garnished with a maraschino cherry. The drink's lack of alcoholic content allows it to be served to people who do not drink alcohol as a \"mocktail\".",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/horses_neck.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 99,
+            "served": 2
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 99,
+            "glass": 6
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 99,
+            "ingredient": 131,
+            "order": 0,
+            "ingredient_quantity": "To Fill"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 99,
+            "ingredient": 131,
+            "order": 1,
+            "ingredient_quantity": "Splash"
+        }
+    },
+    {
+        "model":"cocktail.Garnish",
+        "fields": {
+            "cocktail": 99,
+            "garnish": 105
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 99,
+            "order": 0,
+            "instruction": "Pour grenadine in an ice filled glass and top with cola."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 99,
+            "order": 1,
+            "instruction": "Garnish with a non-alcoholic cherry and serve."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 99,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 99,
+            "tag": 2
+        }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Shirley Temple",
+            "cocktail_description": "A Shirley Temple is a non-alcoholic mixed drink traditionally made with ginger ale and a splash of grenadine, garnished with a maraschino cherry. Modern Shirley Temple recipes may substitute lemon-lime soda or lemonade and sometimes orange juice in part, or in whole.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/shirley.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 100,
+            "served": 2
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 100,
+            "glass": 6
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 100,
+            "ingredient": 107,
+            "order": 0,
+            "ingredient_quantity": "To Fill"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 100,
+            "ingredient": 105,
+            "order": 1,
+            "ingredient_quantity": "Splash"
+        }
+    },
+    {
+        "model":"cocktail.Garnish",
+        "fields": {
+            "cocktail": 100,
+            "garnish": 105
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 100,
+            "order": 0,
+            "instruction": "Pour gingerale into ice filled glash and top with a splash of grenadine."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 100,
+            "order": 1,
+            "instruction": "Garnish with a non alcoholic cherry and serve."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 100,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 100,
+            "tag": 2
+        }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"7 and 7",
+            "cocktail_description": "A 7 and 7 is a highball cocktail, a mixed alcoholic drink containing Seagram's Seven Crown and 7 Up. It is typically served with ice.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/screwdriver.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 101,
+            "served": 2
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 101,
+            "glass": 6
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 101,
+            "ingredient": 5,
+            "order": 0,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 101,
+            "ingredient": 133,
+            "order": 1,
+            "ingredient_quantity": "3 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 101,
+            "order": 0,
+            "instruction": "Combine ingredients in an ice filled glass and serve."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 101,
+            "tag": 7
+        }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Snowball",
+            "cocktail_description": "A Snowball is a mixture of Advocaat and a carbonated lemonade in approximately equal parts. It may have other ingredients, to taste. It typically contains a squeeze of fresh lime juice, which is shaken with the advocaat before pouring into a glass and topping up with lemonade. In the United Kingdom, it is often sold in both pubs and supermarkets in small bottles of approximately 113 millilitres (4.0 imp fl oz; 3.8 US fl oz) or 180 millilitres (6.3 imp fl oz; 6.1 US fl oz) (known in the pub trade as \"splits\") and is usually drunk as a \"winter warmer\"",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/brandy_alexander.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 102,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 102,
+            "glass": 2
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 102,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 102,
+            "glass": 4
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 102,
+            "ingredient": 111,
+            "order": 0,
+            "ingredient_quantity": "2 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 102,
+            "ingredient": 33,
+            "order": 1,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 102,
+            "ingredient": 128,
+            "order": 2,
+            "ingredient_quantity": "3 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Garnish",
+        "fields": {
+            "cocktail": 102,
+            "garnish": 54
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 102,
+            "order": 0,
+            "instruction": "Combine all ingredients in a cocktail shaker and shake for 10-15 seconds."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 102,
+            "order": 1,
+            "instruction": "Strain into your preferred glass and garnish with a lime twist."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 102,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Aquavit Cider",
+            "cocktail_description": "Inspired by the flavors of Scandinavia in the winter, aquavit spices up warm apple cider.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/brandy_alexander.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 103,
+            "served": 3
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 103,
+            "glass": 12
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 103,
+            "ingredient": 56,
+            "order": 0,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 103,
+            "ingredient": 35,
+            "order": 1,
+            "ingredient_quantity": "5 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 103,
+            "ingredient": 40,
+            "order": 2,
+            "ingredient_quantity": ".5 Part"
+        }
+    },
+    {
+        "model":"cocktail.Garnish",
+        "fields": {
+            "cocktail": 103,
+            "garnish": 145
+        }
+    },
+    {
+        "model":"cocktail.Garnish",
+        "fields": {
+            "cocktail": 103,
+            "garnish": 43
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 103,
+            "order": 0,
+            "instruction": "Combine cider and honey in a saucepot and heat until just simmering, making sure to stir occasionally."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 103,
+            "order": 1,
+            "instruction": "Add aquavit and pour into coffee mug or irish coffee mug then serve."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 103,
+            "tag": 10
+        }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Dark Manhattan",
+            "cocktail_description": "Similar to a Manhattan, this variation gets its sweetness from amaro and a lift from orange bitters.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/manhattan.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 104,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 104,
+            "glass": 2
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 104,
+            "glass": 8
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 104,
+            "ingredient": 5,
+            "order": 0,
+            "ingredient_quantity": "2 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 104,
+            "ingredient": 86,
+            "order": 1,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 104,
+            "ingredient": 27,
+            "order": 2,
+            "ingredient_quantity": "2-3 Dashes"
+        }
+    },
+    {
+        "model":"cocktail.Garnish",
+        "fields": {
+            "cocktail": 104,
+            "garnish": 49
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 104,
+            "order": 0,
+            "instruction": "Combine ingredients with ice and stir until chilled, approximately 20-30 seconds."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 104,
+            "order": 1,
+            "instruction": "Strain into your preferred glass, garnish with a cherry and serve."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 104,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 104,
+            "tag": 6
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 104,
+            "tag": 12
+        }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Armagnac Smash",
+            "cocktail_description": "A simple and refreshing cocktail that brings the Armagnac into the fore.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/julep.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail":105,
+            "served": 2
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail":105,
+            "glass": 5
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail":105,
+            "ingredient": 19,
+            "order": 0,
+            "ingredient_quantity": "2 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail":105,
+            "ingredient": 38,
+            "order": 1,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail":105,
+            "ingredient": 34,
+            "order": 2,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Garnish",
+        "fields": {
+            "cocktail":105,
+            "garnish": 42
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail":105,
+            "order": 0,
+            "instruction": "Combine ingredients with ice and shake for 10-15 seconds"
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail":105,
+            "order": 0,
+            "instruction": "Strain into a glass and garnish with a sprig of mint."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail":105,
+            "tag": 1
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail":105,
+            "tag": 13
+        }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Summer Shandy",
+            "cocktail_description": "A refreshing and low ABV sipper for warm weather.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/beer.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 106,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 106,
+            "glass": 6
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 106,
+            "glass": 17
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 106,
+            "glass": 11
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 106,
+            "ingredient": 72,
+            "order": 0,
+            "ingredient_quantity": "3 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 106,
+            "ingredient": 128,
+            "order": 1,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 106,
+            "order": 0,
+            "instruction": "Combine ingredients and serve."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 106,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 106,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Baiju Shandy",
+            "cocktail_description": "A refreshing and low ABV sipper for warm weather. This variation adds the exotic flavors of Baiju which can be potent, be careful about adding too much!",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/beer.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 107,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 107,
+            "glass": 6
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 107,
+            "glass": 17
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 107,
+            "glass": 11
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 107,
+            "ingredient": 71,
+            "order": 0,
+            "ingredient_quantity": "3 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 107,
+            "ingredient": 128,
+            "order": 1,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 107,
+            "ingredient": 69,
+            "order": 1,
+            "ingredient_quantity": ".5 Part"
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 107,
+            "order": 0,
+            "instruction": "Combine ingredients and serve."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 107,
+            "tag": 4
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 107,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Boiler Maker",
+            "cocktail_description": "Sometimes you just need a shot and a beer. A boilermaker can refer to two types of beer cocktail. In American terminology, the drink consists of a glass of beer mixed with a shot of whiskey. When the beer is served as a chaser, the drink is often called simply a shot and a beer. In Texas, it is known as a Two-Step.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/boiler.png"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 108,
+            "served": 1
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 108,
+            "glass": 6
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 108,
+            "glass": 17
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 108,
+            "glass": 11
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 108,
+            "ingredient": 73,
+            "order": 0,
+            "ingredient_quantity": "1 Ea"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 108,
+            "ingredient": 5,
+            "order": 1,
+            "ingredient_quantity": "1 Shot"
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 108,
+            "order": 0,
+            "instruction": "Serve the beer and shot seperatly."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 108,
+            "tag": 1
+        }
+     }
 ]
