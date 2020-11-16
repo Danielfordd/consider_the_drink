@@ -12825,5 +12825,110 @@
             "cocktail": 108,
             "tag": 1
         }
+     },
+     {
+        "model": "cocktail.Cocktail",
+        "fields": {
+            "cocktail_name":"Violet Sake",
+            "cocktail_description": "This tastes like juice but packs a punch. Drink with caution.",
+            "cocktail_image": "https://considerthedrink.s3.us-east-2.amazonaws.com/bramble.png"
+        }
+    },
+    { "model": "ingredient.Ingredient",
+        "fields": {
+            "ingredient_name": "Monin Desert Pear Syrup"
+        }
+    },
+    {
+        "model":"cocktail.Served",
+        "fields": {
+            "cocktail": 109,
+            "served": 2
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 109,
+            "glass": 6
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 109,
+            "glass": 17
+        }
+    },
+    {
+        "model":"cocktail.Glassware",
+        "fields": {
+            "cocktail": 109,
+            "glass": 11
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 109,
+            "ingredient": 84,
+            "order": 0,
+            "ingredient_quantity": "4 Parts"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 109,
+            "ingredient": 177,
+            "order": 1,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Recipe",
+        "fields": {
+            "cocktail": 109,
+            "ingredient": 106,
+            "order": 2,
+            "ingredient_quantity": "1 Part"
+        }
+    },
+    {
+        "model":"cocktail.Garnish",
+        "fields": {
+            "cocktail": 109,
+            "garnish": 43
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 109,
+            "order": 0,
+            "instruction": "Combine ingredients in a cocktail shaker with ice and shake for 10-15 seconds."
+        }
+    },
+    {
+        "model":"cocktail.Instruction",
+        "fields": {
+            "cocktail": 109,
+            "order": 1,
+            "instruction": "Strain into ice filled glass and garnish with a lemon wheel."
+        }
+    },
+    {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 109,
+            "tag": 3
+        }
+     },
+     {
+        "model": "cocktail.CocktailTagJoin",
+        "fields": {
+            "cocktail": 109,
+            "tag": 9
+        }
      }
 ]

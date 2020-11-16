@@ -1,3 +1,5 @@
+[Live Link](https://considerthedrink.herokuapp.com/cocktails/all/1)
+
 ## Major Features
 - [Features Overview](#Features-Overview)
 - [Cocktail Recommender](#Cocktail-Recommender)
@@ -83,7 +85,7 @@ Consider the Drink is a website to discover new cocktails and get recommendation
 ***
 The recommender receives a list of ingredients input by the user and returns cocktails that can be made now, cocktails that can be made with one additional ingredient, and cocktails that can be made with two additional ingredients.
 
---gif here--
+![](gifs/ctd_cocktail_ingredient_search.gif)
 
 Upon navigation to "/ingredients/search" an asynchronous fetch call is made to the Django API to query the Postgres database and receive a full list of ingredient names. The ingredient names received from the fetch call are stored in the ingredients slice of redux state and mapped into a react container.
 
@@ -122,7 +124,7 @@ The website's home page is "/cocktails/all/1" which a user can also reach by cli
 
 Users are able to filter cocktails alphabetically or by selecting provided tags. The results of the filter are paginated at 16 cocktails per page.
 
---gif here--
+![](gifs/ctd_cocktail_filter.gif)
 
 The cocktails that are rendered on the page are returned from an ascynchronous fetch call to the Django API. The cocktail sort function accepts 4 parameters, page number, quantity, sort, and tags passed with the fetch call.
 
@@ -167,7 +169,7 @@ cocktails = list(Cocktail.objects
 ***
 A logged in user is able to favorite cocktails on a cocktail's detail page and see that they have favorited the cocktail on any time that cocktail card is displayed.
 
---gif--
+![](gifs/ctd_cocktail__favorite.gif)
 
 When a user clicks the heart (favorite icon) an api call is sent to the Django API function change_favorite. First the function checks if there is an entry in the favcocktails database and if there is the it deletes the entry. After deleting it responds "False". If there is no entry it creates an entry and responds "True"
 
@@ -191,7 +193,7 @@ A logged in user is to able to leave notes on cocktails, view them, and delete t
 
 Notes are written in the bottom textarea field, which keeps track of the typed value in a react useState hook. When the user submits the textarea field a fetch call is made to the Django API which creates a new note entry. The new note is sent back as a JSON response and put into the redux slice of state "Cocktail/current/notes". This slice of state is mapped over and displayed on the screen.
 
---gif--
+![](gifs/ctd_cocktail__notes.gif)
 
 
 ## User Authentication
