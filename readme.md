@@ -77,21 +77,21 @@ $ pipenv lock -r > requirements.txt
 
 ## Features Overview
 ***
-Consider the Drink is a website to discover new cocktails and get recommendations based off of the ingredients you have. The features listed below focus on the functionality of the finding and filtering cocktails as well as users interacting with them.
+Consider the Drink is a website to discover new cocktails and get recommendations based off of the ingredients you have. The features listed below focus on the functionality of the finding and filtering cocktails as well as users interacting with the cocktails.
 
 > Current Status: Ongoing Development
 
 ## Cocktail Recommender
 ***
-The recommender receives a list of ingredients input by the user and returns cocktails that can be made now, cocktails that can be made with one additional ingredient, and cocktails that can be made with two additional ingredients.
+The recommender receives a list of ingredients, input by the user, and returns cocktails that can be made now, cocktails that can be made with one additional ingredient, and cocktails that can be made with two additional ingredients.
 
 ![](gifs/ctd_cocktail_ingredient_search.gif)
 
-Upon navigation to "/ingredients/search" an asynchronous fetch call is made to the Django API to query the Postgres database and receive a full list of ingredient names. The ingredient names received from the fetch call are stored in the ingredients slice of redux state and mapped into a react container.
+Upon navigation to "/ingredients/search" a fetch call is made to the Django API to query the Postgres database and receive a full list of ingredient names. The ingredient names received from the fetch call are stored in the ingredients slice of redux state and mapped into a react container.
 
-When a user clicks an ingredient, that ingredient is added to a filter inside of the ingredient slice of state. Every click also makes an asynchronous fetch call, with the filtered ingredient, to the Django API function cocktail__sort.
+When a user clicks an ingredient, that ingredient is added to a filter inside of the ingredient slice of state. Every click also makes a fetch call, with the filtered ingredient, to the Django API function cocktail__sort.
 
-The cocktails are looped through and checked to see if they contain ingredients within the filtered ingredient. For every filtered ingredient the cocktail contains a match count is increased. If the cocktail has the same number of match count as ingredients contained it is added to the exact response "res". If it is one less it is added to "rone" and if it is two less it is added to "rtwo".
+The cocktails are looped through and checked to see if they contain ingredients within the filtered ingredient. For every filtered ingredient the cocktail contains, a match count is increased. If the cocktail has the same number of ingredients as the match count it is added to the exact response "res". If it is one less it is added to "rone" and if it is two less it is added to "rtwo".
 
 ```bash
     res = []
@@ -122,19 +122,19 @@ The matches are sent back to react and stored in the redux slice of state "cockt
 ***
 The website's home page is "/cocktails/all/1" which a user can also reach by clicking the logo or "Cocktails" in the navigation bar.
 
-Users are able to filter cocktails alphabetically or by selecting provided tags. The results of the filter are paginated at 16 cocktails per page.
+Users are able to filter cocktails alphabetically or by selecting provided tags. The results of the filter are paginated at 12 cocktails per page.
 
 ![](gifs/ctd_cocktail_filter.gif)
 
-The cocktails that are rendered on the page are returned from an ascynchronous fetch call to the Django API. The cocktail sort function accepts 4 parameters, page number, quantity, sort, and tags passed with the fetch call.
+The cocktails that are rendered on the page are returned from a fetch call to the Django API. The cocktail sort function accepts 4 parameters, page number, quantity, sort, and tags passed with the fetch call.
 
-Pagination is acheived through slicing the cocktail query set where start = (multiplying quantity * page -1) and end = (start + quantity). When a user clicks a new page it re-fetches the Django API.
+Pagination is achieved through slicing the cocktail query set where start = (multiplying quantity * page -1) and end = (start + quantity). When a user clicks a new page it re-fetches the Django API.
 
 ```bash
 Cocktail.objects.all().order_by(sort_by)[start:end]
 ```
 
-Alphabetical sort is acheived through the "A-Z" and "Z-A" select field. When the select changes it sends a new fetch request to the Django API sorting function. If the value is "A-Z" it makes sets the variable sort_by and passes it into .order_by()
+Alphabetical sort is achieved through the "A-Z" and "Z-A" select field. When the select field changes it sends a new fetch request to the Django API sorting function. If the value is "A-Z" it makes sets the variable sort_by and passes it into .order_by()
 
 ```bash
     sort_by = ""
@@ -152,9 +152,7 @@ Alphabetical sort is acheived through the "A-Z" and "Z-A" select field. When the
                          .order_by(sort_by)[start:end])
 ```
 
-Tag filtering is acheived through the user selecting tags which triggers a fetch call to the API's sort function, passing in all selected tags. The selected tags are put into a list and every cocktail is filtered by checking if a provided tag is within that cocktail's tag join table. For every tag that is within both, the count is increased with .annotate. After looping through the cocktails only the cocktails with an annotation count equal to the length of the provided tags. Any duplicate entries are removed with .distinct().
-
---gif--
+Tag filtering is achieved through the user selecting tags which triggers a fetch call to the API's sort function, passing in all selected tags. The selected tags are put into a list and every cocktail is filtered by checking if a provided tag is within that cocktail's tag join table. For every tag that is within both, the count is increased with .annotate. Only the cocktails with an annotation count equal to the length of the provided tags are included in the response. Any duplicate entries are removed with .distinct().
 
 ```bash
 cocktails = list(Cocktail.objects
@@ -167,11 +165,11 @@ cocktails = list(Cocktail.objects
 
 ## User Favorites
 ***
-A logged in user is able to favorite cocktails on a cocktail's detail page and see that they have favorited the cocktail on any time that cocktail card is displayed.
+A logged in user is able to favorite cocktails on a cocktail's detail page and see that they have favorited the cocktail on any page that contains the given cocktail card.
 
 ![](gifs/ctd_cocktail__favorite.gif)
 
-When a user clicks the heart (favorite icon) an api call is sent to the Django API function change_favorite. First the function checks if there is an entry in the favcocktails database and if there is the it deletes the entry. After deleting it responds "False". If there is no entry it creates an entry and responds "True"
+When a user clicks the heart (favorite icon) an api call is sent to the Django API function change_favorite. First the function checks if there is an entry in the favcocktails database and if there is, the function deletes the entry and sends the response "False". If there is no entry it creates an entry and responds "True"
 
 ```bash
     exists = FavCocktail.objects.filter(cocktail=cocktailId, user=userId)
@@ -185,7 +183,7 @@ When a user clicks the heart (favorite icon) an api call is sent to the Django A
     return JsonResponse({'favorited': True})
 ```
 
-When cocktail cards are rendered they each send a fetch call to the Django API function is_favorite that checks if there is an entry in favcocktails.
+When cocktail cards are rendered they check to if there is an entry with the cocktail and user in FavCocktails table.
 
 ## User Cocktail Notes
 ***
@@ -198,7 +196,7 @@ Notes are written in the bottom textarea field, which keeps track of the typed v
 
 ## User Authentication
 ***
-A user is able to view cocktails and receive recommendations based off of ingredients without logging in. In order to save bar ingredients, favorite cocktails, and write notes for cocktails.
+A user is able to view cocktails and receive recommendations based off of ingredients without logging in. In order to save bar ingredients, favorite cocktails, and write notes for cocktails a user must log in.
 
 A user without an account can sign up by navigating to "/signup". The information in the signup form is kept track of through react useState hooks and on submit sends a fetch call with the information to the Django API. The API passes the form data into a serializer that validates the data and creates a JSON web token. The user is then created and saved into the database and a JSON response is sent back with the token.
 
@@ -225,7 +223,7 @@ class UserSerializerWithToken(serializers.ModelSerializer):
         return instance
 ```
 
-On the frontend, the token from the response is set into local storage. The token is then decoded and the user id, user name and email is set into the redux slice of state "authentication".
+On the frontend, the token from the response is set into local storage. The token is also decoded and the user id, user name and email is set into the redux slice of state "authentication".
 
 ```bash
     if (response.ok) {
@@ -271,6 +269,7 @@ export const logout = () => async dispatch => {
 
 ## Future Features
 ***
+
 ## Social
 Allow users to find other users and see their cocktail notes
 
@@ -281,4 +280,4 @@ Allow outside users to access the backend for cocktail information. On the websi
 ## Known Bugs
 ***
 
-- Design is not fully responsive is displays poorly on small screens.
+- Design is not fully responsive. Poor user experience on small screens.
