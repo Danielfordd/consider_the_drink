@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { signup } from '../../store/authentication'
 
 const SignupForm = () => {
@@ -12,10 +12,12 @@ const SignupForm = () => {
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();
   const loggedOut = useSelector(state => state.authentication.username);
+  const history = useHistory()
 
   const SignupHandler = e => {
     e.preventDefault()
     dispatch(signup(firstName, lastName, userName,email, password))
+    history.push('/')
   }
 
   if (loggedOut) {

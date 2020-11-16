@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { login } from '../../store/authentication';
 import LoginDemoUser from './LoginDemoUser'
 

@@ -88,7 +88,7 @@ def cocktail_data(request, cocktail_name):
 @ensure_csrf_cookie
 def cocktail_all(request,
                  page=1,
-                 quantity=16,
+                 quantity=12,
                  sort="name_asc",
                  tags=False):
     """
