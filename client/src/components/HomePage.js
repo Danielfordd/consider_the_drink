@@ -18,7 +18,7 @@ const HomePage = () => {
         return(
             <div className="container">
                 <div className="homepage-welcome shadow">
-                <pre>Enter ingredients below to see cocktails that you can make with them!! If you would like to save your bar's ingredients, <a href="/login">login</a> or <a href="/signup">sign up</a>.</pre>
+                <div>Enter ingredients below to see cocktails that you can make with them!! If you would like to save your bar's ingredients, <a href="/login">login</a> or <a href="/signup">sign up</a>.</div>
                 </div>
                 <div className="homepage-bottom">
                     <IngredientSearchContainer/>

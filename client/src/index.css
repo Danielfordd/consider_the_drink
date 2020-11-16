@@ -66,6 +66,12 @@ ul {
     margin-bottom: 7px;
 }
 
+@media only screen and (max-width: 1058px) {
+    .homepage-welcome{
+        max-width: 600px;
+    }
+
+}
 
 .shadow {
     box-shadow: 5px 7px #DCDCDC;
@@ -174,7 +180,7 @@ ul {
 
 .login-container {
     display: grid;
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     margin: auto;
     justify-content: center;
@@ -182,6 +188,8 @@ ul {
 }
 
 .login-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-self: center;
     margin: auto;
 }
@@ -285,27 +293,82 @@ main {
     width: 100%;
     margin: auto;
     justify-content: center;
+    /* background-color: red !important; */
+}
+
+@media only screen and (max-width: 1099px) {
+    .CocktailCard-Container{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        max-width: 748px !important;
+        height: 50%;
+        width: 70vh !important;
+        margin: auto;
+        justify-content: center;
+    }
+    .CocktailCard-Container__left {
+        margin: auto;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 90% !important;
+        /* max-width: 561px !important; */
+    }
+    .all-cocktails__title{
+        grid-column: 0 / span 3 !important;
+        font-weight: 600;
+        font-size: 1.5em;
+        margin-left: 10%;
+    }
+
+    .all-cocktails__sort {
+        grid-column: span 2 !important;
+        grid-row: 0;
+    }
+    .CocktailCard-Container__right {
+        width: 748px!important;
+        height: 125px !important;
+        margin: auto;
+        margin-top: -100px !important;
+        border: 2px solid  #DCDCDC;
+        margin-bottom: 20px;
+    }
+
+    .CocktailCard-Container__right__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 10px !important;
+    }
+    .tag-title {
+        font-weight: 600;
+        margin-bottom: 5px;
+        border-bottom: none;
+        grid-column: 1 / span 5 !important;
+    }
+
+    .tag {
+        border-bottom: none !important;
+    }
 }
 
 .CocktailCard-Container__left {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);;
-    width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
     height: 80%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
-    max-width: 950px !important;
+    max-width: 900px !important;
     /* background-color: red; */
 }
 
 .CocktailCard-Container__right {
     width: 200px;
     height: 400px;
-    margin-top: 15%;
-    /* margin: auto; */
+    margin-top: 40px!important;
     border: 2px solid  #DCDCDC;
+
 }
 
 .CocktailCard-Container__right__inner {
