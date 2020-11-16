@@ -60,7 +60,6 @@ const SignupForm = () => {
         <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/white_russian.png" alt="cocktail" />
         <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/sotb.png" alt="cocktail" />
         <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/old_fashioned.png" alt="cocktail" />
-        <img src="https://considerthedrink.s3.us-east-2.amazonaws.com/pina.png" alt="cocktail" />
       </div>
     <main className="login-sidebar">
        <form onSubmit={SignupHandler}>
