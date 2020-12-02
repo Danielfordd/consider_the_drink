@@ -59,3 +59,41 @@ li button:hover {
 .NavBar-search input:focus {
     width: 250px !important;
 }
+
+
+.footer {
+    height: 40px;
+    background-color: #000000;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding: 16px 10px;
+    margin: auto;
+}
+
+.footer-inner {
+    grid-column: 2;
+    justify-content: center;
+}
+
+.github {
+font-size: 1.5em;
+}
+
+.angels {
+    font-size: 1.5em;
+}
+
+.linkedin {
+    font-size: 1.5em;
+}
