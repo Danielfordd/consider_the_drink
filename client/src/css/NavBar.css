@@ -87,13 +87,16 @@ li button:hover {
 }
 
 .github {
-font-size: 1.5em;
+font-size: 35px;
+margin-top: -3px;
 }
 
 .angels {
-    font-size: 1.5em;
+    font-size: 32px;
+    margin-top: -4px;
 }
 
 .linkedin {
-    font-size: 1.5em;
+    font-size: 32px;
+    margin-top: -3px;
 }
