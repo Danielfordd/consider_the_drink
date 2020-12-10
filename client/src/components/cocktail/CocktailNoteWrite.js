@@ -16,7 +16,7 @@ const CocktailNoteWrite = ({cocktailId}) => {
     return(
         <form onSubmit={writeNote} className="cocktail-note__write">
             <textarea
-            placeholder="test"
+            placeholder="Write your notes here"
             value={note}
             onChange={e => setNote(e.target.value)}
             />
