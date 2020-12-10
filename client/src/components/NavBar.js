@@ -3,10 +3,10 @@ import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from './authentication/LogoutButton'
 import CocktailSearchBar from './cocktail/CocktailSearchBar'
-import { Icon } from '@iconify/react';
-import linkedinIn from '@iconify-icons/cib/linkedin-in';
-import githubIcon from '@iconify-icons/codicon/github'
-import angellistIcon from '@iconify-icons/simple-icons/angellist';
+// import { Icon } from '@iconify/react';
+// import linkedinIn from '@iconify-icons/cib/linkedin-in';
+// import githubIcon from '@iconify-icons/codicon/github'
+// import angellistIcon from '@iconify-icons/simple-icons/angellist';
 
 const NavBar = () => {
     const loggedIn = useSelector(state => !!state.authentication.username)

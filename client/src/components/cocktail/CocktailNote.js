@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadAllNotes, deleteCocktailNote } from '../../store/cocktails'
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import trashCan from '@iconify-icons/mdi/trash-can';
 
 const CocktailNote = ({cocktailId}) => {
