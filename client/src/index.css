@@ -182,7 +182,6 @@ ul {
     display: grid;
     width: 100vw;
     height: 100vh;
-    margin: auto;
     justify-content: center;
     overflow: hidden;
 }
@@ -190,8 +189,6 @@ ul {
 .login-img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-self: center;
-    margin: auto;
 }
 
 .login-img img {
@@ -447,7 +444,7 @@ main {
 .details-outside-container{
     display: grid;
     grid-template-rows: 5fr 2fr;
-    height: 90vh;
+    height: 100vh;
 }
 
 .details-container {
@@ -603,14 +600,29 @@ main {
     justify-self: center;
 }
 
+.details-instruction h1{
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
 .details-instruction__each {
     margin-bottom: 5px;
+}
+.details-recipe__top h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.details-recipe__top span {
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
 }
 
 .pagination-container {
     grid-column: 1 / span 4;
 }
-
 
 .notfound-container {
     display: grid;

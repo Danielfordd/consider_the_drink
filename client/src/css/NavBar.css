@@ -63,22 +63,23 @@ li button:hover {
 
 .footer {
     height: 40px;
-    background-color: #000000;
-    list-style-type: none;
-    margin: 0;
-    padding-right: 20px;
-    padding-left: 20px;
-    overflow: hidden;
-    color: white;
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    position: relative;
+    /* width: 350px; */
+    /* margin: auto; */
+    margin-left: 40%;
+    padding: 20px;
+    /* align-items: center !important; */
 }
 
 .footer a {
     text-decoration: none;
-    color: white;
-    padding: 16px 10px;
+    color: black;
+    padding: 16px 8px;
     margin: auto;
+}
+
+.footer a:hover {
+    color: gray;
 }
 
 .footer-inner {
@@ -86,6 +87,13 @@ li button:hover {
     justify-content: center;
 }
 
+.footer span {
+    margin-right: 8px;
+    position: relative;
+    top: -25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 .github {
 font-size: 35px;
 margin-top: -3px;

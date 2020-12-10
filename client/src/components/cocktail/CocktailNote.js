@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadAllNotes, deleteCocktailNote } from '../../store/cocktails'
+import { Icon, InlineIcon } from '@iconify/react';
+import trashCan from '@iconify-icons/mdi/trash-can';
 
 const CocktailNote = ({cocktailId}) => {
     const dispatch = useDispatch()
@@ -23,7 +25,7 @@ const CocktailNote = ({cocktailId}) => {
                                          className="cocktail-note">
                                          {note[0]}
                                     </div>
-                                    <div onClick={handleDelete} id={`note-${note[1]}`} className="cocktail-note__delete">Delete Note</div>
+                                    <div onClick={handleDelete} id={`note-${note[1]}`} className="cocktail-note__delete"><Icon icon={trashCan} /></div>
                                 </div>)}
         </>
     )

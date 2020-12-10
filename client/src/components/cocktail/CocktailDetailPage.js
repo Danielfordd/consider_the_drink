@@ -40,6 +40,7 @@ const CocktailDetailPage = () =>{
                         <div className="details-recipe">
                             <div>
                                 <div className="details-recipe__top">
+                                    <h1>Ingredients</h1><span></span>
                                     {cocktailInfo.recipe.map(rec => (
                                         <><div key={`recipe-${rec.ingredient}`}>{rec.ingredient}</div> <div>{rec.ingredient_quantity}</div></>))}
                                 </div>
@@ -51,6 +52,7 @@ const CocktailDetailPage = () =>{
                             </div>
                         </div>
                         <div className="details-instruction">
+                            <h1>Instructions</h1>
                             <div>{cocktailInfo.instructions.map(instruction => (
                                 <div className="details-instruction__each" key={`instruction-${instruction.order}`}>{instruction.order+1}. {instruction.instruction}</div>))}
                             </div>

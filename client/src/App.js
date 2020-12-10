@@ -13,6 +13,7 @@ import { loadCocktailTags } from './store/cocktails'
 import AllCocktails from './components/cocktail/AllCocktails'
 import MyBar from './components/MyBar'
 import { load_mybar, load_favorites } from './store/bar'
+import Footer from './components/Footer'
 
 function App() {
     const dispatch = useDispatch()
@@ -39,6 +40,7 @@ function App() {
                     <Route path="/404" component={NotFound} />
                     <Route exact path="/"><Redirect to="/cocktails/all/1" /></ Route>
                 </Switch>
+            <Footer />
         </BrowserRouter>
     );
 }
