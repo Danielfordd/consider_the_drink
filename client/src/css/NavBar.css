@@ -64,11 +64,8 @@ li button:hover {
 .footer {
     height: 40px;
     position: relative;
-    /* width: 350px; */
-    /* margin: auto; */
     margin-left: 40%;
     padding: 20px;
-    /* align-items: center !important; */
 }
 
 .footer a {
