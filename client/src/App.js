@@ -14,6 +14,7 @@ import AllCocktails from './components/cocktail/AllCocktails'
 import MyBar from './components/MyBar'
 import { load_mybar, load_favorites } from './store/bar'
 import Footer from './components/Footer'
+import api from './components/ApiDoc'
 
 function App() {
     const dispatch = useDispatch()
@@ -32,6 +33,7 @@ function App() {
                 <Switch>
                     <Route path="/login" component={LoginForm} />
                     <Route path="/signup" component={SignUpForm} />
+                    <Route path="/api" component={api} />
                     <Route exact path="/myBar" component={MyBar} />
                     <Route exact path="/ingredients/search" component={HomePage} />
                     <Route exact path="/cocktails/search/:query" component={CocktailSearchResults}/>
