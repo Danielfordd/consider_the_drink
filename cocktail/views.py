@@ -24,7 +24,7 @@ def cocktail_data(request, cocktail_name):
     """
     Returns cocktail's information for cocktail page.
     """
-    result = Cocktail.objects.filter(cocktail_name=cocktail_name).prefetch_related('instruction_set', 'recipe_set','glassware_set', 'glassware_set__glass', 'garnish_set', 'garnish_set__garnish', 'served_set', 'served_set__served')[0]
+    result = Cocktail.objects.filter(cocktail_name=cocktail_name).prefetch_related('instruction_set', 'recipe_set', 'glassware_set', 'glassware_set__glass', 'garnish_set', 'garnish_set__garnish', 'served_set', 'served_set__served')[0]
 
     instructions = [{'order': res.order,
                      'instruction': res.instruction
@@ -110,32 +110,22 @@ def cocktail_all(request,
 
     if tags:
         cocktails = Cocktail.objects.filter(cocktailtagjoin__tag__tag__in=tags).annotate(num_tags=Count('cocktailtagjoin__tag')).filter(num_tags=len(tags)).distinct().order_by(sort_by)
-
         totalCocktails = len(cocktails)
-
         cocktailsList = cocktails[start:end]
-
-        cocktailResponse = {'cocktails': [{'name': res.cocktail_name,
-                                           'image': res.cocktail_image}
-                            for res in cocktailsList]}
-
-        cocktailResponse['total'] = totalCocktails
-
-        return JsonResponse(cocktailResponse)
     else:
         cocktails = Cocktail.objects.all().order_by(sort_by)
-
         totalCocktails = len(cocktails)
-
         cocktailsList = cocktails[start:end]
 
-        cocktailResponse = {'cocktails': [{'name': res.cocktail_name,
-                                           'image': res.cocktail_image}
-                            for res in cocktailsList]}
+    cocktailResponse = {'total': totalCocktails,
+                        'page': page,
+                        'per page': page,
+                        'cocktails': [{'name': res.cocktail_name,
+                                       'image': res.cocktail_image}
+                                      for res in cocktailsList]
+                        }
 
-        cocktailResponse['total'] = totalCocktails
-
-        return JsonResponse(cocktailResponse)
+    return JsonResponse(cocktailResponse)
 
 
 def cocktail__sort(request, ingredients):
@@ -173,3 +163,21 @@ def load_tags(request):
     """
     tags = [tag.tag for tag in CocktailTag.objects.all()]
     return JsonResponse({'tags': tags})
+
+
+def calculate_cocktails(cocktails):
+    res = []
+    rone = []
+    rtwo = []
+    for ct in cts:
+        ingCount = 0
+        for ing in ingredients:
+            if ing in cts[ct]['ingredients']:
+                ingCount += 1
+                if (ingCount >= len(cts[ct])) & (ct != cocktail_name):
+                    res.append({'cocktail': ct, 'image': cts[ct]['image']})
+                    break
+        if ingCount == (len(cts[ct]['ingredients']) - 1) > 0:
+            rone.append({'cocktail': ct, 'image': cts[ct]['image']})
+        elif ingCount == (len(cts[ct]['ingredients']) - 2) > 0:
+            rtwo.append({'cocktail': ct, 'image': cts[ct]['image']})
