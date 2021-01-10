@@ -3,7 +3,8 @@ from django.http import JsonResponse
 from .models import Cocktail, CocktailTagJoin, CocktailTag
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.db.models import Count
-from django.db  import connection
+from django.db import connection
+from cocktail.utilities import calculate_cocktails
 
 
 def cocktail_search(request, query):
@@ -22,13 +23,11 @@ def cocktail_search(request, query):
 @ensure_csrf_cookie
 def cocktail_data(request, cocktail_name):
     """
-    Returns cocktail's information for cocktail page.
+    Return cocktail's information for cocktail page.
     """
-    result = Cocktail.objects.filter(cocktail_name=cocktail_name).prefetch_related('instruction_set', 'recipe_set', 'glassware_set', 'glassware_set__glass', 'garnish_set', 'garnish_set__garnish', 'served_set', 'served_set__served')[0]
-
+    result = Cocktail.objects.filter(cocktail_name=cocktail_name).prefetch_related('instruction_set', 'recipe_set', 'glassware_set', 'glassware_set__glass', 'garnish_set', 'garnish_set__garnish', 'served_set', 'served_set__served')[0]  # noqa
     instructions = [{'order': res.order,
-                     'instruction': res.instruction
-                     }
+                     'instruction': res.instruction}
                     for res in list(result.instruction_set.all().order_by('order'))]  # noqa
 
     recipe = [{'order': res.order,
@@ -47,31 +46,17 @@ def cocktail_data(request, cocktail_name):
 
     ingredients = [rec['ingredient'] for rec in recipe]
 
-    allCocktails = list(Cocktail.objects.all().prefetch_related('recipe_set', 'recipe_set__ingredient'))
+    allCocktails = list(Cocktail.objects.all().prefetch_related('recipe_set', 'recipe_set__ingredient'))  # noqa
 
-    cts = {cocktail.cocktail_name:
+    cocktails = {cocktail.cocktail_name:
            {'image': cocktail.cocktail_image,
             'ingredients': [i.ingredient.ingredient_name
                             for i in cocktail.recipe_set.all()]}
            for cocktail in allCocktails}
 
-    res = []
-    rone = []
-    rtwo = []
-    for ct in cts:
-        ingCount = 0
-        for ing in ingredients:
-            if ing in cts[ct]['ingredients']:
-                ingCount += 1
-                if (ingCount >= len(cts[ct])) & (ct != cocktail_name):
-                    res.append({'cocktail': ct, 'image': cts[ct]['image']})
-                    break
-        if ingCount == (len(cts[ct]['ingredients']) - 1) > 0:
-            rone.append({'cocktail': ct, 'image': cts[ct]['image']})
-        elif ingCount == (len(cts[ct]['ingredients']) - 2) > 0:
-            rtwo.append({'cocktail': ct, 'image': cts[ct]['image']})
+    exactIngredients, oneIngredientAway, twoIngredientsAway = calculate_cocktails(cocktails, ingredients)  # noqa
 
-    [rone.append(cocktail) for cocktail in rtwo]
+    [oneIngredientAway.append(cocktail) for cocktail in twoIngredientsAway]
 
     return JsonResponse({'id': result.id,
                          'name': result.cocktail_name,
@@ -82,7 +67,7 @@ def cocktail_data(request, cocktail_name):
                          'garnish': garnishes,
                          'glassware': glassware,
                          'serving_styles': served,
-                         'similar': rone})
+                         'similar': oneIngredientAway})
 
 
 @ensure_csrf_cookie
@@ -92,8 +77,9 @@ def cocktail_all(request,
                  sort="name_asc",
                  tags=False):
     """
-    Return all cocktail's names and ingredients
+    Return all cocktail's names and ingredients.
     """
+
     start = 0
     if page != 1:
         start = quantity * (page - 1)
@@ -129,32 +115,18 @@ def cocktail_all(request,
 
 
 def cocktail__sort(request, ingredients):
-    ingTest = ingredients.split(",")[:-1]
-    allCocktails = list(Cocktail.objects.all().prefetch_related('recipe_set', 'recipe_set__ingredient'))
-    cts = {cocktail.cocktail_name: [i.ingredient.ingredient_name
-                                    for i in cocktail.recipe_set.all()]
-           for cocktail in allCocktails}
-    res = []
-    rone = []
-    rtwo = []
-    for ct in cts:
-        ingCount = 0
-        ingCheck = {}
-        for ing in ingTest:
-            if ing in ingCheck:
-                continue
-            else:
-                ingCheck[ing] = True
-            if ing in cts[ct]:
-                ingCount += 1
-                if ingCount >= len(cts[ct]):
-                    res.append(ct)
-                    break
-        if ingCount == (len(cts[ct]) - 1) > 0:
-            rone.append(ct)
-        elif ingCount == (len(cts[ct]) - 2) > 0:
-            rtwo.append(ct)
-    return JsonResponse({'exact': res, 'one_off': rone, 'two_off': rtwo})
+    ingredientList = ingredients.split(",")[:-1]
+    allCocktails = Cocktail.objects.all().prefetch_related('recipe_set', 'recipe_set__ingredient')
+
+    cocktails = {cocktail.cocktail_name: [i.ingredient.ingredient_name
+                 for i in cocktail.recipe_set.all()]
+                 for cocktail in allCocktails}
+
+    exactIngredients, oneIngredientAway, two = calculate_cocktails(cocktails, ingredientList)
+
+    return JsonResponse({'exact': exactIngredients,
+                         'one_off': oneIngredientAway,
+                         'two_off': twoIngredientsAway})
 
 
 def load_tags(request):
@@ -163,21 +135,3 @@ def load_tags(request):
     """
     tags = [tag.tag for tag in CocktailTag.objects.all()]
     return JsonResponse({'tags': tags})
-
-
-def calculate_cocktails(cocktails):
-    res = []
-    rone = []
-    rtwo = []
-    for ct in cts:
-        ingCount = 0
-        for ing in ingredients:
-            if ing in cts[ct]['ingredients']:
-                ingCount += 1
-                if (ingCount >= len(cts[ct])) & (ct != cocktail_name):
-                    res.append({'cocktail': ct, 'image': cts[ct]['image']})
-                    break
-        if ingCount == (len(cts[ct]['ingredients']) - 1) > 0:
-            rone.append({'cocktail': ct, 'image': cts[ct]['image']})
-        elif ingCount == (len(cts[ct]['ingredients']) - 2) > 0:
-            rtwo.append({'cocktail': ct, 'image': cts[ct]['image']})

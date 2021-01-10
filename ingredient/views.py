@@ -10,5 +10,6 @@ def all_ingredients(request):
     formatted array under the key "ingredients"
     """
     ingredientsQuery = Ingredient.objects.all().order_by('ingredient_name')
+
     ingredients = [ing.ingredient_name for ing in ingredientsQuery]
     return JsonResponse({'ingredients': ingredients})

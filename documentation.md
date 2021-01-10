@@ -115,3 +115,10 @@ https://www.canva.com/design/DAEMY04EGyw/bZSbfOcRpF818PYuOI2OIw/view?utm_content
 - `/api/cocktails/query` JSON response with filtered cocktail info + cocktail variations
 - `/api/cocktails/${id}}` JSON response with cocktail info + cocktail variations
 - `/api/ingredients` JSON response with all ingredients and associated ingredient categories
+
+## API Documentation
+
+## API Endpoints
+- Cocktail Names + image links
+- Ingredients
+-
